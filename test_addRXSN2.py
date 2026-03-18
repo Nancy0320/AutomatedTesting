@@ -134,8 +134,7 @@ class AddVehicleNumberTest(minium.MiniTest):
 
     def _message_detail(self):
         """跳转到消息页面查看消息流程"""
-        self.logger.info("跳转到消息页面查看消息流程")
-        self.logger.info("跳转到消息页面查看消息流程")
+        self.logger.info("跳转到消息页面查看消息流程1111111111111")
         self._click_element("image", "返回按钮", timeout=5)
         self._click_element("view", "消息", inner_text="消息")
         self._click_element(".title", "消息标题")
