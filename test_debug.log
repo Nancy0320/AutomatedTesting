@@ -1,0 +1,27 @@
+2025-06-23 15:15:11,896 - AddVehicleNumberTest - INFO - call test method
+2025-06-23 15:15:11,896 - AddVehicleNumberTest - INFO - 开始测试
+2025-06-23 15:15:11,920 - AddVehicleNumberTest - WARNING - 第1次点击返回按钮失败: 'bool' object has no attribute 'click'
+2025-06-23 15:15:11,936 - AddVehicleNumberTest - WARNING - 第2次点击返回按钮失败: 'bool' object has no attribute 'click'
+2025-06-23 15:15:11,952 - AddVehicleNumberTest - WARNING - 第3次点击返回按钮失败: 'bool' object has no attribute 'click'
+2025-06-23 15:15:11,952 - AddVehicleNumberTest - ERROR - 测试失败: 'bool' object has no attribute 'click'
+Traceback (most recent call last):
+  File "D:\xcx\v9m_client2\demo.py", line 21, in test_add
+    self._safe_click_with_retry("image", "返回按钮", timeout=10, retries=3)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\xcx\v9m_client2\demo.py", line 46, in _safe_click_with_retry
+    element.click()
+    ^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'click'
+2025-06-23 15:15:12,305 - AddVehicleNumberTest - ERROR - test exception
+Traceback (most recent call last):
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\framework\minitest.py", line 789, in _callTestMethod
+    method()
+    ~~~~~~^^
+  File "D:\xcx\v9m_client2\demo.py", line 21, in test_add
+    self._safe_click_with_retry("image", "返回按钮", timeout=10, retries=3)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\xcx\v9m_client2\demo.py", line 46, in _safe_click_with_retry
+    element.click()
+    ^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'click'
+2025-06-23 15:15:12,309 - AddVehicleNumberTest - INFO - end test method

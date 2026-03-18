@@ -1,0 +1,1 @@
+[1m[31mERROR   [0m websocket:_logging.py:77 Connection to remote host was lost. - goodbye

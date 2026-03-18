@@ -1,0 +1,234 @@
+[I 2026-03-17 16:48:56,418 minium minitest#432 _miniSetUp] =========Current case: test_add_00001_0=========
+[I 2026-03-17 16:48:56,418 minium minitest#435 _miniSetUp] package info: D:.xcx.v9m_client2.test_addRXSN2, case info: AddVehicleNumberTest.test_add_00001_0
+[I 2026-03-17 16:48:56,419 minium basenative#59 wrapper] call BaseNative.check_connection
+[I 2026-03-17 16:48:56,419 minium basenative#63 wrapper] call BaseNative.check_connection end True
+[I 2026-03-17 16:48:56,419 minium basenative#59 wrapper] call BaseNative.back_to_miniprogram
+[I 2026-03-17 16:48:56,420 minium basenative#794 back_to_miniprogram] try back_to_miniprogram 3
+[I 2026-03-17 16:48:56,420 minium basenative#63 wrapper] call BaseNative.back_to_miniprogram end 
+[D 2026-03-17 16:48:56,423 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"0bc7a9e3-3c7c-4c90-83b0-febf2928b398","method":"App.callWxMethod","params":{"method":"getLaunchOptionsSync","args":[]}}
+[D 2026-03-17 16:48:56,460 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"0bc7a9e3-3c7c-4c90-83b0-febf2928b398","result":{"result":{"path":"page/my/my","query":{},"scene":1001,"referrerInfo":{},"mode":"default","apiCategory":"default"}}}
+[D 2026-03-17 16:48:56,461 minium.Conn5968 connection#427 _safely_send] ASYNC_SEND > [1755049715968]{"id":"dda9e300-183a-4eef-9b42-1e7283e76fa5","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/page/my/my"}]}}
+[D 2026-03-17 16:48:56,463 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"method":"App.bindingCalled","params":{"name":"switchTab_before_global","args":[{"url":"/page/my/my"}]}}
+[D 2026-03-17 16:48:56,474 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"dda9e300-183a-4eef-9b42-1e7283e76fa5","result":{"result":{"errMsg":"switchTab:ok"}}}
+[I 2026-03-17 16:48:56,475 minium.Conn5968 connection#704 _handle_async_msg] received async msg: dda9e300-183a-4eef-9b42-1e7283e76fa5
+[D 2026-03-17 16:48:56,476 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"778fecd7-0816-451a-856b-1a7ef3e2945d","method":"App.getCurrentPage","params":{}}
+[D 2026-03-17 16:48:56,479 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"778fecd7-0816-451a-856b-1a7ef3e2945d","result":{"pageId":1,"path":"page/my/my","query":{}}}
+[D 2026-03-17 16:48:56,479 minium.App0672 app#618 _evaluate_js] evaluate js file getCurrentPages [ALL]
+[D 2026-03-17 16:48:56,480 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"812a4902-6fc7-4294-90a6-f24075313895","method":"App.callFunction","params":{"functionDeclaration":"function miniumGetCurrentPages(e){var r=getCurrentPages();return e&&(r=[r.pop()]),r=r.map((function(e){if(e){let{route:r}=e;const n=r.indexOf(\"__plugin__/\");return n>-1&&(r=\"plugin-private://\"+r.slice(n+11)),{pageId:e.__wxWebviewId__,path:r,query:e.options,renderer:e.renderer}}})),e?r.pop():r}","args":[true]}}
+[D 2026-03-17 16:48:56,489 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"812a4902-6fc7-4294-90a6-f24075313895","result":{"result":{"pageId":1,"path":"page/my/my","query":{},"renderer":"webview"}}}
+[I 2026-03-17 16:48:56,493 minium minitest#897 capture] capture setup.png
+[D 2026-03-17 16:48:56,493 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"1306a50c-54b3-4950-8d71-7593eddb16be","method":"App.captureScreenshot","params":{}}
+[D 2026-03-17 16:48:56,683 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"1306a50c-54b3-4950-8d71-7593eddb16be","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAa4AAAOkCAIAAABxk0eCAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3cm7ZcdxIPaIyMwz3vnNNU8oAAQBkBQkipLYan3dltvtYeGFvfKf4D/GO9tLT72x24vWwk2qpW5JlAiKADEDhZrrzeMdz5iZEV68QmEmCbDAgoj8VX1V9b1737nn5T2VNzMjIg8+f+N/giAIgm82jU/6DIIgCJ44jRA6wyAIvunoSZ9AEATBkxcmyEEQBGGCHARBAKAx9IRBEHzjhVFhEARB6AqDIAgAdAghB0EQhJ4wCIIANIa4SRAE33ga5UmfQhAEwZMWwiZBEASgKXSFQRB844XCuyAIgjBBDoIgCMk0QRAEEGqQgyAIIEyQgyAIIESQgyAIIFSbBEEQQEimCYIggBBBDoIgAAANYa0wCIJvvDBBDoIgC
+[I 2026-03-17 16:48:56,686 minium minitest#487 _miniSetUp] =========case: test_add_00001_0 start=========
+[I 2026-03-17 16:48:56,687 minium minitest#788 _callTestMethod] call test method
+[I 2026-03-17 16:48:56,687 minium test_addRXSN2#16 test_add] 开始第 1 次测试
+[I 2026-03-17 16:49:01,688 minium test_addRXSN2#64 _bind_device] 开始绑定设备流程
+[I 2026-03-17 16:49:01,688 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:01,688 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"029e1191-0db8-4bf8-b12b-c0c7facc6ebf","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:01,694 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"029e1191-0db8-4bf8-b12b-c0c7facc6ebf","result":{"elements":[]}}
+[W 2026-03-17 16:49:01,694 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:01,946 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:01,946 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"d519f855-14b2-4d74-b9ea-33b2a83d284a","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:01,951 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"d519f855-14b2-4d74-b9ea-33b2a83d284a","result":{"elements":[]}}
+[W 2026-03-17 16:49:01,952 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:02,203 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:02,203 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"d5bc9d6e-9930-49a8-9027-f51860a9d589","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:02,206 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"d5bc9d6e-9930-49a8-9027-f51860a9d589","result":{"elements":[]}}
+[W 2026-03-17 16:49:02,207 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:02,458 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:02,458 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"b8e31937-8a72-4b8c-b8d4-5a435fbbb439","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:02,462 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"b8e31937-8a72-4b8c-b8d4-5a435fbbb439","result":{"elements":[]}}
+[W 2026-03-17 16:49:02,463 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:02,713 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:02,714 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"db4e7287-185b-4303-983a-0a834826cde1","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:02,717 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"db4e7287-185b-4303-983a-0a834826cde1","result":{"elements":[]}}
+[W 2026-03-17 16:49:02,717 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:02,969 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:02,969 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"e62001b2-6c63-48c8-9e00-055b44f72b18","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:02,973 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"e62001b2-6c63-48c8-9e00-055b44f72b18","result":{"elements":[]}}
+[W 2026-03-17 16:49:02,973 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:03,224 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:03,225 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"f061b4ad-6b90-4eea-864e-3711abe4eacb","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:03,228 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"f061b4ad-6b90-4eea-864e-3711abe4eacb","result":{"elements":[]}}
+[W 2026-03-17 16:49:03,228 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:03,479 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:03,480 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"137c2ead-8a5b-4fc5-84f4-7cad887d031f","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:03,484 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"137c2ead-8a5b-4fc5-84f4-7cad887d031f","result":{"elements":[]}}
+[W 2026-03-17 16:49:03,485 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:03,736 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:03,736 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"57b0c417-aad2-4daf-b196-ed14449c986f","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:03,740 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"57b0c417-aad2-4daf-b196-ed14449c986f","result":{"elements":[]}}
+[W 2026-03-17 16:49:03,740 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:03,991 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:03,991 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"db2f2d0a-51ff-4c67-a016-97bf0d1e1e66","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:03,995 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"db2f2d0a-51ff-4c67-a016-97bf0d1e1e66","result":{"elements":[]}}
+[W 2026-03-17 16:49:03,995 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:04,247 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:04,247 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"682d4d09-f63f-44d1-80d1-d3192b5b63f0","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:04,253 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"682d4d09-f63f-44d1-80d1-d3192b5b63f0","result":{"elements":[]}}
+[W 2026-03-17 16:49:04,255 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:04,582 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:04,582 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"65894203-ecfc-4be1-aa12-30d1eccc65ed","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:04,905 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"65894203-ecfc-4be1-aa12-30d1eccc65ed","result":{"elements":[]}}
+[W 2026-03-17 16:49:04,906 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:05,157 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:05,158 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"1adf21bf-9e8a-41a1-a44a-f1c913e8fb41","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:05,166 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"1adf21bf-9e8a-41a1-a44a-f1c913e8fb41","result":{"elements":[]}}
+[W 2026-03-17 16:49:05,166 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:05,418 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:05,419 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"0b24c9c1-c328-4ecd-ab2d-dc85ae39fbea","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:05,432 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"0b24c9c1-c328-4ecd-ab2d-dc85ae39fbea","result":{"elements":[]}}
+[W 2026-03-17 16:49:05,432 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:05,683 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:05,684 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"95aa3863-63e8-4308-be5b-137e464ee620","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:05,687 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"95aa3863-63e8-4308-be5b-137e464ee620","result":{"elements":[]}}
+[W 2026-03-17 16:49:05,688 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:05,938 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:05,939 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"500e74cb-80c0-4508-bec9-c3e31cc739ed","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:05,944 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"500e74cb-80c0-4508-bec9-c3e31cc739ed","result":{"elements":[]}}
+[W 2026-03-17 16:49:05,944 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:06,195 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:06,196 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"b04b8f01-abe4-4da5-be6d-505abd527820","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:06,222 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"b04b8f01-abe4-4da5-be6d-505abd527820","result":{"elements":[]}}
+[W 2026-03-17 16:49:06,222 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:06,480 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:06,486 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"207b342c-ee78-4d35-a8a6-9f5cab3606e0","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:06,526 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"207b342c-ee78-4d35-a8a6-9f5cab3606e0","result":{"elements":[]}}
+[W 2026-03-17 16:49:06,526 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:06,782 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:06,783 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"d6fe1852-5930-414e-b19c-793fbcee33e4","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:06,789 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"d6fe1852-5930-414e-b19c-793fbcee33e4","result":{"elements":[]}}
+[W 2026-03-17 16:49:06,789 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:07,041 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:07,041 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"d2664f91-58b2-40f2-a808-fd1a9f652fcb","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:07,046 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"d2664f91-58b2-40f2-a808-fd1a9f652fcb","result":{"elements":[]}}
+[W 2026-03-17 16:49:07,047 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:07,297 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:07,297 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"c8cc7624-a02e-495d-8739-0f941f656be3","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:07,301 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"c8cc7624-a02e-495d-8739-0f941f656be3","result":{"elements":[]}}
+[W 2026-03-17 16:49:07,301 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:07,552 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:07,552 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"28465ca8-809a-4e35-94f0-66db6be8a3a9","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:07,556 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"28465ca8-809a-4e35-94f0-66db6be8a3a9","result":{"elements":[]}}
+[W 2026-03-17 16:49:07,557 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:07,807 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:07,808 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"9604c045-3d3f-445c-825c-0b1f190b8780","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:07,811 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"9604c045-3d3f-445c-825c-0b1f190b8780","result":{"elements":[]}}
+[W 2026-03-17 16:49:07,811 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:08,062 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:08,063 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"268d5836-92db-4228-b34b-cf7eb9b89b83","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:08,066 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"268d5836-92db-4228-b34b-cf7eb9b89b83","result":{"elements":[]}}
+[W 2026-03-17 16:49:08,066 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:08,318 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:08,318 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"ec70eaf2-fd85-477f-9987-9cb12345bde6","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:08,322 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"ec70eaf2-fd85-477f-9987-9cb12345bde6","result":{"elements":[]}}
+[W 2026-03-17 16:49:08,322 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:08,573 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:08,574 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"5557e641-a747-496c-86dd-c11d24b00d7d","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:08,578 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"5557e641-a747-496c-86dd-c11d24b00d7d","result":{"elements":[]}}
+[W 2026-03-17 16:49:08,579 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:08,830 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:08,830 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"83faeabc-1d78-4eae-9b71-55dd6499aa94","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:08,834 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"83faeabc-1d78-4eae-9b71-55dd6499aa94","result":{"elements":[]}}
+[W 2026-03-17 16:49:08,834 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:09,085 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:09,086 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"582a7d60-2c21-4faf-85e6-16403c73f57b","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:09,091 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"582a7d60-2c21-4faf-85e6-16403c73f57b","result":{"elements":[]}}
+[W 2026-03-17 16:49:09,091 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:09,343 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:09,343 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"0eab6f62-a238-4065-92e6-9c792a3d58f2","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:09,347 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"0eab6f62-a238-4065-92e6-9c792a3d58f2","result":{"elements":[]}}
+[W 2026-03-17 16:49:09,347 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:09,597 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:09,597 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"ca504340-9ea7-4fd7-b55c-e898e94833ab","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:09,601 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"ca504340-9ea7-4fd7-b55c-e898e94833ab","result":{"elements":[]}}
+[W 2026-03-17 16:49:09,602 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:09,853 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:09,853 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"9bcfaa2d-3d63-4a36-b38e-9b84e7c14e31","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:09,856 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"9bcfaa2d-3d63-4a36-b38e-9b84e7c14e31","result":{"elements":[]}}
+[W 2026-03-17 16:49:09,856 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:10,107 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:10,107 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"4db91f85-5cee-4a1d-8003-d9ce511b437a","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:10,112 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"4db91f85-5cee-4a1d-8003-d9ce511b437a","result":{"elements":[]}}
+[W 2026-03-17 16:49:10,112 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:10,363 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:10,364 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"3f427cad-3afd-44aa-a398-cf36567540dd","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:10,367 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"3f427cad-3afd-44aa-a398-cf36567540dd","result":{"elements":[]}}
+[W 2026-03-17 16:49:10,368 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:10,618 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:10,618 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"b0186dfe-7f0b-4984-acdf-edabc558ca7f","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:10,622 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"b0186dfe-7f0b-4984-acdf-edabc558ca7f","result":{"elements":[]}}
+[W 2026-03-17 16:49:10,622 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:10,873 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:10,873 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"bc8187af-6e46-4345-9910-ddc0e588a8da","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:10,876 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"bc8187af-6e46-4345-9910-ddc0e588a8da","result":{"elements":[]}}
+[W 2026-03-17 16:49:10,876 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:11,127 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:11,127 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"d76d3a63-62f4-4d04-9a0a-4895e60446f1","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:11,130 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"d76d3a63-62f4-4d04-9a0a-4895e60446f1","result":{"elements":[]}}
+[W 2026-03-17 16:49:11,131 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:11,382 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:11,382 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"9cf7514d-7d57-461a-92c7-97ce1631be1e","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:11,386 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"9cf7514d-7d57-461a-92c7-97ce1631be1e","result":{"elements":[]}}
+[W 2026-03-17 16:49:11,386 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:11,637 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:11,638 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"4e7b4b3f-bbcc-4a0f-8af7-a1b9902e4db6","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:11,641 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"4e7b4b3f-bbcc-4a0f-8af7-a1b9902e4db6","result":{"elements":[]}}
+[W 2026-03-17 16:49:11,641 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[I 2026-03-17 16:49:11,892 minium page#716 _get_elements_by_css] try to get elements: .self_click_element
+[D 2026-03-17 16:49:11,892 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"9a87d4ab-ace6-4f99-994d-cc1ce8bf3b5d","method":"Page.getElements","params":{"selector":".self_click_element","pageId":1}}
+[D 2026-03-17 16:49:11,896 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"9a87d4ab-ace6-4f99-994d-cc1ce8bf3b5d","result":{"elements":[]}}
+[W 2026-03-17 16:49:11,896 minium page#747 _get_elements_by_css] Could not found any element '.self_click_element' you need
+[E 2026-03-17 16:49:11,897 minium test_addRXSN2#32 test_add] 第 1 次测试失败: 未找到: .self_click_element with text 
+[D 2026-03-17 16:49:11,897 minium test_addRXSN2#35 test_add] 当前页面截图已保存
+[I 2026-03-17 16:49:11,898 minium minitest#897 capture] capture error_screenshot.png.png
+[D 2026-03-17 16:49:11,898 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"61b9a71a-6304-4f81-8942-2ec1ac4a751d","method":"App.captureScreenshot","params":{}}
+[D 2026-03-17 16:49:11,993 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"61b9a71a-6304-4f81-8942-2ec1ac4a751d","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAa4AAAOkCAIAAABxk0eCAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3cm7ZcdxIPaIyMwz3vnNNU8oAAQBkBQkipLYan3dltvtYeGFvfKf4D/GO9tLT72x24vWwk2qpW5JlAiKADEDhZrrzeMdz5iZEV68QmEmCbDAgoj8VX1V9b1737nn5T2VNzMjIg8+f+N/giAIgm82jU/6DIIgCJ44jRA6wyAIvunoSZ9AEATBkxcmyEEQBGGCHARBAKAx9IRBEHzjhVFhEARB6AqDIAgAdAghB0EQhJ4wCIIANIa4SRAE33ga5UmfQhAEwZMWwiZBEASgKXSFQRB844XCuyAIgjBBDoIgCMk0QRAEEGqQgyAIIEyQgyAIIESQgyAIIFSbBEEQQEimCYIggBBBDoIgAAANYa0wCIJvvDBBDoIgC
+[E 2026-03-17 16:49:11,996 minium minitest#793 _callTestMethod] test exception
+Traceback (most recent call last):
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\framework\minitest.py", line 789, in _callTestMethod
+    method()
+    ~~~~~~^^
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\ddt.py", line 221, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\xcx\v9m_client2\test_addRXSN2.py", line 19, in test_add
+    self._bind_device()
+    ~~~~~~~~~~~~~~~~~^^
+  File "D:\xcx\v9m_client2\test_addRXSN2.py", line 66, in _bind_device
+    self._click_element(".self_click_element", "", inner_text="")
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\xcx\v9m_client2\test_addRXSN2.py", line 53, in _click_element
+    raise Exception(f"未找到{element_name}: {selector} with text {kwargs['inner_text']}")
+Exception: 未找到: .self_click_element with text 
+[I 2026-03-17 16:49:12,002 minium minitest#796 _callTestMethod] end test method
+[D 2026-03-17 16:49:12,007 minium minitest#799 _miniTearDown] =========Current case Down: test_add_00001_0=========
+[I 2026-03-17 16:49:12,007 minium minitest#897 capture] capture teardown.png
+[D 2026-03-17 16:49:12,008 minium.Conn5968 connection#427 _safely_send] SEND > [1755049715968]{"id":"84c61f81-0197-4909-8cf3-485a2c67e267","method":"App.captureScreenshot","params":{}}
+[D 2026-03-17 16:49:12,105 minium.Conn5968 connection#660 __on_message] RECV < [1755049715968]{"id":"84c61f81-0197-4909-8cf3-485a2c67e267","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAa4AAAOkCAIAAABxk0eCAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3cm7ZcdxIPaIyMwz3vnNNU8oAAQBkBQkipLYan3dltvtYeGFvfKf4D/GO9tLT72x24vWwk2qpW5JlAiKADEDhZrrzeMdz5iZEV68QmEmCbDAgoj8VX1V9b1737nn5T2VNzMjIg8+f+N/giAIgm82jU/6DIIgCJ44jRA6wyAIvunoSZ9AEATBkxcmyEEQBGGCHARBAKAx9IRBEHzjhVFhEARB6AqDIAgAdAghB0EQhJ4wCIIANIa4SRAE33ga5UmfQhAEwZMWwiZBEASgKXSFQRB844XCuyAIgjBBDoIgCMk0QRAEEGqQgyAIIEyQgyAIIESQgyAIIFSbBEEQQEimCYIggBBBDoIgAAANYa0wCIJvvDBBDoIgC
+[I 2026-03-17 16:49:12,109 minium basenative#59 wrapper] call BaseNative.get_start_up
+[I 2026-03-17 16:49:12,109 minium basenative#63 wrapper] call BaseNative.get_start_up end 
+[E 2026-03-17 16:49:12,117 minium assertbase#390 _get_stack_info] <bound method AddVehicleNumberTest.test_add of <test_addRXSN2.AddVehicleNumberTest testMethod=test_add_00001_0>>
+Traceback (most recent call last):
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\framework\libs\unittest\case.py", line 43, in testPartExecutor
+    yield
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\framework\libs\unittest\case.py", line 125, in run
+    self._callTestMethod(testMethod)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\framework\minitest.py", line 789, in _callTestMethod
+    method()
+    ~~~~~~^^
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\ddt.py", line 221, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\xcx\v9m_client2\test_addRXSN2.py", line 19, in test_add
+    self._bind_device()
+    ~~~~~~~~~~~~~~~~~^^
+  File "D:\xcx\v9m_client2\test_addRXSN2.py", line 66, in _bind_device
+    self._click_element(".self_click_element", "", inner_text="")
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\xcx\v9m_client2\test_addRXSN2.py", line 53, in _click_element
+    raise Exception(f"未找到{element_name}: {selector} with text {kwargs['inner_text']}")
+Exception: 未找到: .self_click_element with text 
+[W 2026-03-17 16:49:12,121 minium assertbase#354 _log_info_when_error] config: {'debug': False, 'base_dir': 'D:\\xcx\\v9m_client2', 'platform': 'ide', 'app': 'wx', 'debug_mode': 'debug', 'close_ide': 'False', 'auto_capture': 'auto', 'check_mp_foreground': True, 'auto_relaunch': True, 'device_desire': {}, 'account_info': {}, 'report_usage': True, 'remote_connect_timeout': 180, 'request_timeout': 60, 'use_push': True, 'full_reset': 'False', 'outputs': 'D:\\xcx\\v9m_client2\\outputs', 'enable_app_log': False, 'enable_network_panel': False, 'project_path': 'D:\\zsn\\V9Mcode\\client-applets', 'dev_tool_path': 'D:\\Program Files (x86)\\微信web开发者工具\\cli.bat', 'test_port': 9420, 'mock_native_modal': {}, 'mock_request': [], 'auto_authorize': False, 'audits': None, 'teardown_snapshot': False, 'mock_images_dir': '', 'mock_images': {}, 'need_perf': False, 'appid': None, 'enable_h5': True, 'autofix': False, 'framework_capture': True, 'error_capture': False, 'assert_capture': True, 'create_time': '20260317164825', 'case_output': 'D:\\xcx\\v9m_client2\\outputs\\20260317164825\\test_add_00001_0\\20260317164856413752'}
+[W 2026-03-17 16:49:12,121 minium assertbase#355 _log_info_when_error] build info: {'version': '1.6.0', 'revision': '33ce5b50b34ec18c51c054a7cc1bdfb3ab0a451b', 'branch': 'master', 'update_at': '2024-10-09 21:08:56'}
+[W 2026-03-17 16:49:12,121 minium minitest#1029 _log_info_when_error] mini: 基础库3.9.3, 开发者工具1.06.2504060
+[W 2026-03-17 16:49:12,122 minium minitest#1031 _log_info_when_error] native: <minium.native.wx_native.idenative.IdeNative object at 0x00000198A11D6660>

@@ -1,0 +1,98 @@
+[I 2026-03-18 08:41:54,672 minium minitest#432 _miniSetUp] =========Current case: test_add_00001_0=========
+[I 2026-03-18 08:41:54,673 minium minitest#435 _miniSetUp] package info: D:.xcx.v9m_client2.test_addRXSN2, case info: AddVehicleNumberTest.test_add_00001_0
+[I 2026-03-18 08:41:54,673 minium basenative#59 wrapper] call BaseNative.check_connection
+[I 2026-03-18 08:41:54,673 minium basenative#63 wrapper] call BaseNative.check_connection end True
+[I 2026-03-18 08:41:54,673 minium basenative#59 wrapper] call BaseNative.back_to_miniprogram
+[I 2026-03-18 08:41:54,673 minium basenative#794 back_to_miniprogram] try back_to_miniprogram 3
+[I 2026-03-18 08:41:54,673 minium basenative#63 wrapper] call BaseNative.back_to_miniprogram end 
+[D 2026-03-18 08:41:54,674 minium.Conn6272 connection#427 _safely_send] SEND > [2038403656272]{"id":"f9b92b1e-7fec-4266-9c41-3960099457e1","method":"App.callWxMethod","params":{"method":"getLaunchOptionsSync","args":[]}}
+[D 2026-03-18 08:41:54,676 minium.Conn6272 connection#660 __on_message] RECV < [2038403656272]{"id":"f9b92b1e-7fec-4266-9c41-3960099457e1","result":{"result":{"path":"page/my/my","query":{},"scene":1001,"referrerInfo":{},"mode":"default","apiCategory":"default"}}}
+[D 2026-03-18 08:41:54,677 minium.Conn6272 connection#427 _safely_send] ASYNC_SEND > [2038403656272]{"id":"4c767f49-3f1b-4f47-9ed6-b3611d684e5b","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/page/my/my"}]}}
+[D 2026-03-18 08:41:54,679 minium.Conn6272 connection#660 __on_message] RECV < [2038403656272]{"method":"App.bindingCalled","params":{"name":"switchTab_before_global","args":[{"url":"/page/my/my"}]}}
+[D 2026-03-18 08:41:54,686 minium.Conn6272 connection#660 __on_message] RECV < [2038403656272]{"id":"4c767f49-3f1b-4f47-9ed6-b3611d684e5b","result":{"result":{"errMsg":"switchTab:ok"}}}
+[I 2026-03-18 08:41:54,686 minium.Conn6272 connection#704 _handle_async_msg] received async msg: 4c767f49-3f1b-4f47-9ed6-b3611d684e5b
+[D 2026-03-18 08:41:54,687 minium.Conn6272 connection#427 _safely_send] SEND > [2038403656272]{"id":"345a2243-7ab2-4bc3-98f2-51daae2cee57","method":"App.getCurrentPage","params":{}}
+[D 2026-03-18 08:41:54,689 minium.Conn6272 connection#660 __on_message] RECV < [2038403656272]{"id":"345a2243-7ab2-4bc3-98f2-51daae2cee57","result":{"pageId":1,"path":"page/my/my","query":{}}}
+[D 2026-03-18 08:41:54,689 minium.App0976 app#618 _evaluate_js] evaluate js file getCurrentPages [ALL]
+[D 2026-03-18 08:41:54,689 minium.Conn6272 connection#427 _safely_send] SEND > [2038403656272]{"id":"1f8f4160-8433-4e58-827d-04e0f47428d9","method":"App.callFunction","params":{"functionDeclaration":"function miniumGetCurrentPages(e){var r=getCurrentPages();return e&&(r=[r.pop()]),r=r.map((function(e){if(e){let{route:r}=e;const n=r.indexOf(\"__plugin__/\");return n>-1&&(r=\"plugin-private://\"+r.slice(n+11)),{pageId:e.__wxWebviewId__,path:r,query:e.options,renderer:e.renderer}}})),e?r.pop():r}","args":[true]}}
+[D 2026-03-18 08:41:54,692 minium.Conn6272 connection#660 __on_message] RECV < [2038403656272]{"id":"1f8f4160-8433-4e58-827d-04e0f47428d9","result":{"result":{"pageId":1,"path":"page/my/my","query":{},"renderer":"webview"}}}
+[I 2026-03-18 08:41:54,693 minium minitest#897 capture] capture setup.png
+[D 2026-03-18 08:41:54,693 minium.Conn6272 connection#427 _safely_send] SEND > [2038403656272]{"id":"f266356e-1efb-4978-b7bb-c1b124fc2f2f","method":"App.captureScreenshot","params":{}}
+[D 2026-03-18 08:42:22,593 minium.Conn6272 connection#660 __on_message] RECV < [2038403656272]{"id":"f266356e-1efb-4978-b7bb-c1b124fc2f2f","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAa4AAAOkCAIAAABxk0eCAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3VmzZcd1IOa1Vmbu8Yx3vlV1a0YBIAiAoCBRlMSWFK1QuxW2H+wI+8k/wT/Gj+1HT/1itx1hOcIS1ZJbFCWCIkHMqCrUfOfxjHvMzLX8cAuFmSTAAgsC8gOiCqhz7r775t6VJzPXWrnx+Rv/AwRBEHyzaXzSZxAEQfDEaYTQGQZB8E1HT/oEgiAInrwwQQ6CIAgT5CAIAgCNoScMguAbL4wKgyAIQlcYBEEAoEMIOQiCIPSEQRAEoDHETYIg+MbTKE/6FIIgCJ60EDYJgiAATaErDILgGy8U3gVBEIQJchAEQUimCYIggFCDHARBAGGCHARBACGCHARBAKHaJAiCAEIyTRAEAYQIchAEAQBoCGuFQRB844UJc
+[I 2026-03-18 08:42:22,597 minium minitest#487 _miniSetUp] =========case: test_add_00001_0 start=========
+[I 2026-03-18 08:42:22,598 minium minitest#788 _callTestMethod] call test method
+[I 2026-03-18 08:42:22,599 minium test_addRXSN2#16 test_add] 开始第 1 次测试
+[I 2026-03-18 08:42:27,600 minium test_addRXSN2#64 _bind_device] 开始绑定设备流程
+[I 2026-03-18 08:42:27,600 minium page#716 _get_elements_by_css] try to get elements: .scanTheCode_view
+[D 2026-03-18 08:42:27,600 minium.Conn6272 connection#427 _safely_send] SEND > [2038403656272]{"id":"354c2ae4-883d-45ee-bac5-f9b001a19156","method":"Page.getElements","params":{"selector":".scanTheCode_view","pageId":1}}
+[D 2026-03-18 08:42:27,607 minium.Conn6272 connection#660 __on_message] RECV < [2038403656272]{"id":"354c2ae4-883d-45ee-bac5-f9b001a19156","result":{"elements":[]}}
+[W 2026-03-18 08:42:27,608 minium page#747 _get_elements_by_css] Could not found any element '.scanTheCode_view' you need
+[E 2026-03-18 08:42:27,608 minium test_addRXSN2#32 test_add] 第 1 次测试失败: element[.scanTheCode_view] not found
+[D 2026-03-18 08:42:27,608 minium test_addRXSN2#35 test_add] 当前页面截图已保存
+[I 2026-03-18 08:42:27,609 minium minitest#897 capture] capture error_screenshot.png.png
+[D 2026-03-18 08:42:27,609 minium.Conn6272 connection#427 _safely_send] SEND > [2038403656272]{"id":"4b3718b7-16b7-4b88-89eb-36f218ccad61","method":"App.captureScreenshot","params":{}}
+[D 2026-03-18 08:42:27,706 minium.Conn6272 connection#660 __on_message] RECV < [2038403656272]{"id":"4b3718b7-16b7-4b88-89eb-36f218ccad61","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAa4AAAOkCAIAAABxk0eCAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3VmzZcd1IOa1Vmbu8Yx3vlV1a0YBIAiAoCBRlMSWFK1QuxW2H+wI+8k/wT/Gj+1HT/1itx1hOcIS1ZJbFCWCIkHMqCrUfOfxjHvMzLX8cAuFmSTAAgsC8gOiCqhz7r775t6VJzPXWrnx+Rv/AwRBEHyzaXzSZxAEQfDEaYTQGQZB8E1HT/oEgiAInrwwQQ6CIAgT5CAIAgCNoScMguAbL4wKgyAIQlcYBEEAoEMIOQiCIPSEQRAEoDHETYIg+MbTKE/6FIIgCJ60EDYJgiAATaErDILgGy8U3gVBEIQJchAEQUimCYIggFCDHARBAGGCHARBACGCHARBAKHaJAiCAEIyTRAEAYQIchAEAQBoCGuFQRB844UJc
+[E 2026-03-18 08:42:27,709 minium minitest#793 _callTestMethod] test exception
+Traceback (most recent call last):
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\framework\minitest.py", line 789, in _callTestMethod
+    method()
+    ~~~~~~^^
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\ddt.py", line 221, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\xcx\v9m_client2\test_addRXSN2.py", line 19, in test_add
+    self._bind_device()
+    ~~~~~~~~~~~~~~~~~^^
+  File "D:\xcx\v9m_client2\test_addRXSN2.py", line 67, in _bind_device
+    self.page.get_element(".scanTheCode_view").click()
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\miniprogram\base_driver\app.py", line 291, in wrapper
+    return func(*args, **kwargs)
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 148, in wrapper
+    result = func(*args, **kwargs)
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\miniprogram\base_driver\page\page.py", line 375, in get_element
+    raise MiniElementNotFoundError(_selector)
+minium.framework.exception.MiniElementNotFoundError: element[.scanTheCode_view] not found
+[I 2026-03-18 08:42:27,716 minium minitest#796 _callTestMethod] end test method
+[D 2026-03-18 08:42:27,722 minium minitest#799 _miniTearDown] =========Current case Down: test_add_00001_0=========
+[I 2026-03-18 08:42:27,723 minium minitest#897 capture] capture teardown.png
+[D 2026-03-18 08:42:27,723 minium.Conn6272 connection#427 _safely_send] SEND > [2038403656272]{"id":"79377fd1-9b49-4c9d-bd1d-2770b3fbf5cf","method":"App.captureScreenshot","params":{}}
+[D 2026-03-18 08:42:27,820 minium.Conn6272 connection#660 __on_message] RECV < [2038403656272]{"id":"79377fd1-9b49-4c9d-bd1d-2770b3fbf5cf","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAa4AAAOkCAIAAABxk0eCAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3VmzZcd1IOa1Vmbu8Yx3vlV1a0YBIAiAoCBRlMSWFK1QuxW2H+wI+8k/wT/Gj+1HT/1itx1hOcIS1ZJbFCWCIkHMqCrUfOfxjHvMzLX8cAuFmSTAAgsC8gOiCqhz7r775t6VJzPXWrnx+Rv/AwRBEHyzaXzSZxAEQfDEaYTQGQZB8E1HT/oEgiAInrwwQQ6CIAgT5CAIAgCNoScMguAbL4wKgyAIQlcYBEEAoEMIOQiCIPSEQRAEoDHETYIg+MbTKE/6FIIgCJ60EDYJgiAATaErDILgGy8U3gVBEIQJchAEQUimCYIggFCDHARBAGGCHARBACGCHARBAKHaJAiCAEIyTRAEAYQIchAEAQBoCGuFQRB844UJc
+[I 2026-03-18 08:42:27,824 minium page#716 _get_elements_by_css] try to get elements: page
+[D 2026-03-18 08:42:27,824 minium.Conn6272 connection#427 _safely_send] SEND > [2038403656272]{"id":"3bfdc1b2-3274-4788-90aa-5fe943d37ca0","method":"Page.getElements","params":{"selector":"page","pageId":1}}
+[D 2026-03-18 08:42:27,830 minium.Conn6272 connection#660 __on_message] RECV < [2038403656272]{"id":"3bfdc1b2-3274-4788-90aa-5fe943d37ca0","result":{"elements":[{"elementId":"e8015064-289e-4309-8da4-e1a5d3aa0e01","tagName":"body","nodeId":"ed23cb3b"}]}}
+[I 2026-03-18 08:42:27,831 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.CustomElement object at 0x000001DA9A5D1010>]
+[D 2026-03-18 08:42:27,831 minium.Conn6272 connection#427 _safely_send] SEND > [2038403656272]{"id":"a29faa22-1c2f-4265-b5a7-5c6846b32c31","method":"Element.getWXML","params":{"type":"inner","elementId":"e8015064-289e-4309-8da4-e1a5d3aa0e01","pageId":1,"nodeId":"ed23cb3b"}}
+[D 2026-03-18 08:42:27,843 minium.Conn6272 connection#660 __on_message] RECV < [2038403656272]{"id":"a29faa22-1c2f-4265-b5a7-5c6846b32c31","result":{"wxml":"<view class=\"conBox\" style=\"background-image: url(https://test-agent.v9m.top/img/wode.png); height: calc(100% - 97.0625px); --font-size: 13.186666666666667px; --box-height: 63.06666666666667px; --design-width: 71.66666666666667px; --font-size2: 17.2px; --design-icon: 28.666666666666668px;\"><view style=\"width: 100%; height: 54px;\"></view><view style=\"width: 100%; height: 40px;\"></view><view style=\"display: flex; flex-direction: column; w
+[D 2026-03-18 08:42:27,858 minium page#244 pretty_wxml] pretty wxml error
+[I 2026-03-18 08:42:27,860 minium basenative#59 wrapper] call BaseNative.get_start_up
+[I 2026-03-18 08:42:27,860 minium basenative#63 wrapper] call BaseNative.get_start_up end 
+[E 2026-03-18 08:42:27,865 minium utils#166 wrapper] catch error: 'gbk' codec can't decode byte 0x80 in position 920: illegal multibyte sequence
+[E 2026-03-18 08:42:27,869 minium assertbase#390 _get_stack_info] <bound method AddVehicleNumberTest.test_add of <test_addRXSN2.AddVehicleNumberTest testMethod=test_add_00001_0>>
+Traceback (most recent call last):
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\framework\libs\unittest\case.py", line 43, in testPartExecutor
+    yield
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\framework\libs\unittest\case.py", line 125, in run
+    self._callTestMethod(testMethod)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\framework\minitest.py", line 789, in _callTestMethod
+    method()
+    ~~~~~~^^
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\ddt.py", line 221, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\xcx\v9m_client2\test_addRXSN2.py", line 19, in test_add
+    self._bind_device()
+    ~~~~~~~~~~~~~~~~~^^
+  File "D:\xcx\v9m_client2\test_addRXSN2.py", line 67, in _bind_device
+    self.page.get_element(".scanTheCode_view").click()
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\miniprogram\base_driver\app.py", line 291, in wrapper
+    return func(*args, **kwargs)
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 148, in wrapper
+    result = func(*args, **kwargs)
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\miniprogram\base_driver\page\page.py", line 375, in get_element
+    raise MiniElementNotFoundError(_selector)
+minium.framework.exception.MiniElementNotFoundError: element[.scanTheCode_view] not found
+[W 2026-03-18 08:42:27,871 minium assertbase#354 _log_info_when_error] config: {'debug': False, 'base_dir': 'D:\\xcx\\v9m_client2', 'platform': 'ide', 'app': 'wx', 'debug_mode': 'debug', 'close_ide': 'False', 'auto_capture': 'auto', 'check_mp_foreground': True, 'auto_relaunch': True, 'device_desire': {}, 'account_info': {}, 'report_usage': True, 'remote_connect_timeout': 180, 'request_timeout': 60, 'use_push': True, 'full_reset': 'False', 'outputs': 'D:\\xcx\\v9m_client2\\outputs', 'enable_app_log': False, 'enable_network_panel': False, 'project_path': 'D:\\zsn\\V9Mcode\\client-applets', 'dev_tool_path': 'D:\\Program Files (x86)\\微信web开发者工具\\cli.bat', 'test_port': 9420, 'mock_native_modal': {}, 'mock_request': [], 'auto_authorize': False, 'audits': None, 'teardown_snapshot': False, 'mock_images_dir': '', 'mock_images': {}, 'need_perf': False, 'appid': None, 'enable_h5': True, 'autofix': False, 'framework_capture': True, 'error_capture': False, 'assert_capture': True, 'create_time': '20260318084133', 'case_output': 'D:\\xcx\\v9m_client2\\outputs\\20260318084133\\test_add_00001_0\\20260318084154668981'}
+[W 2026-03-18 08:42:27,871 minium assertbase#355 _log_info_when_error] build info: {'version': '1.6.0', 'revision': '33ce5b50b34ec18c51c054a7cc1bdfb3ab0a451b', 'branch': 'master', 'update_at': '2024-10-09 21:08:56'}
+[W 2026-03-18 08:42:27,871 minium minitest#1029 _log_info_when_error] mini: 基础库3.9.3, 开发者工具1.06.2504060
+[W 2026-03-18 08:42:27,872 minium minitest#1031 _log_info_when_error] native: <minium.native.wx_native.idenative.IdeNative object at 0x000001DA9A5367B0>

@@ -1,0 +1,248 @@
+[I 2026-03-17 15:57:05,843 minium minitest#432 _miniSetUp] =========Current case: test_add_00001_0=========
+[I 2026-03-17 15:57:05,844 minium minitest#435 _miniSetUp] package info: D:.xcx.v9m_client2.test_addRXSN, case info: AddVehicleNumberTest.test_add_00001_0
+[I 2026-03-17 15:57:05,844 minium basenative#59 wrapper] call BaseNative.check_connection
+[I 2026-03-17 15:57:05,844 minium basenative#63 wrapper] call BaseNative.check_connection end True
+[I 2026-03-17 15:57:05,844 minium basenative#59 wrapper] call BaseNative.back_to_miniprogram
+[I 2026-03-17 15:57:05,844 minium basenative#794 back_to_miniprogram] try back_to_miniprogram 3
+[I 2026-03-17 15:57:05,844 minium basenative#63 wrapper] call BaseNative.back_to_miniprogram end 
+[D 2026-03-17 15:57:05,845 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"5b254a38-0153-4dcb-8083-3445d04f1307","method":"App.callWxMethod","params":{"method":"getLaunchOptionsSync","args":[]}}
+[D 2026-03-17 15:57:05,848 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"5b254a38-0153-4dcb-8083-3445d04f1307","result":{"result":{"path":"page/my/my","query":{},"scene":1001,"referrerInfo":{},"mode":"default","apiCategory":"default"}}}
+[D 2026-03-17 15:57:05,848 minium.Conn3664 connection#427 _safely_send] ASYNC_SEND > [2480737183664]{"id":"f560876b-d3f7-409b-8adb-168121da1df4","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/page/my/my"}]}}
+[D 2026-03-17 15:57:05,854 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"method":"App.bindingCalled","params":{"name":"switchTab_before_global","args":[{"url":"/page/my/my"}]}}
+[D 2026-03-17 15:57:05,862 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"f560876b-d3f7-409b-8adb-168121da1df4","result":{"result":{"errMsg":"switchTab:ok"}}}
+[I 2026-03-17 15:57:05,862 minium.Conn3664 connection#704 _handle_async_msg] received async msg: f560876b-d3f7-409b-8adb-168121da1df4
+[D 2026-03-17 15:57:05,863 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"4e08b576-afbd-4048-8003-454f6d87c6d9","method":"App.getCurrentPage","params":{}}
+[D 2026-03-17 15:57:05,865 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"4e08b576-afbd-4048-8003-454f6d87c6d9","result":{"pageId":1,"path":"page/my/my","query":{}}}
+[D 2026-03-17 15:57:05,865 minium.App8368 app#618 _evaluate_js] evaluate js file getCurrentPages [ALL]
+[D 2026-03-17 15:57:05,865 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"976e7482-5346-40eb-b9dd-8bb298d2f634","method":"App.callFunction","params":{"functionDeclaration":"function miniumGetCurrentPages(e){var r=getCurrentPages();return e&&(r=[r.pop()]),r=r.map((function(e){if(e){let{route:r}=e;const n=r.indexOf(\"__plugin__/\");return n>-1&&(r=\"plugin-private://\"+r.slice(n+11)),{pageId:e.__wxWebviewId__,path:r,query:e.options,renderer:e.renderer}}})),e?r.pop():r}","args":[true]}}
+[D 2026-03-17 15:57:05,868 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"976e7482-5346-40eb-b9dd-8bb298d2f634","result":{"result":{"pageId":1,"path":"page/my/my","query":{},"renderer":"webview"}}}
+[I 2026-03-17 15:57:05,869 minium minitest#897 capture] capture setup.png
+[D 2026-03-17 15:57:05,870 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"c2cc45a4-46c8-4478-ba4b-cbaf04bbffc6","method":"App.captureScreenshot","params":{}}
+[D 2026-03-17 15:57:39,228 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"c2cc45a4-46c8-4478-ba4b-cbaf04bbffc6","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAa4AAAOkCAIAAABxk0eCAAAAAXNSR0IArs4c6QAAIABJREFUeJzsvXmcXVWZ7/171tp7n7FOjamqTJWhSEhCmCUYRGgwoC2TFxQ/ijbaelu9Xrvbtu1Xu1vee7EVh9tvX/u22oPaFxvsBgQ0AtoSwKCCJCCDBDKQeahUKjWdcZ+991rP+8fe+5xTGasqlYGwvh4P+5y1x5WqXz3Pep71LDp7wzdgMBgMb2wsOtl3YDAYDCcdi2DE0GAwvNExVqHBYDAYq9BgMBgAcbJvwGAwGE4+Fhmj0GAwvOExDrLBYDDAEkYKDQbDGx4TQTYYDAZYZAYLDQbDGx5jFRoMBgMsYiOGBoPhjY7JKzQYDAYTQTYYDAYzVmgwGAwALBir0GAwvOGxhFFCg8HwhsdMvDMYDAYjhQaDwWCSaQwGgwEmg
+[I 2026-03-17 15:57:39,232 minium minitest#487 _miniSetUp] =========case: test_add_00001_0 start=========
+[I 2026-03-17 15:57:39,232 minium minitest#788 _callTestMethod] call test method
+[I 2026-03-17 15:57:39,233 minium test_addRXSN#16 test_add] 开始第 1 次测试
+[I 2026-03-17 15:57:44,235 minium page#716 _get_elements_by_css] try to get elements: image
+[D 2026-03-17 15:57:44,235 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"68a2acdc-56f0-4397-a2fb-ba44430530b6","method":"Page.getElements","params":{"selector":"image","pageId":1}}
+[D 2026-03-17 15:57:44,244 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"68a2acdc-56f0-4397-a2fb-ba44430530b6","result":{"elements":[{"elementId":"1bb86a02-7d5d-4b98-82c3-712138012e8f","tagName":"image"},{"elementId":"28d2a4d6-31ad-4963-9c96-d48c01464638","tagName":"image"},{"elementId":"b38d60b4-0992-4453-bfd6-a4c61bac1c82","tagName":"image"},{"elementId":"67d60236-2ca9-4363-a533-f066d345b63b","tagName":"image"},{"elementId":"00b371f1-2f22-4ab3-a4bb-9ac1df212be1","tagName":"image"},{"elementId":"0e3886cc-2039-40fd-a9ce-5bd35874b06e","tagName":"image"},{"elementId":"ffc44
+[I 2026-03-17 15:57:44,245 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000241978016A0>]
+[I 2026-03-17 15:57:44,245 minium page#716 _get_elements_by_css] try to get elements: image
+[D 2026-03-17 15:57:44,246 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"a3be3d53-716d-4760-a085-63c5eb123ae9","method":"Page.getElements","params":{"selector":"image","pageId":1}}
+[D 2026-03-17 15:57:44,250 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"a3be3d53-716d-4760-a085-63c5eb123ae9","result":{"elements":[{"elementId":"1bb86a02-7d5d-4b98-82c3-712138012e8f","tagName":"image"},{"elementId":"28d2a4d6-31ad-4963-9c96-d48c01464638","tagName":"image"},{"elementId":"b38d60b4-0992-4453-bfd6-a4c61bac1c82","tagName":"image"},{"elementId":"67d60236-2ca9-4363-a533-f066d345b63b","tagName":"image"},{"elementId":"00b371f1-2f22-4ab3-a4bb-9ac1df212be1","tagName":"image"},{"elementId":"0e3886cc-2039-40fd-a9ce-5bd35874b06e","tagName":"image"},{"elementId":"ffc44
+[I 2026-03-17 15:57:44,250 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000241977ED0F0>]
+[D 2026-03-17 15:57:44,250 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"203b47ac-08b2-4b45-9aa2-3cc969036720","method":"Element.getStyles","params":{"names":["pointer-events"],"elementId":"1bb86a02-7d5d-4b98-82c3-712138012e8f","pageId":1}}
+[D 2026-03-17 15:57:44,256 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"203b47ac-08b2-4b45-9aa2-3cc969036720","result":{"styles":["auto"]}}
+[D 2026-03-17 15:57:44,256 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"ed6a5884-efd3-4e74-b17d-bdffd75d2abd","method":"Element.tap","params":{"elementId":"1bb86a02-7d5d-4b98-82c3-712138012e8f","pageId":1}}
+[D 2026-03-17 15:57:44,331 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"method":"App.bindingCalled","params":{"name":"showModal_before_1773734224893","args":[{"title":"提示","content":"您还未登录，请登录后再操作~","confirmText":"确定","confirmColor":"#12d27d","cancelText":"取消"},0.6476725851131988]}}
+[D 2026-03-17 15:57:44,332 minium.App8368 app#1344 super_before] showModal before hook result: [{'title': '提示', 'content': '您还未登录，请登录后再操作~', 'confirmText': '确定', 'confirmColor': '#12d27d', 'cancelText': '取消'}, 0.6476725851131988]
+[D 2026-03-17 15:57:44,367 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"ed6a5884-efd3-4e74-b17d-bdffd75d2abd","result":{"pageX":62,"pageY":129.484375,"clientX":62,"clientY":129.484375}}
+[I 2026-03-17 15:57:45,869 minium test_addRXSN#70 _bind_device] 开始绑定设备流程
+[I 2026-03-17 15:57:45,869 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:45,870 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"5c4f6d47-5256-47d9-afea-f6a07ee324b2","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:45,873 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"5c4f6d47-5256-47d9-afea-f6a07ee324b2","result":{"elements":[]}}
+[W 2026-03-17 15:57:45,874 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:46,125 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:46,125 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"56a213c8-74c3-4d28-abef-22482eb0add2","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:46,129 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"56a213c8-74c3-4d28-abef-22482eb0add2","result":{"elements":[]}}
+[W 2026-03-17 15:57:46,129 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:46,380 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:46,380 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"be3d7800-35cb-41b3-95f9-33beec2d139d","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:46,384 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"be3d7800-35cb-41b3-95f9-33beec2d139d","result":{"elements":[]}}
+[W 2026-03-17 15:57:46,384 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:46,635 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:46,635 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"d217dd5e-40e6-46a5-84f1-d3e60de9f6bf","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:46,639 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"d217dd5e-40e6-46a5-84f1-d3e60de9f6bf","result":{"elements":[]}}
+[W 2026-03-17 15:57:46,639 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:46,891 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:46,891 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"c3608028-63c7-4fe4-9c1a-cfd4693eecd1","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:46,893 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"c3608028-63c7-4fe4-9c1a-cfd4693eecd1","result":{"elements":[]}}
+[W 2026-03-17 15:57:46,894 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:47,145 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:47,146 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"faf784ff-8a1e-4c7f-afd1-de2ff17bd163","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:47,149 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"faf784ff-8a1e-4c7f-afd1-de2ff17bd163","result":{"elements":[]}}
+[W 2026-03-17 15:57:47,150 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:47,401 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:47,401 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"c23a035e-eb3b-4e72-8d0f-3df553569072","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:47,404 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"c23a035e-eb3b-4e72-8d0f-3df553569072","result":{"elements":[]}}
+[W 2026-03-17 15:57:47,404 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:47,656 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:47,656 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"99563d65-daf6-446b-9c85-0f96c48f9653","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:47,659 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"99563d65-daf6-446b-9c85-0f96c48f9653","result":{"elements":[]}}
+[W 2026-03-17 15:57:47,660 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:47,910 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:47,911 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"1e3e9c15-43ae-4b7e-98b6-c5c21a3276ff","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:47,914 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"1e3e9c15-43ae-4b7e-98b6-c5c21a3276ff","result":{"elements":[]}}
+[W 2026-03-17 15:57:47,914 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[D 2026-03-17 15:57:48,106 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"method":"App.bindingCalled","params":{"name":"showModal_callback_1773734224893","args":[{"errMsg":"showModal:ok","cancel":false,"confirm":true,"content":null},0.6476725851131988]}}
+[D 2026-03-17 15:57:48,107 minium.App8368 app#1366 super_callback] wx.showModal callback hook result: [{'errMsg': 'showModal:ok', 'cancel': False, 'confirm': True, 'content': None}, 0.6476725851131988]
+[I 2026-03-17 15:57:48,165 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:48,166 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"d903e0a0-5e7a-44ec-8b54-6ade90364d18","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:48,171 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"d903e0a0-5e7a-44ec-8b54-6ade90364d18","result":{"elements":[]}}
+[W 2026-03-17 15:57:48,171 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:48,423 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:48,423 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"06d50686-1e22-46a8-8526-ec4b992ce2d5","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:48,427 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"06d50686-1e22-46a8-8526-ec4b992ce2d5","result":{"elements":[]}}
+[W 2026-03-17 15:57:48,427 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:48,678 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:48,678 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"83e8b439-4834-4b0a-a349-94faedffd2ec","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:48,682 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"83e8b439-4834-4b0a-a349-94faedffd2ec","result":{"elements":[]}}
+[W 2026-03-17 15:57:48,682 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:48,933 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:48,933 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"08830254-2677-4ab6-9573-9396e6f01bf8","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:48,936 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"08830254-2677-4ab6-9573-9396e6f01bf8","result":{"elements":[]}}
+[W 2026-03-17 15:57:48,936 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:49,189 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:49,189 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"56648483-246c-4228-b9b3-588074b32ad5","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:49,192 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"56648483-246c-4228-b9b3-588074b32ad5","result":{"elements":[]}}
+[W 2026-03-17 15:57:49,193 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:49,444 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:49,444 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"ec5466aa-2257-42f3-88ae-8b3679c78b1c","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:49,447 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"ec5466aa-2257-42f3-88ae-8b3679c78b1c","result":{"elements":[]}}
+[W 2026-03-17 15:57:49,448 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:49,698 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:49,698 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"2d1b03fb-c7f9-404a-995c-eacbd525b166","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:49,703 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"2d1b03fb-c7f9-404a-995c-eacbd525b166","result":{"elements":[]}}
+[W 2026-03-17 15:57:49,703 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:49,955 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:49,955 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"4e4032e9-bb60-4c92-a6c6-60b2dc1e67d2","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:49,958 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"4e4032e9-bb60-4c92-a6c6-60b2dc1e67d2","result":{"elements":[]}}
+[W 2026-03-17 15:57:49,958 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:50,210 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:50,210 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"333df789-3b3c-488c-84d1-308aae41cc5e","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:50,214 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"333df789-3b3c-488c-84d1-308aae41cc5e","result":{"elements":[]}}
+[W 2026-03-17 15:57:50,214 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:50,464 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:50,465 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"fde8aa7c-3873-40a1-bc3b-4fcabfe4f539","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:50,468 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"fde8aa7c-3873-40a1-bc3b-4fcabfe4f539","result":{"elements":[]}}
+[W 2026-03-17 15:57:50,468 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:50,719 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:50,720 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"490f88bc-9af2-4d87-93a6-e8621bf76fb8","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:50,730 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"490f88bc-9af2-4d87-93a6-e8621bf76fb8","result":{"elements":[]}}
+[W 2026-03-17 15:57:50,730 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:50,982 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:50,982 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"8ade2bd4-4782-4e90-8d05-5dd04035b91d","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:50,985 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"8ade2bd4-4782-4e90-8d05-5dd04035b91d","result":{"elements":[]}}
+[W 2026-03-17 15:57:50,986 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:51,237 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:51,238 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"c6b5f88e-fdb3-4daf-b7fb-9a4451f44407","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:51,249 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"c6b5f88e-fdb3-4daf-b7fb-9a4451f44407","result":{"elements":[]}}
+[W 2026-03-17 15:57:51,250 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:51,501 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:51,502 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"c2012d78-9299-4b9b-9369-b5dfa5835492","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:51,510 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"c2012d78-9299-4b9b-9369-b5dfa5835492","result":{"elements":[]}}
+[W 2026-03-17 15:57:51,511 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:51,762 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:51,762 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"878d3eda-4c16-4f29-ae2a-ca11f97bcb66","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:51,765 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"878d3eda-4c16-4f29-ae2a-ca11f97bcb66","result":{"elements":[]}}
+[W 2026-03-17 15:57:51,766 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:52,016 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:52,016 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"aa2aad54-dfc7-445a-a802-cb60cc6c4f45","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:52,020 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"aa2aad54-dfc7-445a-a802-cb60cc6c4f45","result":{"elements":[]}}
+[W 2026-03-17 15:57:52,021 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:52,271 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:52,271 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"5ce78aab-d8f5-4fd8-9ba0-bd219a39a024","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:52,274 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"5ce78aab-d8f5-4fd8-9ba0-bd219a39a024","result":{"elements":[]}}
+[W 2026-03-17 15:57:52,275 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:52,526 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:52,527 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"b495b90f-0d93-4bcb-ac48-e4c5fcffb6a6","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:52,538 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"b495b90f-0d93-4bcb-ac48-e4c5fcffb6a6","result":{"elements":[]}}
+[W 2026-03-17 15:57:52,539 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:52,790 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:52,790 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"43525655-9f67-4206-8518-7b106d795fd4","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:52,794 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"43525655-9f67-4206-8518-7b106d795fd4","result":{"elements":[]}}
+[W 2026-03-17 15:57:52,794 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:53,044 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:53,045 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"66675321-7022-4cf0-9f4e-a09e5eb8ba0c","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:53,048 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"66675321-7022-4cf0-9f4e-a09e5eb8ba0c","result":{"elements":[]}}
+[W 2026-03-17 15:57:53,049 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:53,300 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:53,300 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"8b1e9ba5-2ccf-4459-9647-b09300afd5dc","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:53,303 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"8b1e9ba5-2ccf-4459-9647-b09300afd5dc","result":{"elements":[]}}
+[W 2026-03-17 15:57:53,304 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:53,555 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:53,556 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"0e6a8773-15ec-4e04-b3ab-55805c8a7e3f","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:53,566 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"0e6a8773-15ec-4e04-b3ab-55805c8a7e3f","result":{"elements":[]}}
+[W 2026-03-17 15:57:53,567 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:53,819 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:53,819 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"d1ae576d-6d67-4c54-ae2c-07edc705152e","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:53,822 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"d1ae576d-6d67-4c54-ae2c-07edc705152e","result":{"elements":[]}}
+[W 2026-03-17 15:57:53,823 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:54,116 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:54,117 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"3ffa0b1a-e0ae-4e48-b313-0ce53274a54c","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:54,132 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"3ffa0b1a-e0ae-4e48-b313-0ce53274a54c","result":{"elements":[]}}
+[W 2026-03-17 15:57:54,193 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:54,444 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:54,445 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"322aacce-9860-4889-8fee-deed4b251928","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:54,448 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"322aacce-9860-4889-8fee-deed4b251928","result":{"elements":[]}}
+[W 2026-03-17 15:57:54,448 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:54,699 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:54,699 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"7151e6da-3323-49cc-91ec-518b5d68ba67","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:54,703 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"7151e6da-3323-49cc-91ec-518b5d68ba67","result":{"elements":[]}}
+[W 2026-03-17 15:57:54,703 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:54,954 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:54,955 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"cc974932-4a47-4e37-b923-fbc501d440cb","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:54,960 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"cc974932-4a47-4e37-b923-fbc501d440cb","result":{"elements":[]}}
+[W 2026-03-17 15:57:54,961 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:55,212 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:55,212 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"ed073bee-99a0-44f5-8060-9b8b0a14f3b9","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:55,215 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"ed073bee-99a0-44f5-8060-9b8b0a14f3b9","result":{"elements":[]}}
+[W 2026-03-17 15:57:55,216 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:55,466 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:55,467 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"165c3f62-3c74-468e-b135-ea971575c9fd","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:55,470 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"165c3f62-3c74-468e-b135-ea971575c9fd","result":{"elements":[]}}
+[W 2026-03-17 15:57:55,470 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:55,721 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2026-03-17 15:57:55,721 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"9b6ee966-fb04-4a62-9b93-9e6b23210873","method":"Page.getElements","params":{"selector":".bind_Button","pageId":1}}
+[D 2026-03-17 15:57:55,724 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"9b6ee966-fb04-4a62-9b93-9e6b23210873","result":{"elements":[]}}
+[W 2026-03-17 15:57:55,725 minium page#747 _get_elements_by_css] Could not found any element '.bind_Button' you need
+[I 2026-03-17 15:57:55,977 minium page#716 _get_elements_by_css] try to get elements: .bind_device
+[D 2026-03-17 15:57:55,979 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"e365899b-0b75-4dcc-84cf-053daf0ec07d","method":"Page.getElements","params":{"selector":".bind_device","pageId":1}}
+[D 2026-03-17 15:57:55,989 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"e365899b-0b75-4dcc-84cf-053daf0ec07d","result":{"elements":[]}}
+[W 2026-03-17 15:57:55,991 minium page#747 _get_elements_by_css] Could not found any element '.bind_device' you need
+[E 2026-03-17 15:57:55,992 minium test_addRXSN#38 test_add] 第 1 次测试失败: 未找到'绑定设备充电'按钮
+[D 2026-03-17 15:57:55,993 minium test_addRXSN#41 test_add] 当前页面截图已保存
+[I 2026-03-17 15:57:55,994 minium minitest#897 capture] capture error_screenshot.png.png
+[D 2026-03-17 15:57:55,995 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"4a53737e-3ac5-41fb-94a8-3bd31e672f22","method":"App.captureScreenshot","params":{}}
+[D 2026-03-17 15:57:56,082 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"4a53737e-3ac5-41fb-94a8-3bd31e672f22","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAa4AAAOkCAIAAABxk0eCAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3Xm0XVd5IPjv28OZ7vzmSfNgybIs2cbYxsZgTBGGxCQYTAJJqJVAEqqTSjpUQpKik+7UKlh02lSoJA2JnVBFAglQhmCHNhjbGOMZJEuyrNEa39Ob73zvGfbYf0iyZU028pMl8P6tt946V/sM++x7tN+3h3MOrt/9WXAcx3ltY3ihc+A4jnPBMQRXGTqO81rnokLHcRwXFTqO4wCQC50Bx3GcC4+hCwodx3nNcw1kx3EcYMRVhY7jvOa5EWTHcRxg6DoLHcd5zXNRoeM4DjC0rjJ0HOe1zs0rdBzHcSPIjuM4rq/QcRwHABi4qNBxnNc8RlxN6DjOa5678c5xHMdVhY7jOG4yjeM4DrgRZMdxHHD3IDuO44CLC
+[E 2026-03-17 15:57:56,085 minium minitest#793 _callTestMethod] test exception
+Traceback (most recent call last):
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\framework\minitest.py", line 789, in _callTestMethod
+    method()
+    ~~~~~~^^
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\ddt.py", line 221, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\xcx\v9m_client2\test_addRXSN.py", line 25, in test_add
+    self._bind_device()
+    ~~~~~~~~~~~~~~~~~^^
+  File "D:\xcx\v9m_client2\test_addRXSN.py", line 84, in _bind_device
+    raise Exception("未找到'绑定设备充电'按钮")
+Exception: 未找到'绑定设备充电'按钮
+[I 2026-03-17 15:57:56,094 minium minitest#796 _callTestMethod] end test method
+[D 2026-03-17 15:57:56,102 minium minitest#799 _miniTearDown] =========Current case Down: test_add_00001_0=========
+[I 2026-03-17 15:57:56,102 minium minitest#897 capture] capture teardown.png
+[D 2026-03-17 15:57:56,102 minium.Conn3664 connection#427 _safely_send] SEND > [2480737183664]{"id":"f5a16f30-32d6-4038-a81d-d59707b561fa","method":"App.captureScreenshot","params":{}}
+[D 2026-03-17 15:57:56,184 minium.Conn3664 connection#660 __on_message] RECV < [2480737183664]{"id":"f5a16f30-32d6-4038-a81d-d59707b561fa","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAa4AAAOkCAIAAABxk0eCAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3Xm0XVd5IPjv28OZ7vzmSfNgybIs2cbYxsZgTBGGxCQYTAJJqJVAEqqTSjpUQpKik+7UKlh02lSoJA2JnVBFAglQhmCHNhjbGOMZJEuyrNEa39Ob73zvGfbYf0iyZU028pMl8P6tt946V/sM++x7tN+3h3MOrt/9WXAcx3ltY3ihc+A4jnPBMQRXGTqO81rnokLHcRwXFTqO4wCQC50Bx3GcC4+hCwodx3nNcw1kx3EcYMRVhY7jvOa5EWTHcRxg6DoLHcd5zXNRoeM4DjC0rjJ0HOe1zs0rdBzHcSPIjuM4rq/QcRwHABi4qNBxnNc8RlxN6DjOa5678c5xHMdVhY7jOG4yjeM4DrgRZMdxHHD3IDuO44CLC
+[I 2026-03-17 15:57:56,187 minium basenative#59 wrapper] call BaseNative.get_start_up
+[I 2026-03-17 15:57:56,187 minium basenative#63 wrapper] call BaseNative.get_start_up end 
+[E 2026-03-17 15:57:56,192 minium assertbase#390 _get_stack_info] <bound method AddVehicleNumberTest.test_add of <test_addRXSN.AddVehicleNumberTest testMethod=test_add_00001_0>>
+Traceback (most recent call last):
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\framework\libs\unittest\case.py", line 43, in testPartExecutor
+    yield
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\framework\libs\unittest\case.py", line 125, in run
+    self._callTestMethod(testMethod)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\framework\minitest.py", line 789, in _callTestMethod
+    method()
+    ~~~~~~^^
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\ddt.py", line 221, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\xcx\v9m_client2\test_addRXSN.py", line 25, in test_add
+    self._bind_device()
+    ~~~~~~~~~~~~~~~~~^^
+  File "D:\xcx\v9m_client2\test_addRXSN.py", line 84, in _bind_device
+    raise Exception("未找到'绑定设备充电'按钮")
+Exception: 未找到'绑定设备充电'按钮
+[W 2026-03-17 15:57:56,193 minium assertbase#354 _log_info_when_error] config: {'debug': False, 'base_dir': 'D:\\xcx\\v9m_client2', 'platform': 'ide', 'app': 'wx', 'debug_mode': 'debug', 'close_ide': 'False', 'auto_capture': 'auto', 'check_mp_foreground': True, 'auto_relaunch': True, 'device_desire': {}, 'account_info': {}, 'report_usage': True, 'remote_connect_timeout': 180, 'request_timeout': 60, 'use_push': True, 'full_reset': 'False', 'outputs': 'D:\\xcx\\v9m_client2\\outputs', 'enable_app_log': False, 'enable_network_panel': False, 'project_path': 'D:\\zsn\\V9Mcode\\client-applets', 'dev_tool_path': 'D:\\Program Files (x86)\\微信web开发者工具\\cli.bat', 'test_port': 9420, 'mock_native_modal': {}, 'mock_request': [], 'auto_authorize': False, 'audits': None, 'teardown_snapshot': False, 'mock_images_dir': '', 'mock_images': {}, 'need_perf': False, 'appid': None, 'enable_h5': True, 'autofix': False, 'framework_capture': True, 'error_capture': False, 'assert_capture': True, 'create_time': '20260317155559', 'case_output': 'D:\\xcx\\v9m_client2\\outputs\\20260317155559\\test_add_00001_0\\20260317155705840487'}
+[W 2026-03-17 15:57:56,194 minium assertbase#355 _log_info_when_error] build info: {'version': '1.6.0', 'revision': '33ce5b50b34ec18c51c054a7cc1bdfb3ab0a451b', 'branch': 'master', 'update_at': '2024-10-09 21:08:56'}
+[W 2026-03-17 15:57:56,194 minium minitest#1029 _log_info_when_error] mini: 基础库3.9.3, 开发者工具1.06.2504060
+[W 2026-03-17 15:57:56,194 minium minitest#1031 _log_info_when_error] native: <minium.native.wx_native.idenative.IdeNative object at 0x0000024197756510>

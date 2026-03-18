@@ -1,0 +1,170 @@
+[I 2025-06-23 16:08:21,012 minium minitest#432 _miniSetUp] =========Current case: test_add_00001_0=========
+[I 2025-06-23 16:08:21,014 minium minitest#435 _miniSetUp] package info: D:.xcx.v9m_client2.demo2, case info: AddVehicleNumberTest.test_add_00001_0
+[I 2025-06-23 16:08:21,015 minium basenative#59 wrapper] call BaseNative.check_connection
+[I 2025-06-23 16:08:21,016 minium basenative#63 wrapper] call BaseNative.check_connection end True
+[I 2025-06-23 16:08:21,017 minium basenative#59 wrapper] call BaseNative.back_to_miniprogram
+[I 2025-06-23 16:08:21,019 minium basenative#794 back_to_miniprogram] try back_to_miniprogram 3
+[I 2025-06-23 16:08:21,019 minium basenative#63 wrapper] call BaseNative.back_to_miniprogram end 
+[D 2025-06-23 16:08:21,021 minium.Conn6416 connection#427 _safely_send] SEND > [2315283706416]{"id":"43bf4cf7-d4e5-43a9-b988-0e429cea9f43","method":"App.callWxMethod","params":{"method":"getLaunchOptionsSync","args":[]}}
+[D 2025-06-23 16:08:21,024 minium.Conn6416 connection#660 __on_message] RECV < [2315283706416]{"id":"43bf4cf7-d4e5-43a9-b988-0e429cea9f43","result":{"result":{"path":"page/index/index","query":{},"scene":1001,"referrerInfo":{},"mode":"default","apiCategory":"default"}}}
+[D 2025-06-23 16:08:21,026 minium.Conn6416 connection#427 _safely_send] ASYNC_SEND > [2315283706416]{"id":"9ff450a6-4ecc-4072-8fbd-5a053e3c18d1","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/page/index/index"}]}}
+[D 2025-06-23 16:08:21,030 minium.Conn6416 connection#660 __on_message] RECV < [2315283706416]{"method":"App.bindingCalled","params":{"name":"switchTab_before_global","args":[{"url":"/page/index/index"}]}}
+[D 2025-06-23 16:08:31,040 minium.Conn6416 connection#660 __on_message] RECV < [2315283706416]{"id":"9ff450a6-4ecc-4072-8fbd-5a053e3c18d1","error":{"message":"timeout"}}
+[E 2025-06-23 16:08:31,041 minium.Conn6416 connection#668 __on_message] [9ff450a6-4ecc-4072-8fbd-5a053e3c18d1]: timeout
+[I 2025-06-23 16:08:31,042 minium.Conn6416 connection#704 _handle_async_msg] received async msg: 9ff450a6-4ecc-4072-8fbd-5a053e3c18d1
+[W 2025-06-23 16:08:31,044 minium.App7808 app#1172 _change_route_async] 可能因频繁调用switchTab导致timeout
+[W 2025-06-23 16:08:36,058 minium.App7808 app#1180 _change_route_async] recall switchTab
+[D 2025-06-23 16:08:36,059 minium.Conn6416 connection#427 _safely_send] ASYNC_SEND > [2315283706416]{"id":"9e6cba1d-7eb7-4d06-ba3a-177eaf3b130d","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/page/index/index"}]}}
+[D 2025-06-23 16:08:36,062 minium.Conn6416 connection#660 __on_message] RECV < [2315283706416]{"method":"App.bindingCalled","params":{"name":"switchTab_before_global","args":[{"url":"/page/index/index"}]}}
+[D 2025-06-23 16:08:36,066 minium.Conn6416 connection#660 __on_message] RECV < [2315283706416]{"id":"9e6cba1d-7eb7-4d06-ba3a-177eaf3b130d","result":{"result":{"errMsg":"switchTab:ok"}}}
+[I 2025-06-23 16:08:36,067 minium.Conn6416 connection#704 _handle_async_msg] received async msg: 9e6cba1d-7eb7-4d06-ba3a-177eaf3b130d
+[D 2025-06-23 16:08:41,070 minium.Conn6416 connection#427 _safely_send] SEND > [2315283706416]{"id":"e1c1fad1-6018-464b-a6f4-ac38a694a065","method":"App.getCurrentPage","params":{}}
+[D 2025-06-23 16:08:41,073 minium.Conn6416 connection#660 __on_message] RECV < [2315283706416]{"id":"e1c1fad1-6018-464b-a6f4-ac38a694a065","result":{"pageId":2,"path":"page/power_index/power_index","query":{"order_id":"0"}}}
+[D 2025-06-23 16:08:41,074 minium.App7808 app#618 _evaluate_js] evaluate js file getCurrentPages [ALL]
+[D 2025-06-23 16:08:41,075 minium.Conn6416 connection#427 _safely_send] SEND > [2315283706416]{"id":"5615c738-ed14-4306-8c04-121e88393330","method":"App.callFunction","params":{"functionDeclaration":"function miniumGetCurrentPages(e){var r=getCurrentPages();return e&&(r=[r.pop()]),r=r.map((function(e){if(e){let{route:r}=e;const n=r.indexOf(\"__plugin__/\");return n>-1&&(r=\"plugin-private://\"+r.slice(n+11)),{pageId:e.__wxWebviewId__,path:r,query:e.options,renderer:e.renderer}}})),e?r.pop():r}","args":[true]}}
+[D 2025-06-23 16:08:41,078 minium.Conn6416 connection#660 __on_message] RECV < [2315283706416]{"id":"5615c738-ed14-4306-8c04-121e88393330","result":{"result":{"pageId":2,"path":"page/power_index/power_index","query":{"order_id":"0"},"renderer":"webview"}}}
+[W 2025-06-23 16:08:41,080 minium.App7808 app#1013 switch_tab] Switch tab(/page/index/index) but(/page/power_index/power_index)
+[I 2025-06-23 16:08:41,082 minium minitest#897 capture] capture setup.png
+[D 2025-06-23 16:08:41,083 minium.Conn6416 connection#427 _safely_send] SEND > [2315283706416]{"id":"4c168eed-59c0-4790-9c04-a23bf27d715c","method":"App.captureScreenshot","params":{}}
+[W 2025-06-23 16:09:41,095 minium.App7808 app#682 screen_shot] 截图指令响应失败, 可能因为开发者工具不在前台导致
+[W 2025-06-23 16:09:41,096 minium minitest#929 capture] D:\xcx\v9m_client2\outputs\20250623160749\test_add_00001_0\20250623160821010228\images\setup.png not exists
+[I 2025-06-23 16:09:41,098 minium minitest#487 _miniSetUp] =========case: test_add_00001_0 start=========
+[I 2025-06-23 16:09:41,099 minium minitest#788 _callTestMethod] call test method
+[I 2025-06-23 16:09:41,100 minium demo2#20 test_add] 开始第 1 次测试
+[I 2025-06-23 16:09:41,101 minium page#716 _get_elements_by_css] try to get elements: image
+[D 2025-06-23 16:09:41,102 minium.Conn6416 connection#427 _safely_send] SEND > [2315283706416]{"id":"1ab0c821-a049-4db8-a7f1-4872e8973a47","method":"Page.getElements","params":{"selector":"image","pageId":2}}
+[D 2025-06-23 16:09:43,235 minium.Conn6416 connection#660 __on_message] RECV < [2315283706416]{"id":"4c168eed-59c0-4790-9c04-a23bf27d715c","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAYYAAANMCAIAAADXDp1JAAAAAXNSR0IArs4c6QAAIABJREFUeJyMvdmvvVt2FTbG2vt3b3Grd29XOdjGMpjOjhUnAgIojYSSBx6iKA/50/IeKRIvkeAlCkKEHgJYVExrMOCyy12V7WtXueres7818jDnmHOufc612Pfc89tn769ZazZjtmt9/P39CwAEASAoKH4DJPIV3wr+BRDjj/q3D+tz/fk44/ySAPKO8VdchAIB7PzhJV3ABT6AC3gQD/EFegFeoIfwAB6IY3ABAgRsCQDjjhKBG0lhEQQXsKQbsMgFEFjxQy6BAKEFLLC/AuNgbC2SPgvADWRc3FNcYJ0LkMoZsoY0aZG0IUAmuUwUEQy6sM5REQyE8i9ho88VwS0JIlecIIFx7+YVlkfBJ16aPZKE+A9iS4JAAfFdHa8cQ
+[I 2025-06-23 16:09:43,238 minium.Conn6416 connection#704 _handle_async_msg] received async msg: 4c168eed-59c0-4790-9c04-a23bf27d715c, maybe command ignore response
+[I 2025-06-23 16:10:41,361 minium page#716 _get_elements_by_css] try to get elements: image
+[D 2025-06-23 16:10:41,362 minium.Conn6416 connection#427 _safely_send] SEND > [2315283706416]{"id":"efacd6cd-1310-4f65-ac8b-9194a4f0aae2","method":"Page.getElements","params":{"selector":"image","pageId":2}}
+[E 2025-06-23 16:11:41,377 minium demo2#37 test_add] 第 1 次测试失败: [efacd6cd-1310-4f65-ac8b-9194a4f0aae2][call Page.getElements] receive from remote timeout
+[D 2025-06-23 16:11:41,379 minium demo2#40 test_add] 当前页面截图已保存
+[I 2025-06-23 16:11:41,380 minium minitest#897 capture] capture error_screenshot.png.png
+[D 2025-06-23 16:11:41,381 minium.Conn6416 connection#427 _safely_send] SEND > [2315283706416]{"id":"d0fcc776-06a8-4d61-b438-fa0211537316","method":"App.captureScreenshot","params":{}}
+[D 2025-06-23 16:11:41,564 minium.Conn6416 connection#660 __on_message] RECV < [2315283706416]{"id":"d0fcc776-06a8-4d61-b438-fa0211537316","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAYYAAANMCAIAAADXDp1JAAAAAXNSR0IArs4c6QAAIABJREFUeJyMvdmvvVt2FTbG2vt3b3Grd29XOdjGMpjOjhUnAgIojYSSBx6iKA/50/IeKRIvkeAlCkKEHgJYVExrMOCyy12V7WtXueres7818jDnmHOufc612Pfc89tn769ZazZjtmt9/P39CwAEASAoKH4DJPIV3wr+BRDjj/q3D+tz/fk44/ySAPKO8VdchAIB7PzhJV3ABT6AC3gQD/EFegFeoIfwAB6IY3ABAgRsCQDjjhKBG0lhEQQXsKQbsMgFEFjxQy6BAKEFLLC/AuNgbC2SPgvADWRc3FNcYJ0LkMoZsoY0aZG0IUAmuUwUEQy6sM5REQyE8i9ho88VwS0JIlecIIFx7+YVlkfBJ16aPZKE+A9iS4JAAfFdHa8cQ
+[E 2025-06-23 16:11:41,568 minium minitest#793 _callTestMethod] test exception
+Traceback (most recent call last):
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\framework\minitest.py", line 789, in _callTestMethod
+    method()
+    ~~~~~~^^
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\ddt.py", line 221, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\xcx\v9m_client2\demo2.py", line 23, in test_add
+    self._click_element("image", "返回按钮", timeout=5)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\xcx\v9m_client2\demo2.py", line 60, in _click_element
+    element = self.page.get_element(selector)
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\miniprogram\base_driver\app.py", line 291, in wrapper
+    return func(*args, **kwargs)
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 148, in wrapper
+    result = func(*args, **kwargs)
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\miniprogram\base_driver\page\page.py", line 369, in get_element
+    r = self.get_elements(
+        _selector,
+        max_timeout,
+        auto_fix=auto_fix
+    )
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 148, in wrapper
+    result = func(*args, **kwargs)
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\miniprogram\base_driver\page\page.py", line 452, in get_elements
+    return self._get_elements_by_css(_selector, max_timeout, index=_selector.index, auto_fix=auto_fix)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\miniprogram\base_driver\page\page.py", line 719, in _get_elements_by_css
+    els = search_elements(_selector_list)
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\utils\utils.py", line 64, in wrapper
+    r = func(*args, **kwargs)
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\miniprogram\base_driver\page\page.py", line 711, in search_elements
+    return self.__search_child(
+           ~~~~~~~~~~~~~~~~~~~^
+        _selectors[0:], index=index
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )  # __search_child回pop元素，第一次search失败后重试会有问题，copy一份
+    ^
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\miniprogram\base_driver\page\page.py", line 670, in __search_child
+    els = self.__get_elements(_selector)
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\utils\utils.py", line 90, in wrapper
+    ret = func(*args, **kwargs)
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\miniprogram\base_driver\page\page.py", line 648, in __get_elements
+    ret = self._send("Page.getElements", {"selector": selector.css})
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\miniprogram\base_driver\page\page.py", line 637, in _send
+    self.connection.send(cmd)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\miniprogram\base_driver\connection.py", line 457, in send
+    return self._receive_response(cmd)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\miniprogram\base_driver\connection.py", line 501, in _receive_response
+    raise MiniTimeoutError(
+        f"[{cmd.id}][{cmd.desc}] receive from remote timeout"
+    )
+minium.framework.exception.MiniTimeoutError: [efacd6cd-1310-4f65-ac8b-9194a4f0aae2][call Page.getElements] receive from remote timeout
+[I 2025-06-23 16:11:41,589 minium minitest#796 _callTestMethod] end test method
+[D 2025-06-23 16:11:41,596 minium minitest#799 _miniTearDown] =========Current case Down: test_add_00001_0=========
+[I 2025-06-23 16:11:41,597 minium minitest#897 capture] capture teardown.png
+[D 2025-06-23 16:11:41,598 minium.Conn6416 connection#427 _safely_send] SEND > [2315283706416]{"id":"eb673f4b-eca4-416a-a830-bdf684f466a9","method":"App.captureScreenshot","params":{}}
+[D 2025-06-23 16:11:41,785 minium.Conn6416 connection#660 __on_message] RECV < [2315283706416]{"id":"eb673f4b-eca4-416a-a830-bdf684f466a9","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAYYAAANMCAIAAADXDp1JAAAAAXNSR0IArs4c6QAAIABJREFUeJyMvdmvvVt2FTbG2vt3b3Grd29XOdjGMpjOjhUnAgIojYSSBx6iKA/50/IeKRIvkeAlCkKEHgJYVExrMOCyy12V7WtXueres7818jDnmHOufc612Pfc89tn769ZazZjtmt9/P39CwAEASAoKH4DJPIV3wr+BRDjj/q3D+tz/fk44/ySAPKO8VdchAIB7PzhJV3ABT6AC3gQD/EFegFeoIfwAB6IY3ABAgRsCQDjjhKBG0lhEQQXsKQbsMgFEFjxQy6BAKEFLLC/AuNgbC2SPgvADWRc3FNcYJ0LkMoZsoY0aZG0IUAmuUwUEQy6sM5REQyE8i9ho88VwS0JIlecIIFx7+YVlkfBJ16aPZKE+A9iS4JAAfFdHa8cQ
+[I 2025-06-23 16:11:41,789 minium basenative#59 wrapper] call BaseNative.get_start_up
+[I 2025-06-23 16:11:41,790 minium basenative#63 wrapper] call BaseNative.get_start_up end 
+[E 2025-06-23 16:11:41,802 minium assertbase#390 _get_stack_info] <bound method AddVehicleNumberTest.test_add of <demo2.AddVehicleNumberTest testMethod=test_add_00001_0>>
+Traceback (most recent call last):
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\framework\libs\unittest\case.py", line 43, in testPartExecutor
+    yield
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\framework\libs\unittest\case.py", line 125, in run
+    self._callTestMethod(testMethod)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\framework\minitest.py", line 789, in _callTestMethod
+    method()
+    ~~~~~~^^
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\ddt.py", line 221, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\xcx\v9m_client2\demo2.py", line 23, in test_add
+    self._click_element("image", "返回按钮", timeout=5)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\xcx\v9m_client2\demo2.py", line 60, in _click_element
+    element = self.page.get_element(selector)
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\miniprogram\base_driver\app.py", line 291, in wrapper
+    return func(*args, **kwargs)
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 148, in wrapper
+    result = func(*args, **kwargs)
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\miniprogram\base_driver\page\page.py", line 369, in get_element
+    r = self.get_elements(
+        _selector,
+        max_timeout,
+        auto_fix=auto_fix
+    )
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 148, in wrapper
+    result = func(*args, **kwargs)
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\miniprogram\base_driver\page\page.py", line 452, in get_elements
+    return self._get_elements_by_css(_selector, max_timeout, index=_selector.index, auto_fix=auto_fix)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\miniprogram\base_driver\page\page.py", line 719, in _get_elements_by_css
+    els = search_elements(_selector_list)
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\utils\utils.py", line 64, in wrapper
+    r = func(*args, **kwargs)
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\miniprogram\base_driver\page\page.py", line 711, in search_elements
+    return self.__search_child(
+           ~~~~~~~~~~~~~~~~~~~^
+        _selectors[0:], index=index
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )  # __search_child回pop元素，第一次search失败后重试会有问题，copy一份
+    ^
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\miniprogram\base_driver\page\page.py", line 670, in __search_child
+    els = self.__get_elements(_selector)
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\utils\utils.py", line 90, in wrapper
+    ret = func(*args, **kwargs)
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\miniprogram\base_driver\page\page.py", line 648, in __get_elements
+    ret = self._send("Page.getElements", {"selector": selector.css})
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\miniprogram\base_driver\page\page.py", line 637, in _send
+    self.connection.send(cmd)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\miniprogram\base_driver\connection.py", line 457, in send
+    return self._receive_response(cmd)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\miniprogram\base_driver\connection.py", line 501, in _receive_response
+    raise MiniTimeoutError(
+        f"[{cmd.id}][{cmd.desc}] receive from remote timeout"
+    )
+minium.framework.exception.MiniTimeoutError: [efacd6cd-1310-4f65-ac8b-9194a4f0aae2][call Page.getElements] receive from remote timeout
+[W 2025-06-23 16:11:41,808 minium assertbase#354 _log_info_when_error] config: {'debug': False, 'base_dir': 'D:\\xcx\\v9m_client2', 'platform': 'ide', 'app': 'wx', 'debug_mode': 'debug', 'close_ide': 'False', 'auto_capture': 'auto', 'check_mp_foreground': True, 'auto_relaunch': True, 'device_desire': {}, 'account_info': {}, 'report_usage': True, 'remote_connect_timeout': 180, 'request_timeout': 60, 'use_push': True, 'full_reset': 'False', 'outputs': 'D:\\xcx\\v9m_client2\\outputs', 'enable_app_log': False, 'enable_network_panel': False, 'project_path': 'D:\\zsn\\V9Mcode\\client-applets', 'dev_tool_path': 'D:\\Program Files (x86)\\微信web开发者工具\\cli.bat', 'test_port': 9420, 'mock_native_modal': {}, 'mock_request': [], 'auto_authorize': False, 'audits': None, 'teardown_snapshot': False, 'mock_images_dir': '', 'mock_images': {}, 'need_perf': False, 'appid': None, 'enable_h5': True, 'autofix': False, 'framework_capture': True, 'error_capture': False, 'assert_capture': True, 'create_time': '20250623160749', 'case_output': 'D:\\xcx\\v9m_client2\\outputs\\20250623160749\\test_add_00001_0\\20250623160821010228'}
+[W 2025-06-23 16:11:41,809 minium assertbase#355 _log_info_when_error] build info: {'version': '1.6.0', 'revision': '33ce5b50b34ec18c51c054a7cc1bdfb3ab0a451b', 'branch': 'master', 'update_at': '2024-10-09 21:08:56'}
+[W 2025-06-23 16:11:41,810 minium minitest#1029 _log_info_when_error] mini: 基础库3.7.12, 开发者工具1.06.2412050
+[W 2025-06-23 16:11:41,811 minium minitest#1031 _log_info_when_error] native: <minium.native.wx_native.idenative.IdeNative object at 0x0000021B11A9AF90>

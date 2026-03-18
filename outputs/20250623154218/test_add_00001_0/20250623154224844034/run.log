@@ -1,0 +1,726 @@
+[I 2025-06-23 15:42:24,847 minium minitest#432 _miniSetUp] =========Current case: test_add_00001_0=========
+[I 2025-06-23 15:42:24,847 minium minitest#435 _miniSetUp] package info: D:.xcx.v9m_client2.demo2, case info: AddVehicleNumberTest.test_add_00001_0
+[I 2025-06-23 15:42:24,848 minium basenative#59 wrapper] call BaseNative.check_connection
+[I 2025-06-23 15:42:24,848 minium basenative#63 wrapper] call BaseNative.check_connection end True
+[I 2025-06-23 15:42:24,848 minium basenative#59 wrapper] call BaseNative.back_to_miniprogram
+[I 2025-06-23 15:42:24,849 minium basenative#794 back_to_miniprogram] try back_to_miniprogram 3
+[I 2025-06-23 15:42:24,849 minium basenative#63 wrapper] call BaseNative.back_to_miniprogram end 
+[D 2025-06-23 15:42:24,851 minium.Conn3280 connection#427 _safely_send] ASYNC_SEND > [2051437343280]{"id":"02e6461e-2b4a-45fc-a813-0fe83244474b","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/page/index/index"}]}}
+[D 2025-06-23 15:42:24,853 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"method":"App.bindingCalled","params":{"name":"switchTab_before_global","args":[{"url":"/page/index/index"}]}}
+[D 2025-06-23 15:42:34,865 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"02e6461e-2b4a-45fc-a813-0fe83244474b","error":{"message":"timeout"}}
+[E 2025-06-23 15:42:34,866 minium.Conn3280 connection#668 __on_message] [02e6461e-2b4a-45fc-a813-0fe83244474b]: timeout
+[I 2025-06-23 15:42:34,866 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 02e6461e-2b4a-45fc-a813-0fe83244474b
+[W 2025-06-23 15:42:34,867 minium.App4672 app#1172 _change_route_async] 可能因频繁调用switchTab导致timeout
+[W 2025-06-23 15:42:34,867 minium.App4672 app#1178 _change_route_async] wait route done and return the same page
+[I 2025-06-23 15:42:34,869 minium minitest#897 capture] capture setup.png
+[D 2025-06-23 15:42:34,869 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"56a1f6ac-5cd2-42cb-a6cb-36d5609db0c3","method":"App.captureScreenshot","params":{}}
+[D 2025-06-23 15:42:35,517 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"56a1f6ac-5cd2-42cb-a6cb-36d5609db0c3","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAYYAAANMCAIAAADXDp1JAAAAAXNSR0IArs4c6QAAIABJREFUeJyMvdmvvVt2FTbG2vt3b3Grd29XOdjGMpjOjhUnAgIojYSSBx6iKA/50/IeKRIvkeAlCkKEHgJYVExrMOCyy12V7WtXueres7818jDnmHOufc612Pfc89tn769ZazZjtmt9/P39CwAEASAoKH4DJPIV3wr+BRDjj/q3D+tz/fk44/ySAPKO8VdchAIB7PzhJV3ABT6AC3gQD/EFegFeoIfwAB6IY3ABAgRsCQDjjhKBG0lhEQQXsKQbsMgFEFjxQy6BAKEFLLC/AuNgbC2SPgvADWRc3FNcYJ0LkMoZsoY0aZG0IUAmuUwUEQy6sM5REQyE8i9ho88VwS0JIlecIIFx7+YVlkfBJ16aPZKE+A9iS4JAAfFdHa8cQ
+[I 2025-06-23 15:42:35,521 minium minitest#487 _miniSetUp] =========case: test_add_00001_0 start=========
+[I 2025-06-23 15:42:35,522 minium minitest#788 _callTestMethod] call test method
+[I 2025-06-23 15:42:35,522 minium demo2#16 test_add] 开始第 1 次测试
+[I 2025-06-23 15:42:35,522 minium page#716 _get_elements_by_css] try to get elements: image
+[D 2025-06-23 15:42:35,522 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"c48c0234-5c1c-4ace-a5ca-e4120449df2d","method":"Page.getElements","params":{"selector":"image","pageId":4}}
+[D 2025-06-23 15:42:35,533 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"c48c0234-5c1c-4ace-a5ca-e4120449df2d","result":{"elements":[{"elementId":"7d8efd19-4ad7-4a1c-9f93-69a38dd3e1e1","tagName":"image"},{"elementId":"b5f2e582-881a-4a0e-83b4-f92cef51031c","tagName":"image"},{"elementId":"81b83b89-fb9b-4433-ae61-2af6e3173d3d","tagName":"image"},{"elementId":"64e00fe8-188f-43a5-b078-8199bd1c4a71","tagName":"image"},{"elementId":"f0bc2f19-d9d9-4976-bfaf-c38fbc274188","tagName":"image"},{"elementId":"9f918250-604c-40b0-8061-a8d7f1e74102","tagName":"image"},{"elementId":"48b35
+[I 2025-06-23 15:42:35,534 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33DDE80>]
+[D 2025-06-23 15:42:35,535 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"c48c0234-5c1c-4ace-a5ca-e4120449df2d","result":{"elements":[{"elementId":"7d8efd19-4ad7-4a1c-9f93-69a38dd3e1e1","tagName":"image"},{"elementId":"b5f2e582-881a-4a0e-83b4-f92cef51031c","tagName":"image"},{"elementId":"81b83b89-fb9b-4433-ae61-2af6e3173d3d","tagName":"image"},{"elementId":"64e00fe8-188f-43a5-b078-8199bd1c4a71","tagName":"image"},{"elementId":"f0bc2f19-d9d9-4976-bfaf-c38fbc274188","tagName":"image"},{"elementId":"9f918250-604c-40b0-8061-a8d7f1e74102","tagName":"image"},{"elementId":"48b35
+[I 2025-06-23 15:42:35,536 minium page#716 _get_elements_by_css] try to get elements: image
+[I 2025-06-23 15:42:35,536 minium.Conn3280 connection#704 _handle_async_msg] received async msg: c48c0234-5c1c-4ace-a5ca-e4120449df2d, maybe command ignore response
+[D 2025-06-23 15:42:35,536 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"8a298f85-3920-4f08-a936-499a9ca2d2bc","method":"Page.getElements","params":{"selector":"image","pageId":4}}
+[D 2025-06-23 15:42:35,540 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"8a298f85-3920-4f08-a936-499a9ca2d2bc","result":{"elements":[{"elementId":"7d8efd19-4ad7-4a1c-9f93-69a38dd3e1e1","tagName":"image"},{"elementId":"b5f2e582-881a-4a0e-83b4-f92cef51031c","tagName":"image"},{"elementId":"81b83b89-fb9b-4433-ae61-2af6e3173d3d","tagName":"image"},{"elementId":"64e00fe8-188f-43a5-b078-8199bd1c4a71","tagName":"image"},{"elementId":"f0bc2f19-d9d9-4976-bfaf-c38fbc274188","tagName":"image"},{"elementId":"9f918250-604c-40b0-8061-a8d7f1e74102","tagName":"image"},{"elementId":"48b35
+[I 2025-06-23 15:42:35,540 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA338B980>]
+[D 2025-06-23 15:42:35,541 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"8a298f85-3920-4f08-a936-499a9ca2d2bc","result":{"elements":[{"elementId":"7d8efd19-4ad7-4a1c-9f93-69a38dd3e1e1","tagName":"image"},{"elementId":"b5f2e582-881a-4a0e-83b4-f92cef51031c","tagName":"image"},{"elementId":"81b83b89-fb9b-4433-ae61-2af6e3173d3d","tagName":"image"},{"elementId":"64e00fe8-188f-43a5-b078-8199bd1c4a71","tagName":"image"},{"elementId":"f0bc2f19-d9d9-4976-bfaf-c38fbc274188","tagName":"image"},{"elementId":"9f918250-604c-40b0-8061-a8d7f1e74102","tagName":"image"},{"elementId":"48b35
+[D 2025-06-23 15:42:35,542 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"8d754f84-a932-41dd-be36-386e3821156b","method":"Element.getStyles","params":{"names":["pointer-events"],"elementId":"7d8efd19-4ad7-4a1c-9f93-69a38dd3e1e1","pageId":4}}
+[I 2025-06-23 15:42:35,542 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 8a298f85-3920-4f08-a936-499a9ca2d2bc, maybe command ignore response
+[D 2025-06-23 15:42:35,546 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"8d754f84-a932-41dd-be36-386e3821156b","result":{"styles":["auto"]}}
+[D 2025-06-23 15:42:35,547 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"0fb9523b-092a-4bea-bb04-1224ad24630b","method":"Element.tap","params":{"elementId":"7d8efd19-4ad7-4a1c-9f93-69a38dd3e1e1","pageId":4}}
+[D 2025-06-23 15:42:35,547 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"8d754f84-a932-41dd-be36-386e3821156b","result":{"styles":["auto"]}}
+[I 2025-06-23 15:42:35,548 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 8d754f84-a932-41dd-be36-386e3821156b, maybe command ignore response
+[D 2025-06-23 15:42:35,625 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"method":"App.bindingCalled","params":{"name":"switchTab_before_global","args":[{"url":"/page/index/index"}]}}
+[D 2025-06-23 15:42:35,628 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"0fb9523b-092a-4bea-bb04-1224ad24630b","result":{"pageX":98,"pageY":771.5,"clientX":98,"clientY":771.5}}
+[D 2025-06-23 15:42:35,630 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"0fb9523b-092a-4bea-bb04-1224ad24630b","result":{"pageX":98,"pageY":771.5,"clientX":98,"clientY":771.5}}
+[I 2025-06-23 15:42:35,630 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 0fb9523b-092a-4bea-bb04-1224ad24630b, maybe command ignore response
+[I 2025-06-23 15:42:37,131 minium demo2#65 _bind_device] 开始绑定设备流程
+[I 2025-06-23 15:42:37,132 minium page#716 _get_elements_by_css] try to get elements: .bind_Button
+[D 2025-06-23 15:42:37,132 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"0c317a37-8a97-4404-8fba-522cadd1f9b4","method":"Page.getElements","params":{"selector":".bind_Button","pageId":4}}
+[D 2025-06-23 15:42:37,135 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"0c317a37-8a97-4404-8fba-522cadd1f9b4","result":{"elements":[{"elementId":"6e340670-1364-42b8-9ef9-e890973455ee","tagName":"view"}]}}
+[I 2025-06-23 15:42:37,136 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D2710>]
+[D 2025-06-23 15:42:37,136 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"0c317a37-8a97-4404-8fba-522cadd1f9b4","result":{"elements":[{"elementId":"6e340670-1364-42b8-9ef9-e890973455ee","tagName":"view"}]}}
+[I 2025-06-23 15:42:37,137 minium page#716 _get_elements_by_css] try to get elements: .bind_device
+[I 2025-06-23 15:42:37,137 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 0c317a37-8a97-4404-8fba-522cadd1f9b4, maybe command ignore response
+[D 2025-06-23 15:42:37,137 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"9c76cfdc-fd07-4c3f-a447-2a7cf21e73a9","method":"Page.getElements","params":{"selector":".bind_device","pageId":4}}
+[D 2025-06-23 15:42:37,141 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"9c76cfdc-fd07-4c3f-a447-2a7cf21e73a9","result":{"elements":[{"elementId":"0ba86370-6a4d-4cfe-a8fe-43c3629ce7f4","tagName":"view"},{"elementId":"c791bc01-68ca-4bbf-9f8a-bfbb12301cf7","tagName":"view"},{"elementId":"b1ec14cd-98eb-47a2-8e6b-009b4d9a0c1e","tagName":"view"}]}}
+[I 2025-06-23 15:42:37,141 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D3390>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D34D0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D32F0>]
+[D 2025-06-23 15:42:37,142 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"9c76cfdc-fd07-4c3f-a447-2a7cf21e73a9","result":{"elements":[{"elementId":"0ba86370-6a4d-4cfe-a8fe-43c3629ce7f4","tagName":"view"},{"elementId":"c791bc01-68ca-4bbf-9f8a-bfbb12301cf7","tagName":"view"},{"elementId":"b1ec14cd-98eb-47a2-8e6b-009b4d9a0c1e","tagName":"view"}]}}
+[D 2025-06-23 15:42:37,142 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"38e24627-9018-47e6-a28e-00bd0c516f96","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"0ba86370-6a4d-4cfe-a8fe-43c3629ce7f4","pageId":4}}
+[I 2025-06-23 15:42:37,142 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 9c76cfdc-fd07-4c3f-a447-2a7cf21e73a9, maybe command ignore response
+[D 2025-06-23 15:42:37,145 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"38e24627-9018-47e6-a28e-00bd0c516f96","result":{"properties":["绑定设备充电"]}}
+[D 2025-06-23 15:42:37,146 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"c9169c59-047d-4965-8407-2390adb32e4a","method":"Element.getStyles","params":{"names":["pointer-events"],"elementId":"0ba86370-6a4d-4cfe-a8fe-43c3629ce7f4","pageId":4}}
+[D 2025-06-23 15:42:37,147 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"38e24627-9018-47e6-a28e-00bd0c516f96","result":{"properties":["绑定设备充电"]}}
+[I 2025-06-23 15:42:37,147 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 38e24627-9018-47e6-a28e-00bd0c516f96, maybe command ignore response
+[D 2025-06-23 15:42:37,150 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"c9169c59-047d-4965-8407-2390adb32e4a","result":{"styles":["auto"]}}
+[D 2025-06-23 15:42:37,150 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"c9169c59-047d-4965-8407-2390adb32e4a","result":{"styles":["auto"]}}
+[D 2025-06-23 15:42:37,151 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"67fc312d-18cb-45b7-a01b-d35edfe3fabb","method":"Element.tap","params":{"elementId":"0ba86370-6a4d-4cfe-a8fe-43c3629ce7f4","pageId":4}}
+[I 2025-06-23 15:42:37,151 minium.Conn3280 connection#704 _handle_async_msg] received async msg: c9169c59-047d-4965-8407-2390adb32e4a, maybe command ignore response
+[D 2025-06-23 15:42:37,208 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"67fc312d-18cb-45b7-a01b-d35edfe3fabb","result":{"pageX":71.703125,"pageY":640.390625,"clientX":71.703125,"clientY":640.390625}}
+[D 2025-06-23 15:42:37,209 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"67fc312d-18cb-45b7-a01b-d35edfe3fabb","result":{"pageX":71.703125,"pageY":640.390625,"clientX":71.703125,"clientY":640.390625}}
+[I 2025-06-23 15:42:37,209 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 67fc312d-18cb-45b7-a01b-d35edfe3fabb, maybe command ignore response
+[I 2025-06-23 15:42:38,210 minium page#716 _get_elements_by_css] try to get elements: input.input_text
+[D 2025-06-23 15:42:38,210 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"1047b8b3-82a7-40a1-b87f-b7479cf6b8b6","method":"Page.getElements","params":{"selector":"input.input_text","pageId":4}}
+[D 2025-06-23 15:42:38,214 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"1047b8b3-82a7-40a1-b87f-b7479cf6b8b6","result":{"elements":[{"elementId":"865586b9-44f1-4135-b93c-6347c6ee55c7","tagName":"input"}]}}
+[D 2025-06-23 15:42:38,215 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"1047b8b3-82a7-40a1-b87f-b7479cf6b8b6","result":{"elements":[{"elementId":"865586b9-44f1-4135-b93c-6347c6ee55c7","tagName":"input"}]}}
+[I 2025-06-23 15:42:38,215 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.FormElement object at 0x000001DDA33DE7B0>]
+[I 2025-06-23 15:42:38,215 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 1047b8b3-82a7-40a1-b87f-b7479cf6b8b6, maybe command ignore response
+[I 2025-06-23 15:42:38,216 minium page#716 _get_elements_by_css] try to get elements: input.input_text
+[D 2025-06-23 15:42:38,217 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"1e387160-fd84-4076-93f6-cde843506b75","method":"Page.getElements","params":{"selector":"input.input_text","pageId":4}}
+[D 2025-06-23 15:42:38,220 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"1e387160-fd84-4076-93f6-cde843506b75","result":{"elements":[{"elementId":"865586b9-44f1-4135-b93c-6347c6ee55c7","tagName":"input"}]}}
+[I 2025-06-23 15:42:38,221 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.FormElement object at 0x000001DDA33B6AD0>]
+[D 2025-06-23 15:42:38,221 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"1e387160-fd84-4076-93f6-cde843506b75","result":{"elements":[{"elementId":"865586b9-44f1-4135-b93c-6347c6ee55c7","tagName":"input"}]}}
+[I 2025-06-23 15:42:38,222 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 1e387160-fd84-4076-93f6-cde843506b75, maybe command ignore response
+[D 2025-06-23 15:42:38,723 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"b27596f7-bfd4-4baa-9d67-c3683a538a3b","method":"Element.callFunction","params":{"functionName":"input.input","args":["924010604",false],"elementId":"865586b9-44f1-4135-b93c-6347c6ee55c7","pageId":4}}
+[D 2025-06-23 15:42:38,736 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"b27596f7-bfd4-4baa-9d67-c3683a538a3b","result":{}}
+[I 2025-06-23 15:42:38,737 minium page#716 _get_elements_by_css] try to get elements: .bind-btn
+[D 2025-06-23 15:42:38,738 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"b27596f7-bfd4-4baa-9d67-c3683a538a3b","result":{}}
+[D 2025-06-23 15:42:38,738 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"7ce2192b-9ac7-4b4f-a9d2-e5197bed0f86","method":"Page.getElements","params":{"selector":".bind-btn","pageId":4}}
+[I 2025-06-23 15:42:38,739 minium.Conn3280 connection#704 _handle_async_msg] received async msg: b27596f7-bfd4-4baa-9d67-c3683a538a3b, maybe command ignore response
+[D 2025-06-23 15:42:38,745 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"7ce2192b-9ac7-4b4f-a9d2-e5197bed0f86","result":{"elements":[{"elementId":"cff2a9e1-9abb-474e-a7e6-59081a72c6b8","tagName":"view"}]}}
+[I 2025-06-23 15:42:38,745 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D39D0>]
+[D 2025-06-23 15:42:38,746 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"7ce2192b-9ac7-4b4f-a9d2-e5197bed0f86","result":{"elements":[{"elementId":"cff2a9e1-9abb-474e-a7e6-59081a72c6b8","tagName":"view"}]}}
+[I 2025-06-23 15:42:38,746 minium page#716 _get_elements_by_css] try to get elements: .bind-btn
+[I 2025-06-23 15:42:38,747 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 7ce2192b-9ac7-4b4f-a9d2-e5197bed0f86, maybe command ignore response
+[D 2025-06-23 15:42:38,747 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"560c0ec0-a18c-4f7f-bbe9-7e3546c85409","method":"Page.getElements","params":{"selector":".bind-btn","pageId":4}}
+[D 2025-06-23 15:42:38,752 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"560c0ec0-a18c-4f7f-bbe9-7e3546c85409","result":{"elements":[{"elementId":"cff2a9e1-9abb-474e-a7e6-59081a72c6b8","tagName":"view"}]}}
+[I 2025-06-23 15:42:38,752 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D3CF0>]
+[D 2025-06-23 15:42:38,753 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"560c0ec0-a18c-4f7f-bbe9-7e3546c85409","result":{"elements":[{"elementId":"cff2a9e1-9abb-474e-a7e6-59081a72c6b8","tagName":"view"}]}}
+[D 2025-06-23 15:42:38,753 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"65187578-7cfa-4119-84e3-0c000d56067c","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"cff2a9e1-9abb-474e-a7e6-59081a72c6b8","pageId":4}}
+[I 2025-06-23 15:42:38,753 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 560c0ec0-a18c-4f7f-bbe9-7e3546c85409, maybe command ignore response
+[D 2025-06-23 15:42:38,758 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"65187578-7cfa-4119-84e3-0c000d56067c","result":{"properties":["确认添加"]}}
+[D 2025-06-23 15:42:38,759 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"faf2e8d2-2e3b-49ae-8db0-94d254c62ed2","method":"Element.getStyles","params":{"names":["pointer-events"],"elementId":"cff2a9e1-9abb-474e-a7e6-59081a72c6b8","pageId":4}}
+[D 2025-06-23 15:42:38,759 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"65187578-7cfa-4119-84e3-0c000d56067c","result":{"properties":["确认添加"]}}
+[I 2025-06-23 15:42:38,760 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 65187578-7cfa-4119-84e3-0c000d56067c, maybe command ignore response
+[D 2025-06-23 15:42:38,763 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"faf2e8d2-2e3b-49ae-8db0-94d254c62ed2","result":{"styles":["auto"]}}
+[D 2025-06-23 15:42:38,764 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"28b968d6-7f19-4214-864f-bd9bd2919999","method":"Element.tap","params":{"elementId":"cff2a9e1-9abb-474e-a7e6-59081a72c6b8","pageId":4}}
+[D 2025-06-23 15:42:38,764 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"faf2e8d2-2e3b-49ae-8db0-94d254c62ed2","result":{"styles":["auto"]}}
+[I 2025-06-23 15:42:38,764 minium.Conn3280 connection#704 _handle_async_msg] received async msg: faf2e8d2-2e3b-49ae-8db0-94d254c62ed2, maybe command ignore response
+[D 2025-06-23 15:42:38,822 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"28b968d6-7f19-4214-864f-bd9bd2919999","result":{"pageX":195.5,"pageY":422,"clientX":195.5,"clientY":422}}
+[D 2025-06-23 15:42:38,823 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"28b968d6-7f19-4214-864f-bd9bd2919999","result":{"pageX":195.5,"pageY":422,"clientX":195.5,"clientY":422}}
+[I 2025-06-23 15:42:38,823 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 28b968d6-7f19-4214-864f-bd9bd2919999, maybe command ignore response
+[D 2025-06-23 15:42:39,037 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"method":"App.bindingCalled","params":{"name":"navigateTo_before_global","args":[{"url":"../select_info/select_info?rx_sn=924010604"}]}}
+[D 2025-06-23 15:42:39,900 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"path":"page/select_info/select_info","query":{"rx_sn":"924010604"},"openType":"navigateTo","timeStamp":1750664559889,"webviewId":6,"routeEventId":"6_1750664559334","renderer":"webview"},1750664559890]}}
+[I 2025-06-23 15:42:39,902 minium.App4672 app#1226 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'path': 'page/select_info/select_info', 'query': {'rx_sn': '924010604'}, 'openType': 'navigateTo', 'timeStamp': 1750664559889, 'webviewId': 6, 'routeEventId': '6_1750664559334', 'renderer': 'webview'}, 1750664559890]}
+[I 2025-06-23 15:42:40,324 minium demo2#89 _bind_device] 设备绑定成功
+[I 2025-06-23 15:42:40,324 minium demo2#93 _select_vehicle_info] 开始选择车辆信息
+[I 2025-06-23 15:42:40,324 minium page#716 _get_elements_by_css] try to get elements: view
+[D 2025-06-23 15:42:40,325 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"3d5b540d-c050-48b4-9143-d239caa90fec","method":"Page.getElements","params":{"selector":"view","pageId":6}}
+[D 2025-06-23 15:42:40,331 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"3d5b540d-c050-48b4-9143-d239caa90fec","result":{"elements":[{"elementId":"27b9625e-a8f1-443a-afb9-f2e7f524ea6f","tagName":"view"},{"elementId":"85cfe836-24ed-4d0b-814d-8c640366d017","tagName":"view"},{"elementId":"d5abeecd-18cc-4de4-84b0-70acfbdebd8f","tagName":"view"},{"elementId":"3214721d-bb59-46c8-a79a-0b67d749ef85","tagName":"view"},{"elementId":"b36c9965-fea9-4145-b759-e5db089d70af","tagName":"view"},{"elementId":"1455fad3-3516-41af-9324-63a4630b1f4a","tagName":"view"},{"elementId":"46e047c9-f6
+[I 2025-06-23 15:42:40,332 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D32F0>]
+[D 2025-06-23 15:42:40,333 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"3d5b540d-c050-48b4-9143-d239caa90fec","result":{"elements":[{"elementId":"27b9625e-a8f1-443a-afb9-f2e7f524ea6f","tagName":"view"},{"elementId":"85cfe836-24ed-4d0b-814d-8c640366d017","tagName":"view"},{"elementId":"d5abeecd-18cc-4de4-84b0-70acfbdebd8f","tagName":"view"},{"elementId":"3214721d-bb59-46c8-a79a-0b67d749ef85","tagName":"view"},{"elementId":"b36c9965-fea9-4145-b759-e5db089d70af","tagName":"view"},{"elementId":"1455fad3-3516-41af-9324-63a4630b1f4a","tagName":"view"},{"elementId":"46e047c9-f6
+[I 2025-06-23 15:42:40,333 minium page#716 _get_elements_by_css] try to get elements: view
+[I 2025-06-23 15:42:40,333 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 3d5b540d-c050-48b4-9143-d239caa90fec, maybe command ignore response
+[D 2025-06-23 15:42:40,333 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"6dd498dd-a7a3-4cbf-a9a3-d9d2b13a5318","method":"Page.getElements","params":{"selector":"view","pageId":6}}
+[D 2025-06-23 15:42:40,340 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"6dd498dd-a7a3-4cbf-a9a3-d9d2b13a5318","result":{"elements":[{"elementId":"27b9625e-a8f1-443a-afb9-f2e7f524ea6f","tagName":"view"},{"elementId":"85cfe836-24ed-4d0b-814d-8c640366d017","tagName":"view"},{"elementId":"d5abeecd-18cc-4de4-84b0-70acfbdebd8f","tagName":"view"},{"elementId":"3214721d-bb59-46c8-a79a-0b67d749ef85","tagName":"view"},{"elementId":"b36c9965-fea9-4145-b759-e5db089d70af","tagName":"view"},{"elementId":"1455fad3-3516-41af-9324-63a4630b1f4a","tagName":"view"},{"elementId":"46e047c9-f6
+[I 2025-06-23 15:42:40,341 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D3430>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D1130>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D39D0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D3D90>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D3570>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D3CF0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D3890>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D37F0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D3E30>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D3930>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D3ED0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D3F70>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8CD0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8050>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F80F0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8190>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8230>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F82D0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8370>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8410>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F84B0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8550>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F85F0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8690>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8730>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F87D0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8870>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8910>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F89B0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8A50>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8AF0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8B90>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8C30>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8D70>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8E10>]
+[D 2025-06-23 15:42:40,342 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"6dd498dd-a7a3-4cbf-a9a3-d9d2b13a5318","result":{"elements":[{"elementId":"27b9625e-a8f1-443a-afb9-f2e7f524ea6f","tagName":"view"},{"elementId":"85cfe836-24ed-4d0b-814d-8c640366d017","tagName":"view"},{"elementId":"d5abeecd-18cc-4de4-84b0-70acfbdebd8f","tagName":"view"},{"elementId":"3214721d-bb59-46c8-a79a-0b67d749ef85","tagName":"view"},{"elementId":"b36c9965-fea9-4145-b759-e5db089d70af","tagName":"view"},{"elementId":"1455fad3-3516-41af-9324-63a4630b1f4a","tagName":"view"},{"elementId":"46e047c9-f6
+[D 2025-06-23 15:42:40,342 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"f42267bc-158d-48af-adf6-2c9f7ead7299","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"27b9625e-a8f1-443a-afb9-f2e7f524ea6f","pageId":6}}
+[I 2025-06-23 15:42:40,348 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 6dd498dd-a7a3-4cbf-a9a3-d9d2b13a5318, maybe command ignore response
+[D 2025-06-23 15:42:40,352 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"f42267bc-158d-48af-adf6-2c9f7ead7299","result":{"properties":["返回\n请选择爱车信息\n亲爱的用户，选择爱车后方可使用充电服务哦～\n款式 *\n电动自行车\n电动摩托车\n共享单车\n其他\n品牌 *\n凤凰\n永久\n雅迪\n绿源\n爱玛\n台铃\n其他\n型号 *\n型号1\n型号2\n型号3\n型号4\n型号5\n型号6\n其他\n确定添加"]}}
+[D 2025-06-23 15:42:40,353 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"74c8c865-ee66-43a4-9539-de471aba3381","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"85cfe836-24ed-4d0b-814d-8c640366d017","pageId":6}}
+[D 2025-06-23 15:42:40,353 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"f42267bc-158d-48af-adf6-2c9f7ead7299","result":{"properties":["返回\n请选择爱车信息\n亲爱的用户，选择爱车后方可使用充电服务哦～\n款式 *\n电动自行车\n电动摩托车\n共享单车\n其他\n品牌 *\n凤凰\n永久\n雅迪\n绿源\n爱玛\n台铃\n其他\n型号 *\n型号1\n型号2\n型号3\n型号4\n型号5\n型号6\n其他\n确定添加"]}}
+[I 2025-06-23 15:42:40,354 minium.Conn3280 connection#704 _handle_async_msg] received async msg: f42267bc-158d-48af-adf6-2c9f7ead7299, maybe command ignore response
+[D 2025-06-23 15:42:40,356 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"74c8c865-ee66-43a4-9539-de471aba3381","result":{"properties":["返回"]}}
+[D 2025-06-23 15:42:40,357 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"e86aced0-b92d-4e40-b43e-0c08826de8fe","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"d5abeecd-18cc-4de4-84b0-70acfbdebd8f","pageId":6}}
+[D 2025-06-23 15:42:40,357 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"74c8c865-ee66-43a4-9539-de471aba3381","result":{"properties":["返回"]}}
+[I 2025-06-23 15:42:40,358 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 74c8c865-ee66-43a4-9539-de471aba3381, maybe command ignore response
+[D 2025-06-23 15:42:40,360 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"e86aced0-b92d-4e40-b43e-0c08826de8fe","result":{"properties":[""]}}
+[D 2025-06-23 15:42:40,361 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"737d6ded-4921-4938-b5ff-f44e56e85098","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"3214721d-bb59-46c8-a79a-0b67d749ef85","pageId":6}}
+[D 2025-06-23 15:42:40,361 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"e86aced0-b92d-4e40-b43e-0c08826de8fe","result":{"properties":[""]}}
+[I 2025-06-23 15:42:40,362 minium.Conn3280 connection#704 _handle_async_msg] received async msg: e86aced0-b92d-4e40-b43e-0c08826de8fe, maybe command ignore response
+[D 2025-06-23 15:42:40,367 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"737d6ded-4921-4938-b5ff-f44e56e85098","result":{"properties":["返回"]}}
+[D 2025-06-23 15:42:40,368 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"692f0bca-9a94-408e-92b8-ccd0f5952b17","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"b36c9965-fea9-4145-b759-e5db089d70af","pageId":6}}
+[D 2025-06-23 15:42:40,368 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"737d6ded-4921-4938-b5ff-f44e56e85098","result":{"properties":["返回"]}}
+[I 2025-06-23 15:42:40,369 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 737d6ded-4921-4938-b5ff-f44e56e85098, maybe command ignore response
+[D 2025-06-23 15:42:40,371 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"692f0bca-9a94-408e-92b8-ccd0f5952b17","result":{"properties":["返回"]}}
+[D 2025-06-23 15:42:40,372 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"6e2924fd-0815-4f91-89a2-48a9e7777090","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"1455fad3-3516-41af-9324-63a4630b1f4a","pageId":6}}
+[D 2025-06-23 15:42:40,372 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"692f0bca-9a94-408e-92b8-ccd0f5952b17","result":{"properties":["返回"]}}
+[I 2025-06-23 15:42:40,373 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 692f0bca-9a94-408e-92b8-ccd0f5952b17, maybe command ignore response
+[D 2025-06-23 15:42:40,376 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"6e2924fd-0815-4f91-89a2-48a9e7777090","result":{"properties":["请选择爱车信息"]}}
+[D 2025-06-23 15:42:40,377 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"adcaffad-ab7a-4db2-a4ac-9ae705638795","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"46e047c9-f6fd-45ba-bfba-709441a66fb8","pageId":6}}
+[D 2025-06-23 15:42:40,377 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"6e2924fd-0815-4f91-89a2-48a9e7777090","result":{"properties":["请选择爱车信息"]}}
+[I 2025-06-23 15:42:40,378 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 6e2924fd-0815-4f91-89a2-48a9e7777090, maybe command ignore response
+[D 2025-06-23 15:42:40,381 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"adcaffad-ab7a-4db2-a4ac-9ae705638795","result":{"properties":["亲爱的用户，选择爱车后方可使用充电服务哦～"]}}
+[D 2025-06-23 15:42:40,381 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"c5d954af-285a-425b-8b18-b5c4fd3a1009","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"cd14d743-a823-45bc-a452-e4d7ec5d88b2","pageId":6}}
+[D 2025-06-23 15:42:40,382 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"adcaffad-ab7a-4db2-a4ac-9ae705638795","result":{"properties":["亲爱的用户，选择爱车后方可使用充电服务哦～"]}}
+[I 2025-06-23 15:42:40,382 minium.Conn3280 connection#704 _handle_async_msg] received async msg: adcaffad-ab7a-4db2-a4ac-9ae705638795, maybe command ignore response
+[D 2025-06-23 15:42:40,386 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"c5d954af-285a-425b-8b18-b5c4fd3a1009","result":{"properties":["款式 *\n电动自行车\n电动摩托车\n共享单车\n其他"]}}
+[D 2025-06-23 15:42:40,387 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"eb2087fa-eea4-44dc-9b70-984193455f83","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"3872859a-be32-4923-ba9e-4dddf52594a2","pageId":6}}
+[D 2025-06-23 15:42:40,387 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"c5d954af-285a-425b-8b18-b5c4fd3a1009","result":{"properties":["款式 *\n电动自行车\n电动摩托车\n共享单车\n其他"]}}
+[I 2025-06-23 15:42:40,387 minium.Conn3280 connection#704 _handle_async_msg] received async msg: c5d954af-285a-425b-8b18-b5c4fd3a1009, maybe command ignore response
+[D 2025-06-23 15:42:40,392 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"eb2087fa-eea4-44dc-9b70-984193455f83","result":{"properties":["款式 *"]}}
+[D 2025-06-23 15:42:40,393 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"de45a585-7109-4f53-9773-6a1f692058bf","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"2147d3ad-eb71-4705-8e68-d56321063f2e","pageId":6}}
+[D 2025-06-23 15:42:40,394 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"eb2087fa-eea4-44dc-9b70-984193455f83","result":{"properties":["款式 *"]}}
+[I 2025-06-23 15:42:40,394 minium.Conn3280 connection#704 _handle_async_msg] received async msg: eb2087fa-eea4-44dc-9b70-984193455f83, maybe command ignore response
+[D 2025-06-23 15:42:40,398 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"de45a585-7109-4f53-9773-6a1f692058bf","result":{"properties":["电动自行车\n电动摩托车\n共享单车\n其他"]}}
+[D 2025-06-23 15:42:40,398 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"c83280e0-f733-4cac-bfb8-e293fc92a666","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"59e54970-99e6-4762-be66-72138ca4343f","pageId":6}}
+[D 2025-06-23 15:42:40,399 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"de45a585-7109-4f53-9773-6a1f692058bf","result":{"properties":["电动自行车\n电动摩托车\n共享单车\n其他"]}}
+[I 2025-06-23 15:42:40,399 minium.Conn3280 connection#704 _handle_async_msg] received async msg: de45a585-7109-4f53-9773-6a1f692058bf, maybe command ignore response
+[D 2025-06-23 15:42:40,402 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"c83280e0-f733-4cac-bfb8-e293fc92a666","result":{"properties":["电动自行车"]}}
+[D 2025-06-23 15:42:40,403 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"565aac4e-8ffb-4da9-b0ae-ca3813c6e63f","method":"Element.getStyles","params":{"names":["pointer-events"],"elementId":"59e54970-99e6-4762-be66-72138ca4343f","pageId":6}}
+[D 2025-06-23 15:42:40,403 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"c83280e0-f733-4cac-bfb8-e293fc92a666","result":{"properties":["电动自行车"]}}
+[I 2025-06-23 15:42:40,403 minium.Conn3280 connection#704 _handle_async_msg] received async msg: c83280e0-f733-4cac-bfb8-e293fc92a666, maybe command ignore response
+[D 2025-06-23 15:42:40,406 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"565aac4e-8ffb-4da9-b0ae-ca3813c6e63f","result":{"styles":["auto"]}}
+[D 2025-06-23 15:42:40,406 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"e90efa4b-a34b-41cd-8ba3-ac9a51fd159d","method":"Element.tap","params":{"elementId":"59e54970-99e6-4762-be66-72138ca4343f","pageId":6}}
+[D 2025-06-23 15:42:40,407 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"565aac4e-8ffb-4da9-b0ae-ca3813c6e63f","result":{"styles":["auto"]}}
+[I 2025-06-23 15:42:40,407 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 565aac4e-8ffb-4da9-b0ae-ca3813c6e63f, maybe command ignore response
+[D 2025-06-23 15:42:40,464 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"e90efa4b-a34b-41cd-8ba3-ac9a51fd159d","result":{"pageX":64.796875,"pageY":220,"clientX":64.796875,"clientY":220}}
+[D 2025-06-23 15:42:40,465 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"e90efa4b-a34b-41cd-8ba3-ac9a51fd159d","result":{"pageX":64.796875,"pageY":220,"clientX":64.796875,"clientY":220}}
+[I 2025-06-23 15:42:40,465 minium.Conn3280 connection#704 _handle_async_msg] received async msg: e90efa4b-a34b-41cd-8ba3-ac9a51fd159d, maybe command ignore response
+[I 2025-06-23 15:42:41,966 minium page#716 _get_elements_by_css] try to get elements: view
+[D 2025-06-23 15:42:41,966 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"1a591919-6d5c-4206-ba61-04d759f89297","method":"Page.getElements","params":{"selector":"view","pageId":6}}
+[D 2025-06-23 15:42:41,971 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"1a591919-6d5c-4206-ba61-04d759f89297","result":{"elements":[{"elementId":"27b9625e-a8f1-443a-afb9-f2e7f524ea6f","tagName":"view"},{"elementId":"85cfe836-24ed-4d0b-814d-8c640366d017","tagName":"view"},{"elementId":"d5abeecd-18cc-4de4-84b0-70acfbdebd8f","tagName":"view"},{"elementId":"3214721d-bb59-46c8-a79a-0b67d749ef85","tagName":"view"},{"elementId":"b36c9965-fea9-4145-b759-e5db089d70af","tagName":"view"},{"elementId":"1455fad3-3516-41af-9324-63a4630b1f4a","tagName":"view"},{"elementId":"46e047c9-f6
+[I 2025-06-23 15:42:41,972 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D39D0>]
+[I 2025-06-23 15:42:41,972 minium page#716 _get_elements_by_css] try to get elements: view
+[D 2025-06-23 15:42:41,973 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"1a591919-6d5c-4206-ba61-04d759f89297","result":{"elements":[{"elementId":"27b9625e-a8f1-443a-afb9-f2e7f524ea6f","tagName":"view"},{"elementId":"85cfe836-24ed-4d0b-814d-8c640366d017","tagName":"view"},{"elementId":"d5abeecd-18cc-4de4-84b0-70acfbdebd8f","tagName":"view"},{"elementId":"3214721d-bb59-46c8-a79a-0b67d749ef85","tagName":"view"},{"elementId":"b36c9965-fea9-4145-b759-e5db089d70af","tagName":"view"},{"elementId":"1455fad3-3516-41af-9324-63a4630b1f4a","tagName":"view"},{"elementId":"46e047c9-f6
+[D 2025-06-23 15:42:41,974 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"4a5b0c5c-d0aa-44ac-a6e8-69eb4054146d","method":"Page.getElements","params":{"selector":"view","pageId":6}}
+[I 2025-06-23 15:42:41,974 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 1a591919-6d5c-4206-ba61-04d759f89297, maybe command ignore response
+[D 2025-06-23 15:42:41,980 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"4a5b0c5c-d0aa-44ac-a6e8-69eb4054146d","result":{"elements":[{"elementId":"27b9625e-a8f1-443a-afb9-f2e7f524ea6f","tagName":"view"},{"elementId":"85cfe836-24ed-4d0b-814d-8c640366d017","tagName":"view"},{"elementId":"d5abeecd-18cc-4de4-84b0-70acfbdebd8f","tagName":"view"},{"elementId":"3214721d-bb59-46c8-a79a-0b67d749ef85","tagName":"view"},{"elementId":"b36c9965-fea9-4145-b759-e5db089d70af","tagName":"view"},{"elementId":"1455fad3-3516-41af-9324-63a4630b1f4a","tagName":"view"},{"elementId":"46e047c9-f6
+[D 2025-06-23 15:42:41,982 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"4a5b0c5c-d0aa-44ac-a6e8-69eb4054146d","result":{"elements":[{"elementId":"27b9625e-a8f1-443a-afb9-f2e7f524ea6f","tagName":"view"},{"elementId":"85cfe836-24ed-4d0b-814d-8c640366d017","tagName":"view"},{"elementId":"d5abeecd-18cc-4de4-84b0-70acfbdebd8f","tagName":"view"},{"elementId":"3214721d-bb59-46c8-a79a-0b67d749ef85","tagName":"view"},{"elementId":"b36c9965-fea9-4145-b759-e5db089d70af","tagName":"view"},{"elementId":"1455fad3-3516-41af-9324-63a4630b1f4a","tagName":"view"},{"elementId":"46e047c9-f6
+[I 2025-06-23 15:42:41,982 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D2CB0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D3CF0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D3570>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D3D90>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D3890>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D37F0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D3E30>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D3930>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D3F70>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D34D0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D3610>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8EB0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8CD0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8050>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F80F0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8190>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8230>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F82D0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8370>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8410>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F84B0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8550>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F85F0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8690>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8730>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F87D0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8870>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8910>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F89B0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8A50>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8AF0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8B90>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8C30>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8D70>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33F8E10>]
+[I 2025-06-23 15:42:41,983 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 4a5b0c5c-d0aa-44ac-a6e8-69eb4054146d, maybe command ignore response
+[D 2025-06-23 15:42:41,983 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"e7772532-538b-4c72-a3e2-fb252f577f32","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"27b9625e-a8f1-443a-afb9-f2e7f524ea6f","pageId":6}}
+[D 2025-06-23 15:42:41,988 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"e7772532-538b-4c72-a3e2-fb252f577f32","result":{"properties":["返回\n请选择爱车信息\n亲爱的用户，选择爱车后方可使用充电服务哦～\n款式 *\n电动自行车\n电动摩托车\n共享单车\n其他\n品牌 *\n凤凰\n永久\n雅迪\n绿源\n爱玛\n台铃\n其他\n型号 *\n型号1\n型号2\n型号3\n型号4\n型号5\n型号6\n其他\n确定添加"]}}
+[D 2025-06-23 15:42:41,989 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"8481c071-c72b-43a3-bc63-75ceafe94117","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"85cfe836-24ed-4d0b-814d-8c640366d017","pageId":6}}
+[D 2025-06-23 15:42:41,989 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"e7772532-538b-4c72-a3e2-fb252f577f32","result":{"properties":["返回\n请选择爱车信息\n亲爱的用户，选择爱车后方可使用充电服务哦～\n款式 *\n电动自行车\n电动摩托车\n共享单车\n其他\n品牌 *\n凤凰\n永久\n雅迪\n绿源\n爱玛\n台铃\n其他\n型号 *\n型号1\n型号2\n型号3\n型号4\n型号5\n型号6\n其他\n确定添加"]}}
+[I 2025-06-23 15:42:41,989 minium.Conn3280 connection#704 _handle_async_msg] received async msg: e7772532-538b-4c72-a3e2-fb252f577f32, maybe command ignore response
+[D 2025-06-23 15:42:41,992 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"8481c071-c72b-43a3-bc63-75ceafe94117","result":{"properties":["返回"]}}
+[D 2025-06-23 15:42:41,993 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"7adcffd9-009f-4c2c-9233-7996193354ff","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"d5abeecd-18cc-4de4-84b0-70acfbdebd8f","pageId":6}}
+[D 2025-06-23 15:42:41,993 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"8481c071-c72b-43a3-bc63-75ceafe94117","result":{"properties":["返回"]}}
+[I 2025-06-23 15:42:41,994 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 8481c071-c72b-43a3-bc63-75ceafe94117, maybe command ignore response
+[D 2025-06-23 15:42:41,996 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"7adcffd9-009f-4c2c-9233-7996193354ff","result":{"properties":[""]}}
+[D 2025-06-23 15:42:41,997 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"7adcffd9-009f-4c2c-9233-7996193354ff","result":{"properties":[""]}}
+[D 2025-06-23 15:42:41,997 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"61d5c8dc-f892-4f3b-bd59-25b8732798be","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"3214721d-bb59-46c8-a79a-0b67d749ef85","pageId":6}}
+[I 2025-06-23 15:42:41,997 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 7adcffd9-009f-4c2c-9233-7996193354ff, maybe command ignore response
+[D 2025-06-23 15:42:42,000 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"61d5c8dc-f892-4f3b-bd59-25b8732798be","result":{"properties":["返回"]}}
+[D 2025-06-23 15:42:42,001 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"f7dae3da-c93f-4df3-868d-0d2b78c62e14","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"b36c9965-fea9-4145-b759-e5db089d70af","pageId":6}}
+[D 2025-06-23 15:42:42,001 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"61d5c8dc-f892-4f3b-bd59-25b8732798be","result":{"properties":["返回"]}}
+[I 2025-06-23 15:42:42,002 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 61d5c8dc-f892-4f3b-bd59-25b8732798be, maybe command ignore response
+[D 2025-06-23 15:42:42,005 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"f7dae3da-c93f-4df3-868d-0d2b78c62e14","result":{"properties":["返回"]}}
+[D 2025-06-23 15:42:42,006 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"f7dae3da-c93f-4df3-868d-0d2b78c62e14","result":{"properties":["返回"]}}
+[D 2025-06-23 15:42:42,006 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"893e060c-da86-4c71-9d24-ec3cf424f9ba","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"1455fad3-3516-41af-9324-63a4630b1f4a","pageId":6}}
+[I 2025-06-23 15:42:42,006 minium.Conn3280 connection#704 _handle_async_msg] received async msg: f7dae3da-c93f-4df3-868d-0d2b78c62e14, maybe command ignore response
+[D 2025-06-23 15:42:42,010 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"893e060c-da86-4c71-9d24-ec3cf424f9ba","result":{"properties":["请选择爱车信息"]}}
+[D 2025-06-23 15:42:42,010 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"1f6dc80a-bd44-42c3-839a-d11cf45274c9","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"46e047c9-f6fd-45ba-bfba-709441a66fb8","pageId":6}}
+[D 2025-06-23 15:42:42,011 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"893e060c-da86-4c71-9d24-ec3cf424f9ba","result":{"properties":["请选择爱车信息"]}}
+[I 2025-06-23 15:42:42,011 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 893e060c-da86-4c71-9d24-ec3cf424f9ba, maybe command ignore response
+[D 2025-06-23 15:42:42,013 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"1f6dc80a-bd44-42c3-839a-d11cf45274c9","result":{"properties":["亲爱的用户，选择爱车后方可使用充电服务哦～"]}}
+[D 2025-06-23 15:42:42,014 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"ac945667-7c33-4029-8d85-16d0ff8556c8","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"cd14d743-a823-45bc-a452-e4d7ec5d88b2","pageId":6}}
+[D 2025-06-23 15:42:42,014 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"1f6dc80a-bd44-42c3-839a-d11cf45274c9","result":{"properties":["亲爱的用户，选择爱车后方可使用充电服务哦～"]}}
+[I 2025-06-23 15:42:42,015 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 1f6dc80a-bd44-42c3-839a-d11cf45274c9, maybe command ignore response
+[D 2025-06-23 15:42:42,018 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"ac945667-7c33-4029-8d85-16d0ff8556c8","result":{"properties":["款式 *\n电动自行车\n电动摩托车\n共享单车\n其他"]}}
+[D 2025-06-23 15:42:42,019 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"1ec242a2-b166-4baa-abbd-f8ef95290c48","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"3872859a-be32-4923-ba9e-4dddf52594a2","pageId":6}}
+[D 2025-06-23 15:42:42,019 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"ac945667-7c33-4029-8d85-16d0ff8556c8","result":{"properties":["款式 *\n电动自行车\n电动摩托车\n共享单车\n其他"]}}
+[I 2025-06-23 15:42:42,019 minium.Conn3280 connection#704 _handle_async_msg] received async msg: ac945667-7c33-4029-8d85-16d0ff8556c8, maybe command ignore response
+[D 2025-06-23 15:42:42,022 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"1ec242a2-b166-4baa-abbd-f8ef95290c48","result":{"properties":["款式 *"]}}
+[D 2025-06-23 15:42:42,023 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"673813bf-cd9a-4446-a987-035ad2441e96","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"2147d3ad-eb71-4705-8e68-d56321063f2e","pageId":6}}
+[D 2025-06-23 15:42:42,023 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"1ec242a2-b166-4baa-abbd-f8ef95290c48","result":{"properties":["款式 *"]}}
+[I 2025-06-23 15:42:42,024 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 1ec242a2-b166-4baa-abbd-f8ef95290c48, maybe command ignore response
+[D 2025-06-23 15:42:42,027 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"673813bf-cd9a-4446-a987-035ad2441e96","result":{"properties":["电动自行车\n电动摩托车\n共享单车\n其他"]}}
+[D 2025-06-23 15:42:42,028 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"81d6ef49-a3b1-4a89-8a03-da61d0751b51","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"59e54970-99e6-4762-be66-72138ca4343f","pageId":6}}
+[D 2025-06-23 15:42:42,028 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"673813bf-cd9a-4446-a987-035ad2441e96","result":{"properties":["电动自行车\n电动摩托车\n共享单车\n其他"]}}
+[I 2025-06-23 15:42:42,029 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 673813bf-cd9a-4446-a987-035ad2441e96, maybe command ignore response
+[D 2025-06-23 15:42:42,032 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"81d6ef49-a3b1-4a89-8a03-da61d0751b51","result":{"properties":["电动自行车"]}}
+[D 2025-06-23 15:42:42,032 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"8bd2b539-0304-49c5-89ae-a2bbcfef7da7","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"ec0a171d-b053-49bd-99af-7e8cf089e136","pageId":6}}
+[D 2025-06-23 15:42:42,032 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"81d6ef49-a3b1-4a89-8a03-da61d0751b51","result":{"properties":["电动自行车"]}}
+[I 2025-06-23 15:42:42,033 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 81d6ef49-a3b1-4a89-8a03-da61d0751b51, maybe command ignore response
+[D 2025-06-23 15:42:42,035 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"8bd2b539-0304-49c5-89ae-a2bbcfef7da7","result":{"properties":["电动摩托车"]}}
+[D 2025-06-23 15:42:42,036 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"8bd2b539-0304-49c5-89ae-a2bbcfef7da7","result":{"properties":["电动摩托车"]}}
+[D 2025-06-23 15:42:42,036 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"a97304d0-5eab-414a-a837-0ab3cfa951ad","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"5d6e10e1-9f56-4465-bbb2-0c9fce3c933b","pageId":6}}
+[I 2025-06-23 15:42:42,036 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 8bd2b539-0304-49c5-89ae-a2bbcfef7da7, maybe command ignore response
+[D 2025-06-23 15:42:42,039 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"a97304d0-5eab-414a-a837-0ab3cfa951ad","result":{"properties":["共享单车"]}}
+[D 2025-06-23 15:42:42,040 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"c1af4d91-766e-48e7-8d97-d917a5e173a5","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"4b69fcb9-665f-459d-a628-75d5d211502e","pageId":6}}
+[D 2025-06-23 15:42:42,040 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"a97304d0-5eab-414a-a837-0ab3cfa951ad","result":{"properties":["共享单车"]}}
+[I 2025-06-23 15:42:42,041 minium.Conn3280 connection#704 _handle_async_msg] received async msg: a97304d0-5eab-414a-a837-0ab3cfa951ad, maybe command ignore response
+[D 2025-06-23 15:42:42,043 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"c1af4d91-766e-48e7-8d97-d917a5e173a5","result":{"properties":["其他"]}}
+[D 2025-06-23 15:42:42,044 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"879f2e39-0ae9-45d2-b3ce-ebac7fe0ff3f","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"5ce45e57-a227-4626-97ea-8faf8296a559","pageId":6}}
+[D 2025-06-23 15:42:42,044 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"c1af4d91-766e-48e7-8d97-d917a5e173a5","result":{"properties":["其他"]}}
+[I 2025-06-23 15:42:42,045 minium.Conn3280 connection#704 _handle_async_msg] received async msg: c1af4d91-766e-48e7-8d97-d917a5e173a5, maybe command ignore response
+[D 2025-06-23 15:42:42,048 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"879f2e39-0ae9-45d2-b3ce-ebac7fe0ff3f","result":{"properties":["品牌 *\n凤凰\n永久\n雅迪\n绿源\n爱玛\n台铃\n其他"]}}
+[D 2025-06-23 15:42:42,049 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"879f2e39-0ae9-45d2-b3ce-ebac7fe0ff3f","result":{"properties":["品牌 *\n凤凰\n永久\n雅迪\n绿源\n爱玛\n台铃\n其他"]}}
+[D 2025-06-23 15:42:42,049 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"f237bbbe-30d3-4da9-be72-079ad5a79917","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"57f3cee7-5117-44d4-8d91-254dd36ce59a","pageId":6}}
+[I 2025-06-23 15:42:42,050 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 879f2e39-0ae9-45d2-b3ce-ebac7fe0ff3f, maybe command ignore response
+[D 2025-06-23 15:42:42,053 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"f237bbbe-30d3-4da9-be72-079ad5a79917","result":{"properties":["品牌 *"]}}
+[D 2025-06-23 15:42:42,053 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"0a04ca3e-88d5-41a1-ade5-c942e08d02c5","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"e51cc65c-388f-403d-a327-01899b581c81","pageId":6}}
+[D 2025-06-23 15:42:42,054 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"f237bbbe-30d3-4da9-be72-079ad5a79917","result":{"properties":["品牌 *"]}}
+[I 2025-06-23 15:42:42,054 minium.Conn3280 connection#704 _handle_async_msg] received async msg: f237bbbe-30d3-4da9-be72-079ad5a79917, maybe command ignore response
+[D 2025-06-23 15:42:42,057 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"0a04ca3e-88d5-41a1-ade5-c942e08d02c5","result":{"properties":["凤凰\n永久\n雅迪\n绿源\n爱玛\n台铃\n其他"]}}
+[D 2025-06-23 15:42:42,057 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"a12d8772-388b-4ce5-a886-f0905eae5223","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"64c78235-149e-4a23-93ed-f3171ff25d3e","pageId":6}}
+[D 2025-06-23 15:42:42,058 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"0a04ca3e-88d5-41a1-ade5-c942e08d02c5","result":{"properties":["凤凰\n永久\n雅迪\n绿源\n爱玛\n台铃\n其他"]}}
+[I 2025-06-23 15:42:42,058 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 0a04ca3e-88d5-41a1-ade5-c942e08d02c5, maybe command ignore response
+[D 2025-06-23 15:42:42,061 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"a12d8772-388b-4ce5-a886-f0905eae5223","result":{"properties":["凤凰"]}}
+[D 2025-06-23 15:42:42,062 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"a12d8772-388b-4ce5-a886-f0905eae5223","result":{"properties":["凤凰"]}}
+[D 2025-06-23 15:42:42,062 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"7fe12261-50d9-4f28-9dd2-5f4fcb6759ee","method":"Element.getStyles","params":{"names":["pointer-events"],"elementId":"64c78235-149e-4a23-93ed-f3171ff25d3e","pageId":6}}
+[I 2025-06-23 15:42:42,062 minium.Conn3280 connection#704 _handle_async_msg] received async msg: a12d8772-388b-4ce5-a886-f0905eae5223, maybe command ignore response
+[D 2025-06-23 15:42:42,066 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"7fe12261-50d9-4f28-9dd2-5f4fcb6759ee","result":{"styles":["auto"]}}
+[D 2025-06-23 15:42:42,067 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"b4e99eb6-b70e-4a03-be13-2745654709d5","method":"Element.tap","params":{"elementId":"64c78235-149e-4a23-93ed-f3171ff25d3e","pageId":6}}
+[D 2025-06-23 15:42:42,067 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"7fe12261-50d9-4f28-9dd2-5f4fcb6759ee","result":{"styles":["auto"]}}
+[I 2025-06-23 15:42:42,067 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 7fe12261-50d9-4f28-9dd2-5f4fcb6759ee, maybe command ignore response
+[D 2025-06-23 15:42:42,123 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"b4e99eb6-b70e-4a03-be13-2745654709d5","result":{"pageX":64.796875,"pageY":375,"clientX":64.796875,"clientY":375}}
+[D 2025-06-23 15:42:42,124 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"b4e99eb6-b70e-4a03-be13-2745654709d5","result":{"pageX":64.796875,"pageY":375,"clientX":64.796875,"clientY":375}}
+[I 2025-06-23 15:42:42,124 minium.Conn3280 connection#704 _handle_async_msg] received async msg: b4e99eb6-b70e-4a03-be13-2745654709d5, maybe command ignore response
+[I 2025-06-23 15:42:43,625 minium page#716 _get_elements_by_css] try to get elements: view
+[D 2025-06-23 15:42:43,625 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"4f62d765-9c41-4e9d-bc37-4f4f6a8cd4c7","method":"Page.getElements","params":{"selector":"view","pageId":6}}
+[D 2025-06-23 15:42:43,631 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"4f62d765-9c41-4e9d-bc37-4f4f6a8cd4c7","result":{"elements":[{"elementId":"27b9625e-a8f1-443a-afb9-f2e7f524ea6f","tagName":"view"},{"elementId":"85cfe836-24ed-4d0b-814d-8c640366d017","tagName":"view"},{"elementId":"d5abeecd-18cc-4de4-84b0-70acfbdebd8f","tagName":"view"},{"elementId":"3214721d-bb59-46c8-a79a-0b67d749ef85","tagName":"view"},{"elementId":"b36c9965-fea9-4145-b759-e5db089d70af","tagName":"view"},{"elementId":"1455fad3-3516-41af-9324-63a4630b1f4a","tagName":"view"},{"elementId":"46e047c9-f6
+[D 2025-06-23 15:42:43,633 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"4f62d765-9c41-4e9d-bc37-4f4f6a8cd4c7","result":{"elements":[{"elementId":"27b9625e-a8f1-443a-afb9-f2e7f524ea6f","tagName":"view"},{"elementId":"85cfe836-24ed-4d0b-814d-8c640366d017","tagName":"view"},{"elementId":"d5abeecd-18cc-4de4-84b0-70acfbdebd8f","tagName":"view"},{"elementId":"3214721d-bb59-46c8-a79a-0b67d749ef85","tagName":"view"},{"elementId":"b36c9965-fea9-4145-b759-e5db089d70af","tagName":"view"},{"elementId":"1455fad3-3516-41af-9324-63a4630b1f4a","tagName":"view"},{"elementId":"46e047c9-f6
+[I 2025-06-23 15:42:43,633 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D3D90>]
+[I 2025-06-23 15:42:43,633 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 4f62d765-9c41-4e9d-bc37-4f4f6a8cd4c7, maybe command ignore response
+[I 2025-06-23 15:42:43,634 minium page#716 _get_elements_by_css] try to get elements: view
+[D 2025-06-23 15:42:43,634 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"170efae8-2ee5-4c5b-9414-c9b5a8c548f6","method":"Page.getElements","params":{"selector":"view","pageId":6}}
+[D 2025-06-23 15:42:43,640 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"170efae8-2ee5-4c5b-9414-c9b5a8c548f6","result":{"elements":[{"elementId":"27b9625e-a8f1-443a-afb9-f2e7f524ea6f","tagName":"view"},{"elementId":"85cfe836-24ed-4d0b-814d-8c640366d017","tagName":"view"},{"elementId":"d5abeecd-18cc-4de4-84b0-70acfbdebd8f","tagName":"view"},{"elementId":"3214721d-bb59-46c8-a79a-0b67d749ef85","tagName":"view"},{"elementId":"b36c9965-fea9-4145-b759-e5db089d70af","tagName":"view"},{"elementId":"1455fad3-3516-41af-9324-63a4630b1f4a","tagName":"view"},{"elementId":"46e047c9-f6
+[D 2025-06-23 15:42:43,641 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"170efae8-2ee5-4c5b-9414-c9b5a8c548f6","result":{"elements":[{"elementId":"27b9625e-a8f1-443a-afb9-f2e7f524ea6f","tagName":"view"},{"elementId":"85cfe836-24ed-4d0b-814d-8c640366d017","tagName":"view"},{"elementId":"d5abeecd-18cc-4de4-84b0-70acfbdebd8f","tagName":"view"},{"elementId":"3214721d-bb59-46c8-a79a-0b67d749ef85","tagName":"view"},{"elementId":"b36c9965-fea9-4145-b759-e5db089d70af","tagName":"view"},{"elementId":"1455fad3-3516-41af-9324-63a4630b1f4a","tagName":"view"},{"elementId":"46e047c9-f6
+[I 2025-06-23 15:42:43,641 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D34D0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D3F70>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D3E30>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D3610>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D3890>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D3930>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D37F0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D1130>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D3ED0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA3404F50>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA3404050>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA34040F0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA3404190>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA3404230>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA34042D0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA3404370>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA3404410>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA34044B0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA3404550>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA34045F0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA3404690>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA3404730>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA34047D0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA3404870>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA3404910>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA34049B0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA3404A50>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA3404AF0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA3404B90>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA3404C30>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA3404CD0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA3404D70>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA3404E10>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA3404EB0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA3404FF0>]
+[I 2025-06-23 15:42:43,641 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 170efae8-2ee5-4c5b-9414-c9b5a8c548f6, maybe command ignore response
+[D 2025-06-23 15:42:43,642 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"412a0830-9798-4db7-9cab-605a1d7f489d","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"27b9625e-a8f1-443a-afb9-f2e7f524ea6f","pageId":6}}
+[D 2025-06-23 15:42:43,645 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"412a0830-9798-4db7-9cab-605a1d7f489d","result":{"properties":["返回\n请选择爱车信息\n亲爱的用户，选择爱车后方可使用充电服务哦～\n款式 *\n电动自行车\n电动摩托车\n共享单车\n其他\n品牌 *\n凤凰\n永久\n雅迪\n绿源\n爱玛\n台铃\n其他\n型号 *\n型号1\n型号2\n型号3\n型号4\n型号5\n型号6\n其他\n确定添加"]}}
+[D 2025-06-23 15:42:43,646 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"fdab9312-fb3f-4b27-878d-214e8f98d63a","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"85cfe836-24ed-4d0b-814d-8c640366d017","pageId":6}}
+[D 2025-06-23 15:42:43,646 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"412a0830-9798-4db7-9cab-605a1d7f489d","result":{"properties":["返回\n请选择爱车信息\n亲爱的用户，选择爱车后方可使用充电服务哦～\n款式 *\n电动自行车\n电动摩托车\n共享单车\n其他\n品牌 *\n凤凰\n永久\n雅迪\n绿源\n爱玛\n台铃\n其他\n型号 *\n型号1\n型号2\n型号3\n型号4\n型号5\n型号6\n其他\n确定添加"]}}
+[I 2025-06-23 15:42:43,647 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 412a0830-9798-4db7-9cab-605a1d7f489d, maybe command ignore response
+[D 2025-06-23 15:42:43,650 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"fdab9312-fb3f-4b27-878d-214e8f98d63a","result":{"properties":["返回"]}}
+[D 2025-06-23 15:42:43,651 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"3e4d3310-a9e7-4c37-93d3-038bf9ec83c7","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"d5abeecd-18cc-4de4-84b0-70acfbdebd8f","pageId":6}}
+[D 2025-06-23 15:42:43,651 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"fdab9312-fb3f-4b27-878d-214e8f98d63a","result":{"properties":["返回"]}}
+[I 2025-06-23 15:42:43,652 minium.Conn3280 connection#704 _handle_async_msg] received async msg: fdab9312-fb3f-4b27-878d-214e8f98d63a, maybe command ignore response
+[D 2025-06-23 15:42:43,654 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"3e4d3310-a9e7-4c37-93d3-038bf9ec83c7","result":{"properties":[""]}}
+[D 2025-06-23 15:42:43,655 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"1ce96382-f81d-4380-9eb2-0bd7f7643243","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"3214721d-bb59-46c8-a79a-0b67d749ef85","pageId":6}}
+[D 2025-06-23 15:42:43,655 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"3e4d3310-a9e7-4c37-93d3-038bf9ec83c7","result":{"properties":[""]}}
+[I 2025-06-23 15:42:43,656 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 3e4d3310-a9e7-4c37-93d3-038bf9ec83c7, maybe command ignore response
+[D 2025-06-23 15:42:43,693 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"1ce96382-f81d-4380-9eb2-0bd7f7643243","result":{"properties":["返回"]}}
+[D 2025-06-23 15:42:43,698 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"ffaa76e5-c45a-492c-8b32-2300969db8e3","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"b36c9965-fea9-4145-b759-e5db089d70af","pageId":6}}
+[D 2025-06-23 15:42:43,698 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"1ce96382-f81d-4380-9eb2-0bd7f7643243","result":{"properties":["返回"]}}
+[I 2025-06-23 15:42:43,700 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 1ce96382-f81d-4380-9eb2-0bd7f7643243, maybe command ignore response
+[D 2025-06-23 15:42:43,712 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"ffaa76e5-c45a-492c-8b32-2300969db8e3","result":{"properties":["返回"]}}
+[D 2025-06-23 15:42:43,713 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"6d8af97b-7d43-4d98-9fb6-6752e9e2931d","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"1455fad3-3516-41af-9324-63a4630b1f4a","pageId":6}}
+[D 2025-06-23 15:42:43,713 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"ffaa76e5-c45a-492c-8b32-2300969db8e3","result":{"properties":["返回"]}}
+[I 2025-06-23 15:42:43,714 minium.Conn3280 connection#704 _handle_async_msg] received async msg: ffaa76e5-c45a-492c-8b32-2300969db8e3, maybe command ignore response
+[D 2025-06-23 15:42:43,717 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"6d8af97b-7d43-4d98-9fb6-6752e9e2931d","result":{"properties":["请选择爱车信息"]}}
+[D 2025-06-23 15:42:43,718 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"6d8af97b-7d43-4d98-9fb6-6752e9e2931d","result":{"properties":["请选择爱车信息"]}}
+[D 2025-06-23 15:42:43,718 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"0d819b39-1a7c-426e-9226-a350fe70ede1","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"46e047c9-f6fd-45ba-bfba-709441a66fb8","pageId":6}}
+[I 2025-06-23 15:42:43,719 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 6d8af97b-7d43-4d98-9fb6-6752e9e2931d, maybe command ignore response
+[D 2025-06-23 15:42:43,722 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"0d819b39-1a7c-426e-9226-a350fe70ede1","result":{"properties":["亲爱的用户，选择爱车后方可使用充电服务哦～"]}}
+[D 2025-06-23 15:42:43,723 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"bad814b9-5591-44a2-9e45-dfc2359e5a38","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"cd14d743-a823-45bc-a452-e4d7ec5d88b2","pageId":6}}
+[D 2025-06-23 15:42:43,723 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"0d819b39-1a7c-426e-9226-a350fe70ede1","result":{"properties":["亲爱的用户，选择爱车后方可使用充电服务哦～"]}}
+[I 2025-06-23 15:42:43,725 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 0d819b39-1a7c-426e-9226-a350fe70ede1, maybe command ignore response
+[D 2025-06-23 15:42:43,728 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"bad814b9-5591-44a2-9e45-dfc2359e5a38","result":{"properties":["款式 *\n电动自行车\n电动摩托车\n共享单车\n其他"]}}
+[D 2025-06-23 15:42:43,729 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"8f862003-62f1-42b1-9958-f92c44e20e2c","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"3872859a-be32-4923-ba9e-4dddf52594a2","pageId":6}}
+[D 2025-06-23 15:42:43,729 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"bad814b9-5591-44a2-9e45-dfc2359e5a38","result":{"properties":["款式 *\n电动自行车\n电动摩托车\n共享单车\n其他"]}}
+[I 2025-06-23 15:42:43,730 minium.Conn3280 connection#704 _handle_async_msg] received async msg: bad814b9-5591-44a2-9e45-dfc2359e5a38, maybe command ignore response
+[D 2025-06-23 15:42:43,732 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"8f862003-62f1-42b1-9958-f92c44e20e2c","result":{"properties":["款式 *"]}}
+[D 2025-06-23 15:42:43,733 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"a106f0fc-2601-48b4-9c17-aa4ce4b2c6a3","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"2147d3ad-eb71-4705-8e68-d56321063f2e","pageId":6}}
+[D 2025-06-23 15:42:43,734 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"8f862003-62f1-42b1-9958-f92c44e20e2c","result":{"properties":["款式 *"]}}
+[I 2025-06-23 15:42:43,734 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 8f862003-62f1-42b1-9958-f92c44e20e2c, maybe command ignore response
+[D 2025-06-23 15:42:43,737 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"a106f0fc-2601-48b4-9c17-aa4ce4b2c6a3","result":{"properties":["电动自行车\n电动摩托车\n共享单车\n其他"]}}
+[D 2025-06-23 15:42:43,737 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"8f41babe-f2b4-4ac7-b0e7-b6ab9f33a84f","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"59e54970-99e6-4762-be66-72138ca4343f","pageId":6}}
+[D 2025-06-23 15:42:43,738 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"a106f0fc-2601-48b4-9c17-aa4ce4b2c6a3","result":{"properties":["电动自行车\n电动摩托车\n共享单车\n其他"]}}
+[I 2025-06-23 15:42:43,739 minium.Conn3280 connection#704 _handle_async_msg] received async msg: a106f0fc-2601-48b4-9c17-aa4ce4b2c6a3, maybe command ignore response
+[D 2025-06-23 15:42:43,741 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"8f41babe-f2b4-4ac7-b0e7-b6ab9f33a84f","result":{"properties":["电动自行车"]}}
+[D 2025-06-23 15:42:43,742 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"e94e2e88-a5f1-4722-921f-9f28653a858b","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"ec0a171d-b053-49bd-99af-7e8cf089e136","pageId":6}}
+[D 2025-06-23 15:42:43,742 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"8f41babe-f2b4-4ac7-b0e7-b6ab9f33a84f","result":{"properties":["电动自行车"]}}
+[I 2025-06-23 15:42:43,743 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 8f41babe-f2b4-4ac7-b0e7-b6ab9f33a84f, maybe command ignore response
+[D 2025-06-23 15:42:43,745 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"e94e2e88-a5f1-4722-921f-9f28653a858b","result":{"properties":["电动摩托车"]}}
+[D 2025-06-23 15:42:43,746 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"2d2794bc-0c6d-4fb6-9279-2be37117c51b","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"5d6e10e1-9f56-4465-bbb2-0c9fce3c933b","pageId":6}}
+[D 2025-06-23 15:42:43,746 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"e94e2e88-a5f1-4722-921f-9f28653a858b","result":{"properties":["电动摩托车"]}}
+[I 2025-06-23 15:42:43,747 minium.Conn3280 connection#704 _handle_async_msg] received async msg: e94e2e88-a5f1-4722-921f-9f28653a858b, maybe command ignore response
+[D 2025-06-23 15:42:43,749 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"2d2794bc-0c6d-4fb6-9279-2be37117c51b","result":{"properties":["共享单车"]}}
+[D 2025-06-23 15:42:43,750 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"0f769ce8-5ee6-4ba3-837b-9d38e8c962a9","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"4b69fcb9-665f-459d-a628-75d5d211502e","pageId":6}}
+[D 2025-06-23 15:42:43,750 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"2d2794bc-0c6d-4fb6-9279-2be37117c51b","result":{"properties":["共享单车"]}}
+[I 2025-06-23 15:42:43,750 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 2d2794bc-0c6d-4fb6-9279-2be37117c51b, maybe command ignore response
+[D 2025-06-23 15:42:43,753 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"0f769ce8-5ee6-4ba3-837b-9d38e8c962a9","result":{"properties":["其他"]}}
+[D 2025-06-23 15:42:43,754 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"c9d11a75-fc27-49c5-9ee2-aa983d757681","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"5ce45e57-a227-4626-97ea-8faf8296a559","pageId":6}}
+[D 2025-06-23 15:42:43,754 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"0f769ce8-5ee6-4ba3-837b-9d38e8c962a9","result":{"properties":["其他"]}}
+[I 2025-06-23 15:42:43,755 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 0f769ce8-5ee6-4ba3-837b-9d38e8c962a9, maybe command ignore response
+[D 2025-06-23 15:42:43,757 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"c9d11a75-fc27-49c5-9ee2-aa983d757681","result":{"properties":["品牌 *\n凤凰\n永久\n雅迪\n绿源\n爱玛\n台铃\n其他"]}}
+[D 2025-06-23 15:42:43,758 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"43148185-d866-439d-bd42-b08821fc92fa","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"57f3cee7-5117-44d4-8d91-254dd36ce59a","pageId":6}}
+[D 2025-06-23 15:42:43,758 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"c9d11a75-fc27-49c5-9ee2-aa983d757681","result":{"properties":["品牌 *\n凤凰\n永久\n雅迪\n绿源\n爱玛\n台铃\n其他"]}}
+[I 2025-06-23 15:42:43,758 minium.Conn3280 connection#704 _handle_async_msg] received async msg: c9d11a75-fc27-49c5-9ee2-aa983d757681, maybe command ignore response
+[D 2025-06-23 15:42:43,761 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"43148185-d866-439d-bd42-b08821fc92fa","result":{"properties":["品牌 *"]}}
+[D 2025-06-23 15:42:43,762 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"9b778146-1bed-479f-a359-20eb0f7f1ddd","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"e51cc65c-388f-403d-a327-01899b581c81","pageId":6}}
+[D 2025-06-23 15:42:43,762 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"43148185-d866-439d-bd42-b08821fc92fa","result":{"properties":["品牌 *"]}}
+[I 2025-06-23 15:42:43,763 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 43148185-d866-439d-bd42-b08821fc92fa, maybe command ignore response
+[D 2025-06-23 15:42:43,765 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"9b778146-1bed-479f-a359-20eb0f7f1ddd","result":{"properties":["凤凰\n永久\n雅迪\n绿源\n爱玛\n台铃\n其他"]}}
+[D 2025-06-23 15:42:43,766 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"311c68c4-7078-4ce4-a38e-28f1eab92bb2","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"64c78235-149e-4a23-93ed-f3171ff25d3e","pageId":6}}
+[D 2025-06-23 15:42:43,766 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"9b778146-1bed-479f-a359-20eb0f7f1ddd","result":{"properties":["凤凰\n永久\n雅迪\n绿源\n爱玛\n台铃\n其他"]}}
+[I 2025-06-23 15:42:43,767 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 9b778146-1bed-479f-a359-20eb0f7f1ddd, maybe command ignore response
+[D 2025-06-23 15:42:43,770 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"311c68c4-7078-4ce4-a38e-28f1eab92bb2","result":{"properties":["凤凰"]}}
+[D 2025-06-23 15:42:43,770 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"1d7c88d8-e6f1-488e-95c2-866c579e22a8","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"b565486f-b8ef-4e39-a3f9-da24c8d7c190","pageId":6}}
+[D 2025-06-23 15:42:43,771 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"311c68c4-7078-4ce4-a38e-28f1eab92bb2","result":{"properties":["凤凰"]}}
+[I 2025-06-23 15:42:43,771 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 311c68c4-7078-4ce4-a38e-28f1eab92bb2, maybe command ignore response
+[D 2025-06-23 15:42:43,773 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"1d7c88d8-e6f1-488e-95c2-866c579e22a8","result":{"properties":["永久"]}}
+[D 2025-06-23 15:42:43,774 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"60644f5a-e4ee-46f5-bb7b-bd165ce49e18","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"0496bfc4-60cf-4108-9842-a3ee635cada4","pageId":6}}
+[D 2025-06-23 15:42:43,774 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"1d7c88d8-e6f1-488e-95c2-866c579e22a8","result":{"properties":["永久"]}}
+[I 2025-06-23 15:42:43,775 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 1d7c88d8-e6f1-488e-95c2-866c579e22a8, maybe command ignore response
+[D 2025-06-23 15:42:43,778 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"60644f5a-e4ee-46f5-bb7b-bd165ce49e18","result":{"properties":["雅迪"]}}
+[D 2025-06-23 15:42:43,779 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"7eee88af-ce23-48ed-aedc-b2315e8acb63","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"0abd39da-e33d-4d79-97de-bfaeae6ce37b","pageId":6}}
+[D 2025-06-23 15:42:43,779 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"60644f5a-e4ee-46f5-bb7b-bd165ce49e18","result":{"properties":["雅迪"]}}
+[I 2025-06-23 15:42:43,779 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 60644f5a-e4ee-46f5-bb7b-bd165ce49e18, maybe command ignore response
+[D 2025-06-23 15:42:43,782 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"7eee88af-ce23-48ed-aedc-b2315e8acb63","result":{"properties":["绿源"]}}
+[D 2025-06-23 15:42:43,782 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"83ec8aea-6821-4f05-82a3-53e5be6426cd","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"e48c4b02-d761-4f61-a13a-790161c93180","pageId":6}}
+[D 2025-06-23 15:42:43,783 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"7eee88af-ce23-48ed-aedc-b2315e8acb63","result":{"properties":["绿源"]}}
+[I 2025-06-23 15:42:43,784 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 7eee88af-ce23-48ed-aedc-b2315e8acb63, maybe command ignore response
+[D 2025-06-23 15:42:43,787 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"83ec8aea-6821-4f05-82a3-53e5be6426cd","result":{"properties":["爱玛"]}}
+[D 2025-06-23 15:42:43,787 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"a58b4560-f40f-4075-81b2-1bf325cee42f","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"74a730ea-ce82-467a-b0ee-f7a2b13fad80","pageId":6}}
+[D 2025-06-23 15:42:43,788 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"83ec8aea-6821-4f05-82a3-53e5be6426cd","result":{"properties":["爱玛"]}}
+[I 2025-06-23 15:42:43,788 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 83ec8aea-6821-4f05-82a3-53e5be6426cd, maybe command ignore response
+[D 2025-06-23 15:42:43,791 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"a58b4560-f40f-4075-81b2-1bf325cee42f","result":{"properties":["台铃"]}}
+[D 2025-06-23 15:42:43,792 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"edbbb18f-25cf-4fa3-b802-3ac74316f8e3","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"14ecfa74-530e-41fc-81ec-716abb88b050","pageId":6}}
+[D 2025-06-23 15:42:43,792 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"a58b4560-f40f-4075-81b2-1bf325cee42f","result":{"properties":["台铃"]}}
+[I 2025-06-23 15:42:43,793 minium.Conn3280 connection#704 _handle_async_msg] received async msg: a58b4560-f40f-4075-81b2-1bf325cee42f, maybe command ignore response
+[D 2025-06-23 15:42:43,796 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"edbbb18f-25cf-4fa3-b802-3ac74316f8e3","result":{"properties":["其他"]}}
+[D 2025-06-23 15:42:43,797 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"24e4a6ee-a2d0-4501-bf90-5c45fed352c6","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"55217b50-0839-4929-b977-23da21934448","pageId":6}}
+[D 2025-06-23 15:42:43,797 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"edbbb18f-25cf-4fa3-b802-3ac74316f8e3","result":{"properties":["其他"]}}
+[I 2025-06-23 15:42:43,797 minium.Conn3280 connection#704 _handle_async_msg] received async msg: edbbb18f-25cf-4fa3-b802-3ac74316f8e3, maybe command ignore response
+[D 2025-06-23 15:42:43,801 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"24e4a6ee-a2d0-4501-bf90-5c45fed352c6","result":{"properties":["型号 *\n型号1\n型号2\n型号3\n型号4\n型号5\n型号6\n其他"]}}
+[D 2025-06-23 15:42:43,802 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"a083f817-e665-42e4-8dc7-b33527b2de53","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"2fb8837a-e9a2-459b-acb0-2978a08d2766","pageId":6}}
+[D 2025-06-23 15:42:43,802 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"24e4a6ee-a2d0-4501-bf90-5c45fed352c6","result":{"properties":["型号 *\n型号1\n型号2\n型号3\n型号4\n型号5\n型号6\n其他"]}}
+[I 2025-06-23 15:42:43,803 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 24e4a6ee-a2d0-4501-bf90-5c45fed352c6, maybe command ignore response
+[D 2025-06-23 15:42:43,805 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"a083f817-e665-42e4-8dc7-b33527b2de53","result":{"properties":["型号 *"]}}
+[D 2025-06-23 15:42:43,806 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"ba6edd89-ecec-42e1-924c-0595cbb8d8e5","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"66932584-fd38-4f1c-93e1-10b324807a67","pageId":6}}
+[D 2025-06-23 15:42:43,806 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"a083f817-e665-42e4-8dc7-b33527b2de53","result":{"properties":["型号 *"]}}
+[I 2025-06-23 15:42:43,807 minium.Conn3280 connection#704 _handle_async_msg] received async msg: a083f817-e665-42e4-8dc7-b33527b2de53, maybe command ignore response
+[D 2025-06-23 15:42:43,809 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"ba6edd89-ecec-42e1-924c-0595cbb8d8e5","result":{"properties":["型号1\n型号2\n型号3\n型号4\n型号5\n型号6\n其他"]}}
+[D 2025-06-23 15:42:43,810 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"2f94706e-9c33-4d04-8d4f-3650c890ef68","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"3633a324-d580-4168-b083-7b43dafb2f21","pageId":6}}
+[D 2025-06-23 15:42:43,810 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"ba6edd89-ecec-42e1-924c-0595cbb8d8e5","result":{"properties":["型号1\n型号2\n型号3\n型号4\n型号5\n型号6\n其他"]}}
+[I 2025-06-23 15:42:43,811 minium.Conn3280 connection#704 _handle_async_msg] received async msg: ba6edd89-ecec-42e1-924c-0595cbb8d8e5, maybe command ignore response
+[D 2025-06-23 15:42:43,814 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"2f94706e-9c33-4d04-8d4f-3650c890ef68","result":{"properties":["型号1"]}}
+[D 2025-06-23 15:42:43,815 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"acf2e786-fc27-4af6-b7cc-b41486b05e48","method":"Element.getStyles","params":{"names":["pointer-events"],"elementId":"3633a324-d580-4168-b083-7b43dafb2f21","pageId":6}}
+[D 2025-06-23 15:42:43,815 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"2f94706e-9c33-4d04-8d4f-3650c890ef68","result":{"properties":["型号1"]}}
+[I 2025-06-23 15:42:43,816 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 2f94706e-9c33-4d04-8d4f-3650c890ef68, maybe command ignore response
+[D 2025-06-23 15:42:43,818 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"acf2e786-fc27-4af6-b7cc-b41486b05e48","result":{"styles":["auto"]}}
+[D 2025-06-23 15:42:43,819 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"f839995a-c884-43df-859d-969afdf49843","method":"Element.tap","params":{"elementId":"3633a324-d580-4168-b083-7b43dafb2f21","pageId":6}}
+[D 2025-06-23 15:42:43,819 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"acf2e786-fc27-4af6-b7cc-b41486b05e48","result":{"styles":["auto"]}}
+[I 2025-06-23 15:42:43,820 minium.Conn3280 connection#704 _handle_async_msg] received async msg: acf2e786-fc27-4af6-b7cc-b41486b05e48, maybe command ignore response
+[D 2025-06-23 15:42:43,876 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"f839995a-c884-43df-859d-969afdf49843","result":{"pageX":64.796875,"pageY":583,"clientX":64.796875,"clientY":583}}
+[D 2025-06-23 15:42:43,877 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"f839995a-c884-43df-859d-969afdf49843","result":{"pageX":64.796875,"pageY":583,"clientX":64.796875,"clientY":583}}
+[I 2025-06-23 15:42:43,877 minium.Conn3280 connection#704 _handle_async_msg] received async msg: f839995a-c884-43df-859d-969afdf49843, maybe command ignore response
+[I 2025-06-23 15:42:45,378 minium page#716 _get_elements_by_css] try to get elements: .confirm_btn
+[D 2025-06-23 15:42:45,379 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"3aa90c75-ffbf-46b7-96c3-c2039de76230","method":"Page.getElements","params":{"selector":".confirm_btn","pageId":6}}
+[D 2025-06-23 15:42:45,383 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"3aa90c75-ffbf-46b7-96c3-c2039de76230","result":{"elements":[{"elementId":"57a3c59a-a140-403b-9163-5365fda10990","tagName":"view"}]}}
+[I 2025-06-23 15:42:45,383 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D3610>]
+[D 2025-06-23 15:42:45,383 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"3aa90c75-ffbf-46b7-96c3-c2039de76230","result":{"elements":[{"elementId":"57a3c59a-a140-403b-9163-5365fda10990","tagName":"view"}]}}
+[I 2025-06-23 15:42:45,384 minium page#716 _get_elements_by_css] try to get elements: .confirm_btn
+[I 2025-06-23 15:42:45,384 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 3aa90c75-ffbf-46b7-96c3-c2039de76230, maybe command ignore response
+[D 2025-06-23 15:42:45,385 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"3f2eb672-ea4a-41ab-a2cf-28d9b2e99595","method":"Page.getElements","params":{"selector":".confirm_btn","pageId":6}}
+[D 2025-06-23 15:42:45,388 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"3f2eb672-ea4a-41ab-a2cf-28d9b2e99595","result":{"elements":[{"elementId":"57a3c59a-a140-403b-9163-5365fda10990","tagName":"view"}]}}
+[I 2025-06-23 15:42:45,389 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000001DDA33D1130>]
+[D 2025-06-23 15:42:45,389 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"3f2eb672-ea4a-41ab-a2cf-28d9b2e99595","result":{"elements":[{"elementId":"57a3c59a-a140-403b-9163-5365fda10990","tagName":"view"}]}}
+[D 2025-06-23 15:42:45,389 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"400721d3-d172-4dd6-a11d-b6e6b0008d3b","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"57a3c59a-a140-403b-9163-5365fda10990","pageId":6}}
+[I 2025-06-23 15:42:45,389 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 3f2eb672-ea4a-41ab-a2cf-28d9b2e99595, maybe command ignore response
+[D 2025-06-23 15:42:45,392 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"400721d3-d172-4dd6-a11d-b6e6b0008d3b","result":{"properties":["确定添加"]}}
+[D 2025-06-23 15:42:45,393 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"a6f8e9a8-5398-47f3-8702-771a3aee9237","method":"Element.getStyles","params":{"names":["pointer-events"],"elementId":"57a3c59a-a140-403b-9163-5365fda10990","pageId":6}}
+[D 2025-06-23 15:42:45,393 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"400721d3-d172-4dd6-a11d-b6e6b0008d3b","result":{"properties":["确定添加"]}}
+[I 2025-06-23 15:42:45,394 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 400721d3-d172-4dd6-a11d-b6e6b0008d3b, maybe command ignore response
+[D 2025-06-23 15:42:45,396 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"a6f8e9a8-5398-47f3-8702-771a3aee9237","result":{"styles":["auto"]}}
+[D 2025-06-23 15:42:45,396 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"a6f8e9a8-5398-47f3-8702-771a3aee9237","result":{"styles":["auto"]}}
+[D 2025-06-23 15:42:45,397 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"d708a59e-a66b-4d36-a6bb-18a7a8e9cc58","method":"Element.tap","params":{"elementId":"57a3c59a-a140-403b-9163-5365fda10990","pageId":6}}
+[I 2025-06-23 15:42:45,397 minium.Conn3280 connection#704 _handle_async_msg] received async msg: a6f8e9a8-5398-47f3-8702-771a3aee9237, maybe command ignore response
+[D 2025-06-23 15:42:45,455 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"d708a59e-a66b-4d36-a6bb-18a7a8e9cc58","result":{"pageX":194.703125,"pageY":763,"clientX":194.703125,"clientY":763}}
+[D 2025-06-23 15:42:45,456 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"d708a59e-a66b-4d36-a6bb-18a7a8e9cc58","result":{"pageX":194.703125,"pageY":763,"clientX":194.703125,"clientY":763}}
+[I 2025-06-23 15:42:45,456 minium.Conn3280 connection#704 _handle_async_msg] received async msg: d708a59e-a66b-4d36-a6bb-18a7a8e9cc58, maybe command ignore response
+[D 2025-06-23 15:42:45,696 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"method":"App.bindingCalled","params":{"name":"showToast_before_1750664485455","args":[{"title":"您已绑定该车辆，请勿重复绑定","icon":"none","duration":2000},0.9494308330788441]}}
+[W 2025-06-23 15:42:45,696 minium.Conn3280 connection#330 notify] no observer listening event showToast_before_1750664485455
+[D 2025-06-23 15:42:45,697 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"method":"App.bindingCalled","params":{"name":"showToast_before_1750664543249","args":[{"title":"您已绑定该车辆，请勿重复绑定","icon":"none","duration":2000},0.9494308330788441]}}
+[D 2025-06-23 15:42:45,699 minium.App4672 app#1344 super_before] showToast before hook result: [{'title': '您已绑定该车辆，请勿重复绑定', 'icon': 'none', 'duration': 2000}, 0.9494308330788441]
+[D 2025-06-23 15:42:45,716 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"method":"App.bindingCalled","params":{"name":"showToast_callback_1750664485455","args":[{"errMsg":"showToast:ok"},0.9494308330788441]}}
+[W 2025-06-23 15:42:45,717 minium.Conn3280 connection#330 notify] no observer listening event showToast_callback_1750664485455
+[D 2025-06-23 15:42:45,718 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"method":"App.bindingCalled","params":{"name":"showToast_callback_1750664543249","args":[{"errMsg":"showToast:ok"},0.9494308330788441]}}
+[D 2025-06-23 15:42:45,719 minium.App4672 app#1366 super_callback] wx.showToast callback hook result: [{'errMsg': 'showToast:ok'}, 0.9494308330788441]
+[I 2025-06-23 15:42:46,957 minium demo2#106 _select_vehicle_info] 车辆信息选择完成
+[I 2025-06-23 15:42:46,957 minium demo2#110 _unbind_vehicle] 开始解绑车辆流程
+[I 2025-06-23 15:42:46,958 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:46,958 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"e335b053-7844-44e9-b13b-8d050c64a7e7","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:46,961 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"e335b053-7844-44e9-b13b-8d050c64a7e7","result":{"elements":[]}}
+[W 2025-06-23 15:42:46,962 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[D 2025-06-23 15:42:46,962 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"e335b053-7844-44e9-b13b-8d050c64a7e7","result":{"elements":[]}}
+[I 2025-06-23 15:42:46,962 minium.Conn3280 connection#704 _handle_async_msg] received async msg: e335b053-7844-44e9-b13b-8d050c64a7e7, maybe command ignore response
+[I 2025-06-23 15:42:47,213 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:47,213 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"b7626113-171d-45fc-87ca-ecdbc95e9737","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:47,216 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"b7626113-171d-45fc-87ca-ecdbc95e9737","result":{"elements":[]}}
+[W 2025-06-23 15:42:47,217 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[D 2025-06-23 15:42:47,217 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"b7626113-171d-45fc-87ca-ecdbc95e9737","result":{"elements":[]}}
+[I 2025-06-23 15:42:47,218 minium.Conn3280 connection#704 _handle_async_msg] received async msg: b7626113-171d-45fc-87ca-ecdbc95e9737, maybe command ignore response
+[I 2025-06-23 15:42:47,468 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:47,469 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"99b41fd5-34fd-4a9c-b681-0a323db7099b","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:47,472 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"99b41fd5-34fd-4a9c-b681-0a323db7099b","result":{"elements":[]}}
+[W 2025-06-23 15:42:47,472 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[D 2025-06-23 15:42:47,472 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"99b41fd5-34fd-4a9c-b681-0a323db7099b","result":{"elements":[]}}
+[I 2025-06-23 15:42:47,473 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 99b41fd5-34fd-4a9c-b681-0a323db7099b, maybe command ignore response
+[I 2025-06-23 15:42:47,723 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:47,723 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"0c07fc41-4357-4718-a05b-2437df49e8bc","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:47,726 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"0c07fc41-4357-4718-a05b-2437df49e8bc","result":{"elements":[]}}
+[W 2025-06-23 15:42:47,727 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[D 2025-06-23 15:42:47,727 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"0c07fc41-4357-4718-a05b-2437df49e8bc","result":{"elements":[]}}
+[I 2025-06-23 15:42:47,728 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 0c07fc41-4357-4718-a05b-2437df49e8bc, maybe command ignore response
+[I 2025-06-23 15:42:47,979 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:47,979 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"81d34eb3-3bdc-4991-a234-9c727365882c","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:47,983 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"81d34eb3-3bdc-4991-a234-9c727365882c","result":{"elements":[]}}
+[W 2025-06-23 15:42:47,983 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[D 2025-06-23 15:42:47,984 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"81d34eb3-3bdc-4991-a234-9c727365882c","result":{"elements":[]}}
+[I 2025-06-23 15:42:47,984 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 81d34eb3-3bdc-4991-a234-9c727365882c, maybe command ignore response
+[I 2025-06-23 15:42:48,235 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:48,235 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"8aa8b66c-60e5-4ca8-be4b-a16a90c72514","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:48,238 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"8aa8b66c-60e5-4ca8-be4b-a16a90c72514","result":{"elements":[]}}
+[W 2025-06-23 15:42:48,238 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[D 2025-06-23 15:42:48,238 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"8aa8b66c-60e5-4ca8-be4b-a16a90c72514","result":{"elements":[]}}
+[I 2025-06-23 15:42:48,239 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 8aa8b66c-60e5-4ca8-be4b-a16a90c72514, maybe command ignore response
+[I 2025-06-23 15:42:48,490 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:48,490 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"6e4fa93f-b301-4861-9c28-c6d69093922d","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:48,493 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"6e4fa93f-b301-4861-9c28-c6d69093922d","result":{"elements":[]}}
+[W 2025-06-23 15:42:48,494 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[D 2025-06-23 15:42:48,494 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"6e4fa93f-b301-4861-9c28-c6d69093922d","result":{"elements":[]}}
+[I 2025-06-23 15:42:48,494 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 6e4fa93f-b301-4861-9c28-c6d69093922d, maybe command ignore response
+[I 2025-06-23 15:42:48,745 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:48,745 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"f06086ce-2af5-4b9e-b8eb-36536723752b","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:48,749 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"f06086ce-2af5-4b9e-b8eb-36536723752b","result":{"elements":[]}}
+[D 2025-06-23 15:42:48,749 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"f06086ce-2af5-4b9e-b8eb-36536723752b","result":{"elements":[]}}
+[W 2025-06-23 15:42:48,750 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[I 2025-06-23 15:42:48,750 minium.Conn3280 connection#704 _handle_async_msg] received async msg: f06086ce-2af5-4b9e-b8eb-36536723752b, maybe command ignore response
+[I 2025-06-23 15:42:49,001 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:49,002 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"00035d2c-4210-47a5-8a02-f3c3a1063e92","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:49,004 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"00035d2c-4210-47a5-8a02-f3c3a1063e92","result":{"elements":[]}}
+[D 2025-06-23 15:42:49,005 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"00035d2c-4210-47a5-8a02-f3c3a1063e92","result":{"elements":[]}}
+[W 2025-06-23 15:42:49,005 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[I 2025-06-23 15:42:49,005 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 00035d2c-4210-47a5-8a02-f3c3a1063e92, maybe command ignore response
+[I 2025-06-23 15:42:49,256 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:49,256 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"bdcb7dba-34a9-4ceb-8a79-6374ab32a8cb","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:49,260 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"bdcb7dba-34a9-4ceb-8a79-6374ab32a8cb","result":{"elements":[]}}
+[W 2025-06-23 15:42:49,260 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[D 2025-06-23 15:42:49,260 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"bdcb7dba-34a9-4ceb-8a79-6374ab32a8cb","result":{"elements":[]}}
+[I 2025-06-23 15:42:49,261 minium.Conn3280 connection#704 _handle_async_msg] received async msg: bdcb7dba-34a9-4ceb-8a79-6374ab32a8cb, maybe command ignore response
+[I 2025-06-23 15:42:49,511 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:49,512 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"93f01f89-bd4b-4675-a9df-69f64244785e","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:49,515 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"93f01f89-bd4b-4675-a9df-69f64244785e","result":{"elements":[]}}
+[D 2025-06-23 15:42:49,516 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"93f01f89-bd4b-4675-a9df-69f64244785e","result":{"elements":[]}}
+[W 2025-06-23 15:42:49,516 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[I 2025-06-23 15:42:49,517 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 93f01f89-bd4b-4675-a9df-69f64244785e, maybe command ignore response
+[I 2025-06-23 15:42:49,767 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:49,768 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"7e40fe4e-96a3-48ba-9cb8-7871498eef74","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:49,772 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"7e40fe4e-96a3-48ba-9cb8-7871498eef74","result":{"elements":[]}}
+[W 2025-06-23 15:42:49,772 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[D 2025-06-23 15:42:49,772 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"7e40fe4e-96a3-48ba-9cb8-7871498eef74","result":{"elements":[]}}
+[I 2025-06-23 15:42:49,773 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 7e40fe4e-96a3-48ba-9cb8-7871498eef74, maybe command ignore response
+[I 2025-06-23 15:42:50,024 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:50,025 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"0a50a71c-f6a7-490d-8550-e8b0ff7f8614","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:50,029 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"0a50a71c-f6a7-490d-8550-e8b0ff7f8614","result":{"elements":[]}}
+[W 2025-06-23 15:42:50,030 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[D 2025-06-23 15:42:50,030 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"0a50a71c-f6a7-490d-8550-e8b0ff7f8614","result":{"elements":[]}}
+[I 2025-06-23 15:42:50,031 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 0a50a71c-f6a7-490d-8550-e8b0ff7f8614, maybe command ignore response
+[I 2025-06-23 15:42:50,281 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:50,281 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"c40ffc53-fb0a-408d-bdae-eba916e07ab9","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:50,285 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"c40ffc53-fb0a-408d-bdae-eba916e07ab9","result":{"elements":[]}}
+[W 2025-06-23 15:42:50,286 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[D 2025-06-23 15:42:50,286 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"c40ffc53-fb0a-408d-bdae-eba916e07ab9","result":{"elements":[]}}
+[I 2025-06-23 15:42:50,286 minium.Conn3280 connection#704 _handle_async_msg] received async msg: c40ffc53-fb0a-408d-bdae-eba916e07ab9, maybe command ignore response
+[I 2025-06-23 15:42:50,630 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:50,631 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"d5a9862e-7437-477e-82c3-c51e7016758b","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:50,673 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"d5a9862e-7437-477e-82c3-c51e7016758b","result":{"elements":[]}}
+[D 2025-06-23 15:42:50,677 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"d5a9862e-7437-477e-82c3-c51e7016758b","result":{"elements":[]}}
+[I 2025-06-23 15:42:50,686 minium.Conn3280 connection#704 _handle_async_msg] received async msg: d5a9862e-7437-477e-82c3-c51e7016758b, maybe command ignore response
+[W 2025-06-23 15:42:50,678 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[I 2025-06-23 15:42:50,949 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:50,951 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"40560490-f8d7-4490-ad69-575b02172473","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:50,979 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"40560490-f8d7-4490-ad69-575b02172473","result":{"elements":[]}}
+[D 2025-06-23 15:42:50,983 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"40560490-f8d7-4490-ad69-575b02172473","result":{"elements":[]}}
+[W 2025-06-23 15:42:50,984 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[I 2025-06-23 15:42:50,986 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 40560490-f8d7-4490-ad69-575b02172473, maybe command ignore response
+[I 2025-06-23 15:42:51,237 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:51,237 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"73b232b1-e4c4-42a1-92b5-61376f78d8e8","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:51,242 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"73b232b1-e4c4-42a1-92b5-61376f78d8e8","result":{"elements":[]}}
+[W 2025-06-23 15:42:51,242 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[D 2025-06-23 15:42:51,242 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"73b232b1-e4c4-42a1-92b5-61376f78d8e8","result":{"elements":[]}}
+[I 2025-06-23 15:42:51,243 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 73b232b1-e4c4-42a1-92b5-61376f78d8e8, maybe command ignore response
+[I 2025-06-23 15:42:51,494 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:51,494 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"f8c047d4-d51c-481e-b115-f0809112bf84","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:51,497 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"f8c047d4-d51c-481e-b115-f0809112bf84","result":{"elements":[]}}
+[W 2025-06-23 15:42:51,498 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[D 2025-06-23 15:42:51,498 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"f8c047d4-d51c-481e-b115-f0809112bf84","result":{"elements":[]}}
+[I 2025-06-23 15:42:51,498 minium.Conn3280 connection#704 _handle_async_msg] received async msg: f8c047d4-d51c-481e-b115-f0809112bf84, maybe command ignore response
+[I 2025-06-23 15:42:51,749 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:51,750 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"eb0c69b3-df16-4ca9-9d6c-cdd6584848bd","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:51,754 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"eb0c69b3-df16-4ca9-9d6c-cdd6584848bd","result":{"elements":[]}}
+[W 2025-06-23 15:42:51,755 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[D 2025-06-23 15:42:51,755 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"eb0c69b3-df16-4ca9-9d6c-cdd6584848bd","result":{"elements":[]}}
+[I 2025-06-23 15:42:51,756 minium.Conn3280 connection#704 _handle_async_msg] received async msg: eb0c69b3-df16-4ca9-9d6c-cdd6584848bd, maybe command ignore response
+[I 2025-06-23 15:42:52,006 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:52,006 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"c4388b07-9859-4174-9664-498fdda6ba6d","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:52,010 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"c4388b07-9859-4174-9664-498fdda6ba6d","result":{"elements":[]}}
+[W 2025-06-23 15:42:52,010 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[D 2025-06-23 15:42:52,011 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"c4388b07-9859-4174-9664-498fdda6ba6d","result":{"elements":[]}}
+[I 2025-06-23 15:42:52,011 minium.Conn3280 connection#704 _handle_async_msg] received async msg: c4388b07-9859-4174-9664-498fdda6ba6d, maybe command ignore response
+[I 2025-06-23 15:42:52,262 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:52,262 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"dda6b7fb-0027-4efb-af00-4bf6f25bf650","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:52,266 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"dda6b7fb-0027-4efb-af00-4bf6f25bf650","result":{"elements":[]}}
+[W 2025-06-23 15:42:52,267 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[D 2025-06-23 15:42:52,267 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"dda6b7fb-0027-4efb-af00-4bf6f25bf650","result":{"elements":[]}}
+[I 2025-06-23 15:42:52,267 minium.Conn3280 connection#704 _handle_async_msg] received async msg: dda6b7fb-0027-4efb-af00-4bf6f25bf650, maybe command ignore response
+[I 2025-06-23 15:42:52,518 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:52,518 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"986d2c5f-2261-4375-bba9-08445ea458a8","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:52,522 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"986d2c5f-2261-4375-bba9-08445ea458a8","result":{"elements":[]}}
+[W 2025-06-23 15:42:52,522 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[D 2025-06-23 15:42:52,523 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"986d2c5f-2261-4375-bba9-08445ea458a8","result":{"elements":[]}}
+[I 2025-06-23 15:42:52,523 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 986d2c5f-2261-4375-bba9-08445ea458a8, maybe command ignore response
+[I 2025-06-23 15:42:52,773 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:52,774 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"db289478-ab57-45a6-a2ed-94759f04dbb2","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:52,777 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"db289478-ab57-45a6-a2ed-94759f04dbb2","result":{"elements":[]}}
+[D 2025-06-23 15:42:52,777 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"db289478-ab57-45a6-a2ed-94759f04dbb2","result":{"elements":[]}}
+[W 2025-06-23 15:42:52,778 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[I 2025-06-23 15:42:52,778 minium.Conn3280 connection#704 _handle_async_msg] received async msg: db289478-ab57-45a6-a2ed-94759f04dbb2, maybe command ignore response
+[I 2025-06-23 15:42:53,029 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:53,029 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"7bfe260e-8f92-4371-91a8-3444fa42bc0a","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:53,033 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"7bfe260e-8f92-4371-91a8-3444fa42bc0a","result":{"elements":[]}}
+[W 2025-06-23 15:42:53,034 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[D 2025-06-23 15:42:53,034 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"7bfe260e-8f92-4371-91a8-3444fa42bc0a","result":{"elements":[]}}
+[I 2025-06-23 15:42:53,035 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 7bfe260e-8f92-4371-91a8-3444fa42bc0a, maybe command ignore response
+[I 2025-06-23 15:42:53,285 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:53,286 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"1fcd7446-b9a9-47e6-844c-2b6cbb9c324b","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:53,290 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"1fcd7446-b9a9-47e6-844c-2b6cbb9c324b","result":{"elements":[]}}
+[W 2025-06-23 15:42:53,290 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[D 2025-06-23 15:42:53,290 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"1fcd7446-b9a9-47e6-844c-2b6cbb9c324b","result":{"elements":[]}}
+[I 2025-06-23 15:42:53,291 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 1fcd7446-b9a9-47e6-844c-2b6cbb9c324b, maybe command ignore response
+[I 2025-06-23 15:42:53,542 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:53,542 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"5e5be53f-c9cc-437c-ad31-4959446bf0e7","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:53,546 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"5e5be53f-c9cc-437c-ad31-4959446bf0e7","result":{"elements":[]}}
+[W 2025-06-23 15:42:53,546 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[D 2025-06-23 15:42:53,546 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"5e5be53f-c9cc-437c-ad31-4959446bf0e7","result":{"elements":[]}}
+[I 2025-06-23 15:42:53,547 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 5e5be53f-c9cc-437c-ad31-4959446bf0e7, maybe command ignore response
+[I 2025-06-23 15:42:53,798 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:53,798 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"0cff4de8-7b42-4e3b-bea9-2f6d08850e25","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:53,802 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"0cff4de8-7b42-4e3b-bea9-2f6d08850e25","result":{"elements":[]}}
+[W 2025-06-23 15:42:53,803 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[D 2025-06-23 15:42:53,803 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"0cff4de8-7b42-4e3b-bea9-2f6d08850e25","result":{"elements":[]}}
+[I 2025-06-23 15:42:53,803 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 0cff4de8-7b42-4e3b-bea9-2f6d08850e25, maybe command ignore response
+[I 2025-06-23 15:42:54,054 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:54,055 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"fe7f9766-ec4f-402a-9a04-0cda5f23e1bd","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:54,058 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"fe7f9766-ec4f-402a-9a04-0cda5f23e1bd","result":{"elements":[]}}
+[W 2025-06-23 15:42:54,059 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[D 2025-06-23 15:42:54,059 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"fe7f9766-ec4f-402a-9a04-0cda5f23e1bd","result":{"elements":[]}}
+[I 2025-06-23 15:42:54,059 minium.Conn3280 connection#704 _handle_async_msg] received async msg: fe7f9766-ec4f-402a-9a04-0cda5f23e1bd, maybe command ignore response
+[I 2025-06-23 15:42:54,310 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:54,311 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"33fa0434-0486-4228-862b-19a36e9dd43a","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:54,314 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"33fa0434-0486-4228-862b-19a36e9dd43a","result":{"elements":[]}}
+[W 2025-06-23 15:42:54,314 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[D 2025-06-23 15:42:54,315 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"33fa0434-0486-4228-862b-19a36e9dd43a","result":{"elements":[]}}
+[I 2025-06-23 15:42:54,315 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 33fa0434-0486-4228-862b-19a36e9dd43a, maybe command ignore response
+[I 2025-06-23 15:42:54,566 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:54,567 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"d84b54a6-3d9a-4b34-ac58-9872b902e6ef","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:54,570 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"d84b54a6-3d9a-4b34-ac58-9872b902e6ef","result":{"elements":[]}}
+[D 2025-06-23 15:42:54,571 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"d84b54a6-3d9a-4b34-ac58-9872b902e6ef","result":{"elements":[]}}
+[W 2025-06-23 15:42:54,571 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[I 2025-06-23 15:42:54,571 minium.Conn3280 connection#704 _handle_async_msg] received async msg: d84b54a6-3d9a-4b34-ac58-9872b902e6ef, maybe command ignore response
+[I 2025-06-23 15:42:54,822 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:54,823 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"eca1f7fe-4138-4470-bd89-e956d1cb70b1","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:54,827 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"eca1f7fe-4138-4470-bd89-e956d1cb70b1","result":{"elements":[]}}
+[W 2025-06-23 15:42:54,827 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[D 2025-06-23 15:42:54,827 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"eca1f7fe-4138-4470-bd89-e956d1cb70b1","result":{"elements":[]}}
+[I 2025-06-23 15:42:54,828 minium.Conn3280 connection#704 _handle_async_msg] received async msg: eca1f7fe-4138-4470-bd89-e956d1cb70b1, maybe command ignore response
+[I 2025-06-23 15:42:55,078 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:55,079 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"ad6f2cba-44e2-4ed8-b9da-e6390cca8b71","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:55,082 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"ad6f2cba-44e2-4ed8-b9da-e6390cca8b71","result":{"elements":[]}}
+[W 2025-06-23 15:42:55,083 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[D 2025-06-23 15:42:55,083 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"ad6f2cba-44e2-4ed8-b9da-e6390cca8b71","result":{"elements":[]}}
+[I 2025-06-23 15:42:55,083 minium.Conn3280 connection#704 _handle_async_msg] received async msg: ad6f2cba-44e2-4ed8-b9da-e6390cca8b71, maybe command ignore response
+[I 2025-06-23 15:42:55,334 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:55,335 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"a2dd8b53-6cdb-48c0-b796-c34b36775338","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:55,337 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"a2dd8b53-6cdb-48c0-b796-c34b36775338","result":{"elements":[]}}
+[D 2025-06-23 15:42:55,338 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"a2dd8b53-6cdb-48c0-b796-c34b36775338","result":{"elements":[]}}
+[W 2025-06-23 15:42:55,338 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[I 2025-06-23 15:42:55,338 minium.Conn3280 connection#704 _handle_async_msg] received async msg: a2dd8b53-6cdb-48c0-b796-c34b36775338, maybe command ignore response
+[I 2025-06-23 15:42:55,590 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:55,590 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"db7bfb5e-86fd-42c3-9467-3e3c00ee11cc","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:55,593 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"db7bfb5e-86fd-42c3-9467-3e3c00ee11cc","result":{"elements":[]}}
+[D 2025-06-23 15:42:55,595 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"db7bfb5e-86fd-42c3-9467-3e3c00ee11cc","result":{"elements":[]}}
+[W 2025-06-23 15:42:55,595 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[I 2025-06-23 15:42:55,595 minium.Conn3280 connection#704 _handle_async_msg] received async msg: db7bfb5e-86fd-42c3-9467-3e3c00ee11cc, maybe command ignore response
+[I 2025-06-23 15:42:55,846 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:55,847 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"3323ff27-7fb3-43d2-8388-6b27d2a96d92","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:55,850 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"3323ff27-7fb3-43d2-8388-6b27d2a96d92","result":{"elements":[]}}
+[D 2025-06-23 15:42:55,850 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"3323ff27-7fb3-43d2-8388-6b27d2a96d92","result":{"elements":[]}}
+[W 2025-06-23 15:42:55,851 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[I 2025-06-23 15:42:55,851 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 3323ff27-7fb3-43d2-8388-6b27d2a96d92, maybe command ignore response
+[I 2025-06-23 15:42:56,102 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:56,102 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"c4b6cebb-54d3-471c-8b44-3f3aea803821","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:56,106 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"c4b6cebb-54d3-471c-8b44-3f3aea803821","result":{"elements":[]}}
+[W 2025-06-23 15:42:56,106 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[D 2025-06-23 15:42:56,106 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"c4b6cebb-54d3-471c-8b44-3f3aea803821","result":{"elements":[]}}
+[I 2025-06-23 15:42:56,107 minium.Conn3280 connection#704 _handle_async_msg] received async msg: c4b6cebb-54d3-471c-8b44-3f3aea803821, maybe command ignore response
+[I 2025-06-23 15:42:56,358 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:56,359 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"24965a20-c449-4b6f-bbf3-09af32f3b4e7","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:56,362 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"24965a20-c449-4b6f-bbf3-09af32f3b4e7","result":{"elements":[]}}
+[W 2025-06-23 15:42:56,362 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[D 2025-06-23 15:42:56,363 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"24965a20-c449-4b6f-bbf3-09af32f3b4e7","result":{"elements":[]}}
+[I 2025-06-23 15:42:56,363 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 24965a20-c449-4b6f-bbf3-09af32f3b4e7, maybe command ignore response
+[I 2025-06-23 15:42:56,613 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:56,614 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"a26a27da-76cd-48b1-832d-6201390df57b","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:56,616 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"a26a27da-76cd-48b1-832d-6201390df57b","result":{"elements":[]}}
+[W 2025-06-23 15:42:56,617 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[D 2025-06-23 15:42:56,617 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"a26a27da-76cd-48b1-832d-6201390df57b","result":{"elements":[]}}
+[I 2025-06-23 15:42:56,618 minium.Conn3280 connection#704 _handle_async_msg] received async msg: a26a27da-76cd-48b1-832d-6201390df57b, maybe command ignore response
+[I 2025-06-23 15:42:56,868 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:56,868 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"d5fe33b2-52f5-49c0-a3fe-430598674062","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:56,871 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"d5fe33b2-52f5-49c0-a3fe-430598674062","result":{"elements":[]}}
+[W 2025-06-23 15:42:56,872 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[D 2025-06-23 15:42:56,872 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"d5fe33b2-52f5-49c0-a3fe-430598674062","result":{"elements":[]}}
+[I 2025-06-23 15:42:56,873 minium.Conn3280 connection#704 _handle_async_msg] received async msg: d5fe33b2-52f5-49c0-a3fe-430598674062, maybe command ignore response
+[I 2025-06-23 15:42:57,123 minium page#716 _get_elements_by_css] try to get elements: .slide5
+[D 2025-06-23 15:42:57,124 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"419e3a0a-f038-4165-8ade-13812051f6fc","method":"Page.getElements","params":{"selector":".slide5","pageId":6}}
+[D 2025-06-23 15:42:57,129 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"419e3a0a-f038-4165-8ade-13812051f6fc","result":{"elements":[]}}
+[D 2025-06-23 15:42:57,129 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"419e3a0a-f038-4165-8ade-13812051f6fc","result":{"elements":[]}}
+[W 2025-06-23 15:42:57,129 minium page#747 _get_elements_by_css] Could not found any element '.slide5' you need
+[I 2025-06-23 15:42:57,130 minium.Conn3280 connection#704 _handle_async_msg] received async msg: 419e3a0a-f038-4165-8ade-13812051f6fc, maybe command ignore response
+[E 2025-06-23 15:42:57,130 minium demo2#33 test_add] 第 1 次测试失败: 未找到查看详情按钮: .slide5 with text 查看详情
+[D 2025-06-23 15:42:57,131 minium demo2#36 test_add] 当前页面截图已保存
+[I 2025-06-23 15:42:57,131 minium minitest#897 capture] capture error_screenshot.png.png
+[D 2025-06-23 15:42:57,131 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"a301a3ce-6d4a-46c2-884f-abfb50bc5642","method":"App.captureScreenshot","params":{}}
+[D 2025-06-23 15:42:57,210 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"a301a3ce-6d4a-46c2-884f-abfb50bc5642","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAYYAAANMCAIAAADXDp1JAAAAAXNSR0IArs4c6QAAIABJREFUeJzMfXd8VkX29xnAxAWitIiGBQyiUpZYESmKSgI2NDbQUAJYUCNNBUEkQJSuIk2FVWqIAoooWCLlJwqGYllgaWsAFYliQlkRlLh43z9um3Km3ecJvueD5t6ZM+ecad85c+4895Ji5zfwyfH+c/9HJbpEQEaOPNuT53ApQFgteHG5Rt5KDSsvl+Z25Gx6QXRxR8tvYSSRsDs0i9x0u/awJol0YfB43LEYg9VRLS9aN7iJtKkim0wyUd7qGeQzIbCHoLlm8gmrQ8FM/GEn53HU81Z2S6gcRQcRgEqUKoQUY96EwiEqWKGXbIFHenmO/3/XJLN62dZey28jUFJ9ZnD8ZYSp/gvNsSEFHgGEtUDZ4lJFc3xWQ7mBHHbU6
+[E 2025-06-23 15:42:57,213 minium minitest#793 _callTestMethod] test exception
+Traceback (most recent call last):
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\framework\minitest.py", line 789, in _callTestMethod
+    method()
+    ~~~~~~^^
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\ddt.py", line 221, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\xcx\v9m_client2\demo2.py", line 28, in test_add
+    self._unbind_vehicle()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\xcx\v9m_client2\demo2.py", line 113, in _unbind_vehicle
+    self._click_element(".slide5", "查看详情按钮", inner_text="查看详情")
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\xcx\v9m_client2\demo2.py", line 54, in _click_element
+    raise Exception(f"未找到{element_name}: {selector} with text {kwargs['inner_text']}")
+Exception: 未找到查看详情按钮: .slide5 with text 查看详情
+[I 2025-06-23 15:42:57,220 minium minitest#796 _callTestMethod] end test method
+[D 2025-06-23 15:42:57,224 minium minitest#799 _miniTearDown] =========Current case Down: test_add_00001_0=========
+[I 2025-06-23 15:42:57,225 minium minitest#897 capture] capture teardown.png
+[D 2025-06-23 15:42:57,225 minium.Conn3280 connection#427 _safely_send] SEND > [2051437343280]{"id":"e5ddb176-3edc-4f32-b8fc-68ed02251ede","method":"App.captureScreenshot","params":{}}
+[D 2025-06-23 15:42:57,301 minium.Conn3280 connection#660 __on_message] RECV < [2051437343280]{"id":"e5ddb176-3edc-4f32-b8fc-68ed02251ede","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAYYAAANMCAIAAADXDp1JAAAAAXNSR0IArs4c6QAAIABJREFUeJzMfXd8VkX29xnAxAWitIiGBQyiUpZYESmKSgI2NDbQUAJYUCNNBUEkQJSuIk2FVWqIAoooWCLlJwqGYllgaWsAFYliQlkRlLh43z9um3Km3ecJvueD5t6ZM+ecad85c+4895Ji5zfwyfH+c/9HJbpEQEaOPNuT53ApQFgteHG5Rt5KDSsvl+Z25Gx6QXRxR8tvYSSRsDs0i9x0u/awJol0YfB43LEYg9VRLS9aN7iJtKkim0wyUd7qGeQzIbCHoLlm8gmrQ8FM/GEn53HU81Z2S6gcRQcRgEqUKoQUY96EwiEqWKGXbIFHenmO/3/XJLN62dZey28jUFJ9ZnD8ZYSp/gvNsSEFHgGEtUDZ4lJFc3xWQ7mBHHbU6
+[I 2025-06-23 15:42:57,303 minium basenative#59 wrapper] call BaseNative.get_start_up
+[I 2025-06-23 15:42:57,303 minium basenative#63 wrapper] call BaseNative.get_start_up end 
+[E 2025-06-23 15:42:57,307 minium assertbase#390 _get_stack_info] <bound method AddVehicleNumberTest.test_add of <demo2.AddVehicleNumberTest testMethod=test_add_00001_0>>
+Traceback (most recent call last):
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\framework\libs\unittest\case.py", line 43, in testPartExecutor
+    yield
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\framework\libs\unittest\case.py", line 125, in run
+    self._callTestMethod(testMethod)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\minium\framework\minitest.py", line 789, in _callTestMethod
+    method()
+    ~~~~~~^^
+  File "D:\xcx\v9m_client\.venv\Lib\site-packages\ddt.py", line 221, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\xcx\v9m_client2\demo2.py", line 28, in test_add
+    self._unbind_vehicle()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\xcx\v9m_client2\demo2.py", line 113, in _unbind_vehicle
+    self._click_element(".slide5", "查看详情按钮", inner_text="查看详情")
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\xcx\v9m_client2\demo2.py", line 54, in _click_element
+    raise Exception(f"未找到{element_name}: {selector} with text {kwargs['inner_text']}")
+Exception: 未找到查看详情按钮: .slide5 with text 查看详情
+[W 2025-06-23 15:42:57,309 minium assertbase#354 _log_info_when_error] config: {'debug': False, 'base_dir': 'D:\\xcx\\v9m_client2', 'platform': 'ide', 'app': 'wx', 'debug_mode': 'debug', 'close_ide': 'False', 'auto_capture': 'auto', 'check_mp_foreground': True, 'auto_relaunch': True, 'device_desire': {}, 'account_info': {}, 'report_usage': True, 'remote_connect_timeout': 180, 'request_timeout': 60, 'use_push': True, 'full_reset': 'False', 'outputs': 'D:\\xcx\\v9m_client2\\outputs', 'enable_app_log': False, 'enable_network_panel': False, 'project_path': 'D:\\zsn\\V9Mcode\\client-applets', 'dev_tool_path': 'D:\\Program Files (x86)\\微信web开发者工具\\cli.bat', 'test_port': 9420, 'mock_native_modal': {}, 'mock_request': [], 'auto_authorize': False, 'audits': None, 'teardown_snapshot': False, 'mock_images_dir': '', 'mock_images': {}, 'need_perf': False, 'appid': None, 'enable_h5': True, 'autofix': False, 'framework_capture': True, 'error_capture': False, 'assert_capture': True, 'create_time': '20250623154218', 'case_output': 'D:\\xcx\\v9m_client2\\outputs\\20250623154218\\test_add_00001_0\\20250623154224844034'}
+[W 2025-06-23 15:42:57,310 minium assertbase#355 _log_info_when_error] build info: {'version': '1.6.0', 'revision': '33ce5b50b34ec18c51c054a7cc1bdfb3ab0a451b', 'branch': 'master', 'update_at': '2024-10-09 21:08:56'}
+[W 2025-06-23 15:42:57,310 minium minitest#1029 _log_info_when_error] mini: 基础库3.7.12, 开发者工具1.06.2412050
+[W 2025-06-23 15:42:57,310 minium minitest#1031 _log_info_when_error] native: <minium.native.wx_native.idenative.IdeNative object at 0x000001DDA331AF90>

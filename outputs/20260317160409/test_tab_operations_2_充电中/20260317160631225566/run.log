@@ -1,0 +1,54 @@
+[I 2026-03-17 16:06:31,228 minium minitest#432 _miniSetUp] =========Current case: test_tab_operations_2_充电中=========
+[I 2026-03-17 16:06:31,228 minium minitest#435 _miniSetUp] package info: D:.xcx.v9m_client2.test_recharge_record, case info: ChargingRecordTest.test_tab_operations_2_充电中
+[I 2026-03-17 16:06:31,228 minium basenative#59 wrapper] call BaseNative.check_connection
+[I 2026-03-17 16:06:31,228 minium basenative#63 wrapper] call BaseNative.check_connection end True
+[I 2026-03-17 16:06:31,228 minium basenative#59 wrapper] call BaseNative.back_to_miniprogram
+[I 2026-03-17 16:06:31,228 minium basenative#794 back_to_miniprogram] try back_to_miniprogram 3
+[I 2026-03-17 16:06:31,228 minium basenative#63 wrapper] call BaseNative.back_to_miniprogram end 
+[D 2026-03-17 16:06:31,229 minium.Conn4144 connection#427 _safely_send] ASYNC_SEND > [2439801104144]{"id":"7f1bc37c-ee10-4cf3-aa5c-bc6a927c9521","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/page/my/my"}]}}
+[D 2026-03-17 16:06:31,231 minium.Conn4144 connection#660 __on_message] RECV < [2439801104144]{"method":"App.bindingCalled","params":{"name":"switchTab_before_global","args":[{"url":"/page/my/my"}]}}
+[D 2026-03-17 16:06:32,611 minium.Conn4144 connection#660 __on_message] RECV < [2439801104144]{"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"path":"page/my/my","query":{},"openType":"switchTab","timeStamp":1773734792599,"webviewId":9,"routeEventId":"9_1773734792094","renderer":"webview"},1773734792601]}}
+[D 2026-03-17 16:06:32,612 minium.Conn4144 connection#660 __on_message] RECV < [2439801104144]{"id":"7f1bc37c-ee10-4cf3-aa5c-bc6a927c9521","result":{"result":{"errMsg":"switchTab:ok"}}}
+[I 2026-03-17 16:06:32,612 minium.Conn4144 connection#704 _handle_async_msg] received async msg: 7f1bc37c-ee10-4cf3-aa5c-bc6a927c9521
+[I 2026-03-17 16:06:32,613 minium.App6544 app#1226 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'path': 'page/my/my', 'query': {}, 'openType': 'switchTab', 'timeStamp': 1773734792599, 'webviewId': 9, 'routeEventId': '9_1773734792094', 'renderer': 'webview'}, 1773734792601]}
+[I 2026-03-17 16:06:32,616 minium minitest#897 capture] capture setup.png
+[D 2026-03-17 16:06:32,616 minium.Conn4144 connection#427 _safely_send] SEND > [2439801104144]{"id":"ab8bf898-46af-4769-be22-8bed0b0dbf53","method":"App.captureScreenshot","params":{}}
+[D 2026-03-17 16:06:32,726 minium.Conn4144 connection#660 __on_message] RECV < [2439801104144]{"id":"ab8bf898-46af-4769-be22-8bed0b0dbf53","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAa4AAAOkCAIAAABxk0eCAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3UmfZcd1IPZzTkTc8c051zyhABAEQFKQKEpiq/XrttxuDwsv7JU/gj+Md7aXnnpjtxethZtUS92SKBEUAWIGCjVX5Ty9+U4RcY4XWShUFapAAiigIGT8gR/y4eXL+27ee/O8G3FORODLV/4nCIIgON40Pus9CIIgeOY0QgiGQRAcd/SsdyAIguDZCw3kIAiOlxfeLY8efPRyev/J0EAOguCYejD6aQyRMAiC4+R+0Hsw+oW7wiAIjhv85MuDd4UhFAZBcJzgpw8eCIUhhRwEwbFyP/49GP1CJAyCIACNIW8SBMHx8klfIT7YVyjPaGeCIAiehU/7Ch+IfiFtEgTBMfVI2iSEwiAIjpH7EZAeLqYJgiA4RvAzD
+[I 2026-03-17 16:06:32,729 minium minitest#487 _miniSetUp] =========case: test_tab_operations_2_充电中 start=========
+[I 2026-03-17 16:06:32,729 minium.App6544 app#913 redirect_to] RedirectTo: /page/power_record/power_record
+[D 2026-03-17 16:06:32,729 minium.Conn4144 connection#427 _safely_send] ASYNC_SEND > [2439801104144]{"id":"cc190d95-0c92-4546-88fa-0c16f14a95db","method":"App.callWxMethod","params":{"method":"redirectTo","args":[{"url":"/page/power_record/power_record"}]}}
+[D 2026-03-17 16:06:32,731 minium.Conn4144 connection#660 __on_message] RECV < [2439801104144]{"method":"App.bindingCalled","params":{"name":"redirectTo_before_global","args":[{"url":"/page/power_record/power_record"}]}}
+[D 2026-03-17 16:06:33,473 minium.Conn4144 connection#660 __on_message] RECV < [2439801104144]{"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"path":"page/power_record/power_record","query":{},"openType":"redirectTo","timeStamp":1773734793467,"webviewId":10,"routeEventId":"10_1773734793022","renderer":"webview"},1773734793469]}}
+[I 2026-03-17 16:06:33,474 minium.App6544 app#1226 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'path': 'page/power_record/power_record', 'query': {}, 'openType': 'redirectTo', 'timeStamp': 1773734793467, 'webviewId': 10, 'routeEventId': '10_1773734793022', 'renderer': 'webview'}, 1773734793469]}
+[D 2026-03-17 16:06:33,476 minium.Conn4144 connection#660 __on_message] RECV < [2439801104144]{"id":"cc190d95-0c92-4546-88fa-0c16f14a95db","result":{"result":{"errMsg":"redirectTo:ok"}}}
+[I 2026-03-17 16:06:33,477 minium.Conn4144 connection#704 _handle_async_msg] received async msg: cc190d95-0c92-4546-88fa-0c16f14a95db
+[D 2026-03-17 16:06:36,478 minium page#400 wait_for] waitFor: 3.0002410411834717 s
+[I 2026-03-17 16:06:36,478 minium test_recharge_record#14 setUp] 已导航到充电记录页面
+[I 2026-03-17 16:06:36,479 minium minitest#788 _callTestMethod] call test method
+[I 2026-03-17 16:06:36,480 minium test_recharge_record#19 test_tab_operations] 开始测试 充电中 选项卡
+[I 2026-03-17 16:06:36,481 minium page#716 _get_elements_by_css] try to get elements: .part1 > view[data-status='2'][data-pay_status='0']
+[D 2026-03-17 16:06:36,482 minium.Conn4144 connection#427 _safely_send] SEND > [2439801104144]{"id":"6d214b8a-592b-4f12-a870-8a4c6f8606af","method":"Page.getElements","params":{"selector":".part1 > view[data-status='2'][data-pay_status='0']","pageId":10}}
+[D 2026-03-17 16:06:36,501 minium.Conn4144 connection#660 __on_message] RECV < [2439801104144]{"id":"6d214b8a-592b-4f12-a870-8a4c6f8606af","result":{"elements":[{"elementId":"a33ac375-157b-45dd-b2ae-e14d2e0f2e93","tagName":"view"}]}}
+[I 2026-03-17 16:06:36,502 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000002380FD76170>]
+[D 2026-03-17 16:06:36,503 minium.Conn4144 connection#427 _safely_send] SEND > [2439801104144]{"id":"d196cd97-eac1-4056-b33e-802760641cc2","method":"Element.getStyles","params":{"names":["pointer-events"],"elementId":"a33ac375-157b-45dd-b2ae-e14d2e0f2e93","pageId":10}}
+[D 2026-03-17 16:06:36,508 minium.Conn4144 connection#660 __on_message] RECV < [2439801104144]{"id":"d196cd97-eac1-4056-b33e-802760641cc2","result":{"styles":["auto"]}}
+[D 2026-03-17 16:06:36,508 minium.Conn4144 connection#427 _safely_send] SEND > [2439801104144]{"id":"e3ea9a4a-d4dd-4f09-9cdf-ff2624f69f9a","method":"Element.tap","params":{"elementId":"a33ac375-157b-45dd-b2ae-e14d2e0f2e93","pageId":10}}
+[D 2026-03-17 16:06:36,582 minium.Conn4144 connection#660 __on_message] RECV < [2439801104144]{"id":"e3ea9a4a-d4dd-4f09-9cdf-ff2624f69f9a","result":{"pageX":150.296875,"pageY":121.5,"clientX":150.296875,"clientY":121.5}}
+[D 2026-03-17 16:06:37,583 minium.Conn4144 connection#427 _safely_send] SEND > [2439801104144]{"id":"467aea38-e2ff-4e92-9768-8887d67099d3","method":"Element.getAttributes","params":{"names":["class"],"elementId":"a33ac375-157b-45dd-b2ae-e14d2e0f2e93","pageId":10}}
+[D 2026-03-17 16:06:37,594 minium.Conn4144 connection#660 __on_message] RECV < [2439801104144]{"id":"467aea38-e2ff-4e92-9768-8887d67099d3","result":{"attributes":["active"]}}
+[I 2026-03-17 16:06:37,595 minium test_recharge_record#56 _switch_to_tab] 成功切换到 充电中 选项卡
+[D 2026-03-17 16:06:37,595 minium.Conn4144 connection#427 _safely_send] SEND > [2439801104144]{"id":"b089e2bc-dd1c-4132-b564-b72e106cd181","method":"App.callWxMethod","params":{"method":"pageScrollTo","args":[{"scrollTop":9999,"duration":1000}]}}
+[D 2026-03-17 16:06:37,600 minium.Conn4144 connection#660 __on_message] RECV < [2439801104144]{"id":"b089e2bc-dd1c-4132-b564-b72e106cd181","result":{"result":{}}}
+[I 2026-03-17 16:06:38,602 minium page#716 _get_elements_by_css] try to get elements: .part2
+[D 2026-03-17 16:06:38,602 minium.Conn4144 connection#427 _safely_send] SEND > [2439801104144]{"id":"bf128510-76de-45d6-9d2a-514864a0130d","method":"Page.getElements","params":{"selector":".part2","pageId":10}}
+[D 2026-03-17 16:06:38,606 minium.Conn4144 connection#660 __on_message] RECV < [2439801104144]{"id":"bf128510-76de-45d6-9d2a-514864a0130d","result":{"elements":[]}}
+[W 2026-03-17 16:06:38,606 minium page#747 _get_elements_by_css] Could not found any element '.part2' you need
+[I 2026-03-17 16:06:38,606 minium test_recharge_record#73 _click_records_in_tab] 充电中 选项卡下有 0 条记录
+[I 2026-03-17 16:06:38,606 minium test_recharge_record#27 test_tab_operations] 充电中 选项卡测试完成
+[I 2026-03-17 16:06:38,606 minium minitest#796 _callTestMethod] end test method
+[D 2026-03-17 16:06:38,607 minium minitest#799 _miniTearDown] =========Current case Down: test_tab_operations_2_充电中=========
+[I 2026-03-17 16:06:38,607 minium minitest#897 capture] capture teardown.png
+[D 2026-03-17 16:06:38,607 minium.Conn4144 connection#427 _safely_send] SEND > [2439801104144]{"id":"3836bfdd-2bec-4095-bdda-6fcb008b0dcd","method":"App.captureScreenshot","params":{}}
+[D 2026-03-17 16:06:38,691 minium.Conn4144 connection#660 __on_message] RECV < [2439801104144]{"id":"3836bfdd-2bec-4095-bdda-6fcb008b0dcd","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAa4AAAOkCAIAAABxk0eCAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3WeUXOd5J/jnfW+o1NU5R4RGTkQgmCWSIiWKMjWSbEnWymnXa+/4g2f3bDpnwzl7/GX3y5zZtb2zZ449Y2tsOUiyJUqiRIsSRVKEQIoIBImcu4FudM4Vb3if/XCrbt9KjW4AZANV/59lsvrWvW/dbrD/ePMVey7+KQEA1LAnYxt0sd43AQCwvgSRLghhCAC1Tq73DQAArDOvVggAUOMEGsgAUOsEkS6QhABQ2zBsAgBAhL5CAACBvkIAAIHJNAAAJNBABoCaJ0joAkPIAFDbBJEueL3vAgBgfTEm0wBAzcMIMgAAEeYVAgB4tUIAgJomiHRCAxkAapzAdgwAUPMEkS5RKwSA2oYRZAAAIqxBBgAQJBCFAACYV
+[I 2026-03-17 16:06:38,694 minium basenative#59 wrapper] call BaseNative.get_start_up
+[I 2026-03-17 16:06:38,694 minium basenative#63 wrapper] call BaseNative.get_start_up end 
